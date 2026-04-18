@@ -4,7 +4,7 @@ import React from 'react';
 import { Spacer } from './Spacer';
 
 const meta: Meta<typeof Input> = {
-  title: 'UI/Input',
+  title: 'Components/Inputs',
   component: Input,
   tags: ['autodocs'],
   argTypes: {

@@ -1,0 +1,61 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Concepts/Introduction" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Geist Design System
+    
+    An open-source design system for building modern websites and applications, inspired by Vercel's minimalism.
+  </div>
+  
+  <div className="sb-section">
+    <div className="sb-section-item">
+      ### 🧱 Core Components
+      Explore the full set of React components designed for high-performance and accessibility.
+      <br />
+      [View Components](?path=/docs/ui-button--docs)
+    </div>
+    
+    <div className="sb-section-item">
+      ### 🎨 Theming
+      Learn how to customize the design system with your own brand colors and tokens.
+      <br />
+      [Learn about Theming](https://geist-ui.dev/en-us/guide/themes)
+    </div>
+    
+    <div className="sb-section-item">
+      ### 🚀 Quick Start
+      Install dependencies and start building your next project with Geist and Bun.
+      ```bash
+      bun add @geist-ui/core @geist-ui/icons
+      ```
+    </div>
+  </div>
+</div>
+
+<style>
+{`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+  .sb-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .sb-section-item {
+    padding: 24px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+  }
+  .sb-section-item:hover {
+    border-color: #000;
+  }
+  .sb-section-title {
+    margin-bottom: 32px;
+  }
+`}
+</style>

@@ -42,7 +42,7 @@ const ToastExample = () => {
 };
 
 const meta: Meta = {
-  title: 'UI/Feedback (Interactions)',
+  title: 'Components/Feedback',
 };
 
 export default meta;

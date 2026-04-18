@@ -11,6 +11,7 @@ import { Note } from '../components/ui/Note';
 import { Avatar } from '../components/ui/Display';
 
 import { Modal, useModal, useToasts } from '../components/ui/Feedback';
+import { Input } from '../components/ui/Input';
 
 const DashboardMockup = () => {
   const { setToast } = useToasts();

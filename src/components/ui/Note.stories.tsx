@@ -3,7 +3,7 @@ import { Note } from './Note';
 import React from 'react';
 
 const meta: Meta<typeof Note> = {
-  title: 'UI/Note',
+  title: 'Components/Messaging',
   component: Note,
   tags: ['autodocs'],
   argTypes: {

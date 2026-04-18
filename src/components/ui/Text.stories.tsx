@@ -3,7 +3,7 @@ import { Text } from './Text';
 import React from 'react';
 
 const meta: Meta<typeof Text> = {
-  title: 'UI/Text',
+  title: 'Components/Typography',
   component: Text,
   tags: ['autodocs'],
   argTypes: {

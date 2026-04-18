@@ -4,7 +4,7 @@ import React from 'react';
 import { Spacer } from './Spacer';
 
 const meta: Meta<typeof Snippet> = {
-  title: 'UI/Snippet',
+  title: 'Components/Utils',
   component: Snippet,
   tags: ['autodocs'],
   argTypes: {
