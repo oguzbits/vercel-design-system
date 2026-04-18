@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Modal, useModal, useToasts } from './Feedback';
-import { Button } from './Button';
-import { Text } from './Text';
-import { Spacer } from './Spacer';
+import { Modal, useModal, useToasts } from '../../../components/ui/Feedback';
+import { Button } from '../../../components/ui/Button';
+import { Text } from '../../../components/ui/Text';
 
 const ModalExample = () => {
   const { visible, setVisible, bindings } = useModal();

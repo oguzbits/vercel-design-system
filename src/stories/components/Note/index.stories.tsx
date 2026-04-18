@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Note } from './Note';
 import React from 'react';
+import { Note } from '../../../components/ui/Note';
 
 const meta: Meta<typeof Note> = {
-  title: 'Components/Messaging',
+  title: 'Components/Note',
   component: Note,
   tags: ['autodocs'],
   argTypes: {

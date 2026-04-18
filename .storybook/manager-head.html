@@ -1,0 +1,76 @@
+<style>
+  /* HIGH-FIDELITY SIDEBAR OVERRIDES */
+  
+  /* Kill the onboarding and setup junk */
+  [id*="onboarding"],
+  [class*="onboarding"],
+  [class*="Onboarding"],
+  [id^="onboarding-"],
+  [data-testid="onboarding-step"],
+  [data-nodetype="onboarding"],
+  #storybook-explorer-menu [class*="onboarding"],
+  #storybook-explorer-menu [class*="level-up"],
+  .sidebar-header > div:nth-child(n+2),
+  [class*="sidebar-footer"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Custom Logo/Header */
+  .sidebar-header:before {
+    content: 'Geist UI React v10';
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+    margin: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eaeaea;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Full Width Search */
+  #storybook-explorer-searchfield {
+    background: #f3f1f1 !important;
+    border: none !important;
+    border-radius: 6px !important;
+    margin: 8px 16px !important;
+    width: calc(100% - 32px) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Integrated Sidebar Look */
+  .sidebar-container {
+    background: #fff !important;
+  }
+
+  .sidebar-subheading {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #888 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-top: 24px !important;
+    padding-left: 16px !important;
+  }
+
+  .sidebar-item {
+    font-size: 14px !important;
+    padding: 6px 16px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    color: #333 !important;
+  }
+
+  .sidebar-item[data-selected='true'] {
+    background: #0078d4 !important;
+    color: #fff !important;
+  }
+
+  .sidebar-item:hover:not([data-selected='true']) {
+    background: #f6f6f6 !important;
+  }
+</style>

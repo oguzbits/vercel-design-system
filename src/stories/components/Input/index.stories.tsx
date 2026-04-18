@@ -1,12 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Input, PasswordInput } from './Input';
+import { Input, PasswordInput } from '../../../components/ui/Input';
 import React from 'react';
-import { Spacer } from './Spacer';
 
 const meta: Meta<typeof Input> = {
-  title: 'Components/Inputs',
+  title: 'Components/Input',
   component: Input,
-  tags: ['autodocs'],
   argTypes: {
     status: {
       control: 'select',

@@ -1,9 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Tabs } from './Tabs';
+import { Tabs } from '../../../components/ui/Tabs';
 
 const meta: Meta<typeof Tabs> = {
-  title: 'Components/Navigation/Tabs',
+  title: 'Components/Tabs',
   component: Tabs,
   tags: ['autodocs'],
 };

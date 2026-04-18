@@ -1,0 +1,24 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Concepts/Migration" />
+
+# Migration Guide
+
+Transitioning from standard HTML/CSS or other UI libraries to Geist UI.
+
+## From Geist V2 to V3
+
+*   **Tokens**: All tokens have been moved to a CSS variable-based architecture.
+*   **Icons**: We now use the `@geist-ui/icons` package for treeshakeable SVG icons.
+*   **Theming**: The `GeistProvider` now supports 0-latency theme switching without layout shifts.
+
+## Porting from Fluent UI
+
+While we share similar architectural goals (strict design tokens, accessible primitives), Geist focuses on **maximum density** and **developer minimalism**.
+
+| Feature | Fluent UI | Geist UI |
+| :--- | :--- | :--- |
+| **Grid** | 4px Base | 8px Base |
+| **Corners** | 4px / Rounded | 0px / Sharp |
+| **Philosophy** | Enterprise Logic | Functional Minimalism |
+

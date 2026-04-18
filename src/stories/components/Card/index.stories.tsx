@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Card, CardContent, CardFooter } from './Card';
-import { Text } from './Text';
+import { Card, CardContent, CardFooter } from '../../../components/ui/Card';
+import { Text } from '../../../components/ui/Text';
 
 const meta: Meta<typeof Card> = {
-  title: 'Components/Surfaces',
+  title: 'Components/Card',
   component: Card,
   tags: ['autodocs'],
 };
@@ -42,7 +42,7 @@ export const WithFooter: Story = {
         <Text p>Footers are perfect for secondary actions or metadata.</Text>
       </CardContent>
       <CardFooter>
-        <Text small secondary>Last updated: 2 mins ago</Text>
+        <Text small>Last updated: 2 mins ago</Text>
       </CardFooter>
     </Card>
   ),

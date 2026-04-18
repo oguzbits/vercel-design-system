@@ -2,17 +2,22 @@ import { create } from '@storybook/theming';
 
 export default create({
   base: 'light',
-  brandTitle: 'Geist Design System',
-  brandUrl: 'https://geist-ui.dev',
-  brandImage: 'https://raw.githubusercontent.com/geist-org/geist-ui/master/public/favicon.ico',
+  
+  // Brand
+  brandTitle: 'Geist UI',
+  brandUrl: 'https://vercel.com/design',
+  brandImage: 'https://assets.vercel.com/image/upload/front/favicon/vercel/76x76.png',
   brandTarget: '_self',
 
   // UI
   appBg: '#ffffff',
   appContentBg: '#ffffff',
-  appPreviewBg: '#ffffff',
   appBorderColor: '#eaeaea',
   appBorderRadius: 0,
+
+  // Typography
+  fontBase: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  fontCode: 'menubar, Monaco, Lucida Console, monospace',
 
   // Text colors
   textColor: '#000000',
