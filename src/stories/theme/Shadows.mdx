@@ -1,0 +1,36 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Theme/Shadows" />
+
+# Shadows & Elevation
+
+Geist uses shadows to provide depth and emphasize layers. Shadows are primarily used on cards, modals, and floating elements like tooltips or popovers.
+
+## Shadow Levels
+
+Geist defines several shadow levels to represent different elevations.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+  <div style={{ padding: '2rem', background: 'var(--geist-background)', boxShadow: 'var(--shadow-small)', border: '1px solid var(--accents-2)', textAlign: 'center' }}>
+    <code style={{ fontSize: '0.8rem' }}>var(--shadow-small)</code>
+    <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Small shadow for subtle lift (e.g., small cards).</p>
+  </div>
+  
+  <div style={{ padding: '2rem', background: 'var(--geist-background)', boxShadow: 'var(--shadow-medium)', border: '1px solid var(--accents-2)', textAlign: 'center' }}>
+    <code style={{ fontSize: '0.8rem' }}>var(--shadow-medium)</code>
+    <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Medium shadow for hover states and secondary elements.</p>
+  </div>
+
+  <div style={{ padding: '2rem', background: 'var(--geist-background)', boxShadow: 'var(--shadow-large)', border: '1px solid var(--accents-2)', textAlign: 'center' }}>
+    <code style={{ fontSize: '0.8rem' }}>var(--shadow-large)</code>
+    <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Large shadow for primary overlays and dropdowns.</p>
+  </div>
+</div>
+
+## Usage
+
+Shadows should be used sparingly to avoid visual clutter. In the Geist aesthetic, sharp borders (`1px solid var(--accents-2)`) are often preferred over shadows for simple containment.
+
+*   **Elevation 1**: Secondary cards, search inputs.
+*   **Elevation 2**: Hover states for interactive elements.
+*   **Elevation 3**: Modals, dropdowns, and tooltips.

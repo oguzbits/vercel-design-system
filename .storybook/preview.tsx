@@ -3,6 +3,21 @@ import type { Preview } from '@storybook/react';
 import { GeistProvider, CssBaseline } from '@geist-ui/core';
 
 const preview: Preview = {
+  globalTypes: {
+    theme: {
+      name: 'Theme',
+      description: 'Global theme for components',
+      defaultValue: 'light',
+      toolbar: {
+        icon: 'circlehollow',
+        items: [
+          { value: 'light', icon: 'circlehollow', title: 'Light' },
+          { value: 'dark', icon: 'circle', title: 'Dark' },
+        ],
+        showName: true,
+      },
+    },
+  },
   parameters: {
     controls: {
       matchers: {
@@ -12,15 +27,26 @@ const preview: Preview = {
     },
     a11y: {
       test: 'todo'
-    }
+    },
+    backgrounds: { disable: true },
   },
   decorators: [
-    (Story) => (
-      <GeistProvider>
-        <CssBaseline />
-        <Story />
-      </GeistProvider>
-    ),
+    (Story, context) => {
+      const theme = context.globals.theme || 'light';
+      return (
+        <GeistProvider themeType={theme}>
+          <CssBaseline />
+          <div style={{ 
+            padding: '24px', 
+            background: theme === 'dark' ? '#000' : '#fff', 
+            minHeight: '100vh',
+            transition: 'background 0.2s ease'
+          }}>
+            <Story />
+          </div>
+        </GeistProvider>
+      );
+    },
   ],
 };
 

@@ -1,0 +1,156 @@
+import { Meta, IconGallery, IconItem } from "@storybook/blocks";
+import * as Icons from "@geist-ui/icons";
+
+<Meta title="Theme/Icons" />
+
+# Icons
+
+Our iconography system is designed to be simple, consistent, and functional. We use `@geist-ui/icons` for a cohesive look across all applications.
+
+## Usage
+
+Icons should be used to provide visual context and improve scannability. They should NOT be used as the sole means of communication for critical actions.
+
+```jsx
+import { Github } from '@geist-ui/icons'
+
+const MyComponent = () => <Github color="black" size={24} />
+```
+
+## Gallery
+
+<IconGallery>
+  <IconItem name="Github">
+    <Icons.Github />
+  </IconItem>
+  <IconItem name="Twitter">
+    <Icons.Twitter />
+  </IconItem>
+  <IconItem name="Search">
+    <Icons.Search />
+  </IconItem>
+  <IconItem name="Plus">
+    <Icons.Plus />
+  </IconItem>
+  <IconItem name="Calendar">
+    <Icons.Calendar />
+  </IconItem>
+  <IconItem name="Settings">
+    <Icons.Settings />
+  </IconItem>
+  <IconItem name="Check">
+    <Icons.Check />
+  </IconItem>
+  <IconItem name="X">
+    <Icons.X />
+  </IconItem>
+  <IconItem name="Activity">
+    <Icons.Activity />
+  </IconItem>
+  <IconItem name="AlertCircle">
+    <Icons.AlertCircle />
+  </IconItem>
+  <IconItem name="ArrowUp">
+    <Icons.ArrowUp />
+  </IconItem>
+  <IconItem name="ArrowDown">
+    <Icons.ArrowDown />
+  </IconItem>
+  <IconItem name="Book">
+    <Icons.Book />
+  </IconItem>
+  <IconItem name="ChevronDown">
+    <Icons.ChevronDown />
+  </IconItem>
+  <IconItem name="Clock">
+    <Icons.Clock />
+  </IconItem>
+  <IconItem name="Copy">
+    <Icons.Copy />
+  </IconItem>
+  <IconItem name="Download">
+    <Icons.Download />
+  </IconItem>
+  <IconItem name="ExternalLink">
+    <Icons.ExternalLink />
+  </IconItem>
+  <IconItem name="File">
+    <Icons.File />
+  </IconItem>
+  <IconItem name="Filter">
+    <Icons.Filter />
+  </IconItem>
+  <IconItem name="Heart">
+    <Icons.Heart />
+  </IconItem>
+  <IconItem name="Home">
+    <Icons.Home />
+  </IconItem>
+  <IconItem name="Info">
+    <Icons.Info />
+  </IconItem>
+  <IconItem name="Link">
+    <Icons.Link />
+  </IconItem>
+  <IconItem name="Lock">
+    <Icons.Lock />
+  </IconItem>
+  <IconItem name="Mail">
+    <Icons.Mail />
+  </IconItem>
+  <IconItem name="Menu">
+    <Icons.Menu />
+  </IconItem>
+  <IconItem name="Moon">
+    <Icons.Moon />
+  </IconItem>
+  <IconItem name="MoreHorizontal">
+    <Icons.MoreHorizontal />
+  </IconItem>
+  <IconItem name="Package">
+    <Icons.Package />
+  </IconItem>
+  <IconItem name="Phone">
+    <Icons.Phone />
+  </IconItem>
+  <IconItem name="Play">
+    <Icons.Play />
+  </IconItem>
+  <IconItem name="RefreshCw">
+    <Icons.RefreshCw />
+  </IconItem>
+  <IconItem name="Send">
+    <Icons.Send />
+  </IconItem>
+  <IconItem name="Share">
+    <Icons.Share />
+  </IconItem>
+  <IconItem name="Shield">
+    <Icons.Shield />
+  </IconItem>
+  <IconItem name="ShoppingCart">
+    <Icons.ShoppingCart />
+  </IconItem>
+  <IconItem name="Star">
+    <Icons.Star />
+  </IconItem>
+  <IconItem name="Sun">
+    <Icons.Sun />
+  </IconItem>
+  <IconItem name="Trash-2">
+    <Icons.Trash2 />
+  </IconItem>
+  <IconItem name="User">
+    <Icons.User />
+  </IconItem>
+  <IconItem name="Video">
+    <Icons.Video />
+  </IconItem>
+</IconGallery>
+
+## Sizes
+
+Icons are available in three standard sizes:
+*   `16px`: For dense UI and labels.
+*   `24px`: Default size for actions and nav.
+*   `32px`: For empty states and hero sections.

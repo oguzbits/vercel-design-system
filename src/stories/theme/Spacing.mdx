@@ -1,0 +1,31 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Theme/Spacing" />
+
+# Spacing
+
+The Geist spacing system is based on an 8px / 4px modular grid. Consistency in spacing is vital for creating a balanced and rhythmically pleasing interface.
+
+## Spacing Scale
+
+Our scale ranges from `4px` (half-unit) to `80px` (massive).
+
+<div style={{ marginTop: '2rem' }}>
+  {[4, 8, 12, 16, 24, 32, 48, 64].map(size => (
+    <div key={size} style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', gap: '1rem' }}>
+      <div style={{ width: '80px', fontSize: '0.8rem', color: 'var(--accents-5)' }}>{size}px</div>
+      <div style={{ height: '24px', width: `${size}px`, background: 'var(--geist-selection)', borderRadius: '2px' }}></div>
+      <div style={{ fontSize: '0.9rem' }}><code>gap: {size/16}rem</code></div>
+    </div>
+  ))}
+</div>
+
+## Layout Grid
+
+For large-scale layouts, we recommend using a standard 12-column grid or CSS Flexbox/Grid with the established spacing units.
+
+**Recommended Margins:**
+*   **Mobile**: 16px
+*   **Tablet**: 24px
+*   **Desktop**: 48px
+*   **Wide**: 64px

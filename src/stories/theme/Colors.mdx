@@ -1,0 +1,53 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+
+<Meta title="Theme/Colors" />
+
+# Colors
+
+The Geist color palette is designed to be purposeful and minimal. It focuses on functional colors that maintain high contrast and readability.
+
+<ColorPalette>
+  <ColorItem
+    title="Core"
+    subtitle="The primary colors of the system"
+    colors={{ 
+      Foreground: '#000000', 
+      Background: '#ffffff', 
+      Selection: '#0070f3' 
+    }}
+  />
+  <ColorItem
+    title="Accents"
+    subtitle="Grayscale shades for borders, text and backgrounds"
+    colors={{ 
+      'Accent 1': '#fafafa',
+      'Accent 2': '#eaeaea',
+      'Accent 3': '#999999',
+      'Accent 4': '#888888',
+      'Accent 5': '#666666',
+      'Accent 6': '#444444',
+      'Accent 7': '#333333',
+      'Accent 8': '#111111',
+    }}
+  />
+  <ColorItem
+    title="Status"
+    subtitle="Colors used for feedback and messaging"
+    colors={{ 
+      Success: '#0070f3',
+      Warning: '#f5a623',
+      Error: '#ee0000',
+      Cyan: '#79ffe1',
+      Purple: '#f81ce5'
+    }}
+  />
+</ColorPalette>
+
+## Usage
+
+In code, you should use the theme object to access these colors:
+
+```tsx
+const theme = useTheme()
+console.log(theme.palette.accents_2) // #eaeaea
+```

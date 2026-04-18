@@ -3,33 +3,63 @@ import { Meta } from "@storybook/blocks";
 <Meta title="Concepts/Introduction" />
 
 <div className="sb-container">
-  <div className='sb-section-title'>
-    # Geist Design System
-    
-    An open-source design system for building modern websites and applications, inspired by Vercel's minimalism.
+  <div className="sb-hero">
+    <h1>Geist Design System</h1>
+    <p>An open-source design system for building modern websites and applications, inspired by the technical precision and minimalism of Vercel.</p>
+    <div className="sb-hero-links">
+      <a href="https://github.com/geist-org/geist-ui" target="_blank" className="sb-btn sb-btn-primary">GitHub Repository</a>
+      <a href="?path=/docs/components-button--docs" className="sb-btn">Explore Components</a>
+    </div>
   </div>
-  
+
   <div className="sb-section">
-    <div className="sb-section-item">
-      ### 🧱 Core Components
-      Explore the full set of React components designed for high-performance and accessibility.
-      <br />
-      [View Components](?path=/docs/ui-button--docs)
+    <div className="sb-section-title">
+      <h2>Core Pillars</h2>
+      <p>The foundation of our engineering-first approach.</p>
     </div>
-    
-    <div className="sb-section-item">
-      ### 🎨 Theming
-      Learn how to customize the design system with your own brand colors and tokens.
-      <br />
-      [Learn about Theming](https://geist-ui.dev/en-us/guide/themes)
+    <div className="sb-grid-3">
+      <div className="sb-grid-item">
+        <div className="sb-item-icon">⚡️</div>
+        <h3>High Performance</h3>
+        <p>Lightweight components built on top of modern React patterns with zero layout shift and minimal bundle size.</p>
+      </div>
+      <div className="sb-grid-item">
+        <div className="sb-item-icon">🎨</div>
+        <h3>Design Tokens</h3>
+        <p>A unified token system that ensures consistent visual language across platforms, from typography to shadows.</p>
+      </div>
+      <div className="sb-grid-item">
+        <div className="sb-item-icon">♿️</div>
+        <h3>Accessible by Default</h3>
+        <p>Strict adherence to WAI-ARIA standards ensures an inclusive experience for all users out of the box.</p>
+      </div>
     </div>
-    
-    <div className="sb-section-item">
-      ### 🚀 Quick Start
-      Install dependencies and start building your next project with Geist and Bun.
-      ```bash
-      bun add @geist-ui/core @geist-ui/icons
-      ```
+  </div>
+
+  <div className="sb-section">
+    <div className="sb-section-title">
+      <h2>Resources</h2>
+    </div>
+    <div className="sb-grid-2">
+      <div className="sb-card">
+        <h3>Figma Library</h3>
+        <p>The official Figma community file for designers to stay in sync with our implementation.</p>
+        <a href="https://www.figma.com/community/file/1021424757657159740" target="_blank">Open Figma →</a>
+      </div>
+      <div className="sb-card">
+        <h3>Documentation</h3>
+        <p>Reference documentation for all props, hooks, and themes provided by the core library.</p>
+        <a href="https://geist-ui.dev/en-us/guide/installation" target="_blank">Read Docs →</a>
+      </div>
+    </div>
+  </div>
+
+  <div className="sb-section">
+    <div className="sb-section-title">
+      <h2>Quick Start</h2>
+    </div>
+    <div className="sb-code-block">
+      <code>bun add @geist-ui/core @geist-ui/icons</code>
     </div>
   </div>
 </div>
@@ -37,25 +67,154 @@ import { Meta } from "@storybook/blocks";
 <style>
 {`
   .sb-container {
-    margin-bottom: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
   }
+
+  .sb-hero {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .sb-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.05em;
+  }
+
+  .sb-hero p {
+    font-size: 1.25rem;
+    color: #a1a1a1;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    line-height: 1.5;
+  }
+
+  .sb-hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .sb-btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    background: white;
+    color: black;
+  }
+
+  .sb-btn-primary {
+    background: #0070f3;
+    color: white;
+  }
+
+  .sb-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+
   .sb-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-    margin-top: 24px;
+    margin-bottom: 80px;
   }
-  .sb-section-item {
-    padding: 24px;
-    border: 1px solid #eaeaea;
-    border-radius: 8px;
-    transition: border-color 0.2s;
-  }
-  .sb-section-item:hover {
-    border-color: #000;
-  }
+
   .sb-section-title {
     margin-bottom: 32px;
+  }
+
+  .sb-section-title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .sb-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .sb-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .sb-grid-item {
+    text-align: left;
+  }
+
+  .sb-item-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .sb-grid-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .sb-grid-item p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .sb-card {
+    padding: 32px;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    transition: all 0.2s;
+  }
+
+  .sb-card:hover {
+    border-color: #000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .sb-card h3 {
+    margin-bottom: 8px;
+  }
+
+  .sb-card a {
+    display: inline-block;
+    margin-top: 16px;
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .sb-code-block {
+    background: #fafafa;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    font-family: monospace;
+  }
+
+  [data-theme='dark'] .sb-card {
+    background: #111;
+    border-color: #333;
+    color: white;
+  }
+
+  [data-theme='dark'] .sb-grid-item p {
+    color: #888;
+  }
+
+  [data-theme='dark'] .sb-code-block {
+    background: #111;
+    border-color: #333;
+    color: #fff;
   }
 `}
 </style>

@@ -1,0 +1,29 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Theme/Z-Index" />
+
+# Stacking Context (Z-Index)
+
+To ensure consistent layering across the application, we use a predefined z-index scale. This prevents "z-index wars" and makes overlays predictable.
+
+## The Scale
+
+| Level | Value | Usage |
+| :--- | :--- | :--- |
+| `base` | `0` | Default stacking context. |
+| `scrolled` | `50` | Elements that float above scrollable content. |
+| `sticky` | `100` | Sticky headers and navigation. |
+| `dropdown` | `200` | Popovers, tooltips, and dropdown menus. |
+| `overlay` | `400` | Modal backdrops and side-drawers. |
+| `modal` | `500` | Modal dialogs. |
+| `toast` | `1000` | Emergency notifications and global alerts. |
+
+## Implementation
+
+Always use the CSS variables to ensure consistency:
+
+```css
+.my-modal {
+  z-index: var(--z-index-modal);
+}
+```

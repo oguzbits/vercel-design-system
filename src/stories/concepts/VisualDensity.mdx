@@ -1,0 +1,20 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Concepts/Visual Density" />
+
+# Visual Density
+
+The Geist Design System provides two levels of visual density to accommodate different user needs and screen real estate requirements.
+
+## Comfortable (Default)
+Optimized for readability and touch targets. This is the recommended density for most consumer-facing applications.
+*   **Target users:** General web users, mobile users.
+*   **Spacing:** Balanced white space.
+
+## Compact
+Designed for data-intensive applications and professional tools where seeing more information at once is critical.
+*   **Target users:** Power users, developers, analysts.
+*   **Spacing:** Reduced padding and margins.
+
+## Implementation
+Currently, density is controlled via global spacing tokens. Future versions will support a runtime toggle in the `GeistProvider`.
