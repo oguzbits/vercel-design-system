@@ -1,0 +1,50 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Theme/Stroke Widths" />
+
+# Stroke Widths
+
+Geist utilizes a restricted scale of stroke widths to ensure visual consistency across icons, borders, and UI separators.
+
+<div style={{
+  marginTop: '2rem',
+  padding: '2.5rem',
+  border: '1px solid #eaeaea',
+  borderRadius: '12px',
+  background: '#fff',
+  maxWidth: '700px'
+}}>
+  {[
+    { name: 'strokeWidthThin', value: '1px' },
+    { name: 'strokeWidthMedium', value: '1.5px' },
+    { name: 'strokeWidthThick', value: '2px' },
+    { name: 'strokeWidthXThick', value: '3px' },
+  ].map((item) => (
+    <div key={item.name} style={{
+      display: 'flex',
+      alignItems: 'center',
+      padding: '24px 0',
+      borderBottom: '1px solid #f5f5f5'
+    }}>
+      <div style={{ width: '200px', fontSize: '14px', color: '#666', fontFamily: 'monospace' }}>
+        {item.name}
+      </div>
+      <div style={{ width: '100px', fontSize: '14px', color: '#111' }}>
+        {item.value}
+      </div>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
+        <div style={{
+          width: '100%',
+          height: '20px',
+          border: `${item.value} solid #111`,
+          background: '#fcfcfc',
+          borderRadius: '4px'
+        }} />
+      </div>
+    </div>
+  ))}
+</div>
+
+## Technical Application
+
+Most Geist components (Inputs, Buttons) utilize `strokeWidthThin`. `strokeWidthThick` is typically reserved for focus states or high-contrast decorative elements.

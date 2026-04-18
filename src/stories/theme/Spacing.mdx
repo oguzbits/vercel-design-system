@@ -4,28 +4,51 @@ import { Meta } from "@storybook/blocks";
 
 # Spacing
 
-The Geist spacing system is based on an 8px / 4px modular grid. Consistency in spacing is vital for creating a balanced and rhythmically pleasing interface.
+Consistent rhythmic flow is maintained through a strict modular spacing scale.
 
-## Spacing Scale
-
-Our scale ranges from `4px` (half-unit) to `80px` (massive).
-
-<div style={{ marginTop: '2rem' }}>
-  {[4, 8, 12, 16, 24, 32, 48, 64].map(size => (
-    <div key={size} style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', gap: '1rem' }}>
-      <div style={{ width: '80px', fontSize: '0.8rem', color: 'var(--accents-5)' }}>{size}px</div>
-      <div style={{ height: '24px', width: `${size}px`, background: 'var(--geist-selection)', borderRadius: '2px' }}></div>
-      <div style={{ fontSize: '0.9rem' }}><code>gap: {size/16}rem</code></div>
+<div style={{
+  marginTop: '2rem',
+  padding: '2rem',
+  border: '1px solid #eaeaea',
+  borderRadius: '12px',
+  background: '#fff',
+  maxWidth: '700px'
+}}>
+  {[
+    { name: 'spacingNone', value: '0px', size: 0 },
+    { name: 'spacingXXS', value: '2px', size: 2 },
+    { name: 'spacingXS', value: '4px', size: 4 },
+    { name: 'spacingS', value: '8px', size: 8 },
+    { name: 'spacingM', value: '12px', size: 12 },
+    { name: 'spacingL', value: '16px', size: 16 },
+    { name: 'spacingXL', value: '24px', size: 24 },
+    { name: 'spacingXXL', value: '32px', size: 32 },
+    { name: 'spacingXXXL', value: '48px', size: 48 },
+    { name: 'spacingXXXXL', value: '64px', size: 64 },
+  ].map((item) => (
+    <div key={item.name} style={{
+      display: 'flex',
+      alignItems: 'center',
+      padding: '16px 0',
+      borderBottom: '1px solid #f5f5f5'
+    }}>
+      <div style={{ width: '200px', fontSize: '14px', color: '#666', fontFamily: 'monospace' }}>
+        {item.name}
+      </div>
+      <div style={{ width: '100px', fontSize: '14px', color: '#111' }}>
+        {item.value}
+      </div>
+      <div style={{ 
+        height: '24px', 
+        width: item.value === '0px' ? '1px' : item.value, 
+        background: '#0070f3',
+        borderRadius: '2px',
+        opacity: item.value === '0px' ? 0.2 : 1
+      }} />
     </div>
   ))}
 </div>
 
-## Layout Grid
+## Rationale
 
-For large-scale layouts, we recommend using a standard 12-column grid or CSS Flexbox/Grid with the established spacing units.
-
-**Recommended Margins:**
-*   **Mobile**: 16px
-*   **Tablet**: 24px
-*   **Desktop**: 48px
-*   **Wide**: 64px
+Geist layout increments follow an 8pt/4pt grid, ensuring components align perfectly across desktop and mobile viewports.

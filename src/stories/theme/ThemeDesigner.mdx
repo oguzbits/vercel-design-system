@@ -1,0 +1,39 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Theme/Theme Designer" />
+
+# Theme Designer
+
+Geist is highly customizable. You can override any part of the theme by passing a partial theme object to the `GeistProvider`.
+
+## Customization Example
+
+```tsx
+import { GeistProvider, CssBaseline, Themes } from '@geist-ui/core'
+
+const myTheme = Themes.createFromLight({
+  type: 'custom',
+  palette: {
+    success: '#000',
+  },
+})
+
+const App = () => (
+  <GeistProvider themes={[myTheme]} themeType="custom">
+    <CssBaseline />
+    <YourApp />
+  </GeistProvider>
+)
+```
+
+## Available Overrides
+
+You can override variables in the following categories:
+*   `palette`: All color tokens.
+*   `expressiveness`: Shadows, transitions, and special effects.
+*   `layout`: Spacing, z-index, and container widths.
+*   `font`: Family, sizes, and weights.
+
+## Tooling
+
+While we don't have a live drag-and-drop designer in this Storybook yet, we recommend using the standard Geist UI tokens documented in the other **Theme** sections as your starting point.

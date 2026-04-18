@@ -1,0 +1,65 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Theme/Border Radii" />
+
+# Border Radii
+
+Consistent corner treatment is essential for a cohesive user interface. Geist primarily leans towards sharp edges (`0px`), but provides a scale for subtle softening in specific contexts.
+
+<div style={{
+  marginTop: '2rem',
+  padding: '2rem',
+  border: '1px solid #eaeaea',
+  borderRadius: '12px',
+  background: '#fff',
+  maxWidth: '700px'
+}}>
+  {[
+    { name: 'borderRadiusNone', value: '0', radius: '0px' },
+    { name: 'borderRadiusSmall', value: '2px', radius: '2px' },
+    { name: 'borderRadiusMedium', value: '4px', radius: '4px' },
+    { name: 'borderRadiusLarge', value: '8px', radius: '8px' },
+    { name: 'borderRadiusXLarge', value: '12px', radius: '12px' },
+    { name: 'borderRadius2XLarge', value: '16px', radius: '16px' },
+    { name: 'borderRadius3XLarge', value: '24px', radius: '24px' },
+    { name: 'borderRadiusCircular', value: '10000px', radius: '10000px' },
+  ].map((item) => (
+    <div key={item.name} style={{
+      display: 'flex',
+      alignItems: 'center',
+      padding: '12px 0',
+      borderBottom: '1px solid #f5f5f5'
+    }}>
+      <div style={{ width: '200px', fontSize: '14px', color: '#666', fontFamily: 'monospace' }}>
+        {item.name}
+      </div>
+      <div style={{ width: '100px', fontSize: '14px', color: '#111' }}>
+        {item.value}
+      </div>
+      <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+        {/* Filled Sample */}
+        <div style={{
+          width: '40px',
+          height: '40px',
+          background: '#bbb',
+          borderRadius: item.radius
+        }} />
+        {/* Outlined Sample */}
+        <div style={{
+          width: '40px',
+          height: '40px',
+          border: '1px solid #111',
+          borderRadius: item.radius
+        }} />
+      </div>
+    </div>
+  ))}
+</div>
+
+## Usage
+
+*   **None (0px)**: Default for primary layout containers and strict Geist components.
+*   **Small (2px)**: Used for small UI elements like badges.
+*   **Medium (4px)**: Standard for buttons and inputs.
+*   **Large (8px)**: Used for cards and secondary sections.
+*   **Circular**: Reserved for Avatars and pill-shaped interactive elements.
