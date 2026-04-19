@@ -1,49 +1,41 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Input, PasswordInput } from '../../../components/ui/Input';
-import React from 'react';
+import { Meta } from '@storybook/react';
+import { Input } from '@geist-ui/core';
 
-const meta: Meta<typeof Input> = {
+export { Default } from './InputDefault';
+export { Type } from './InputType';
+export { Size } from './InputSize';
+export { States } from './InputStates';
+export { Content } from './InputContent';
+export { Interactions } from './InputInteractions';
+
+export default {
   title: 'Components/Input',
   component: Input,
-  argTypes: {
-    status: {
-      control: 'select',
-      options: ['default', 'secondary', 'success', 'warning', 'error'],
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `
+### Best Practices
+
+#### Layout
+- **Do** use standard alignment for labels (usually left-aligned above or to the left of the input).
+- **Do** ensure adequate contrast between the input border and the background (at least 3:1).
+- **Don't** use too many different sizes of inputs on a single page; maintain a consistent scale.
+- **Do** use placeholders sparingly; they are not a replacement for labels.
+
+#### Interaction
+- **Do** provide immediate feedback for validation errors.
+- **Do** use the \`clearable\` prop for search inputs or fields where users frequently need to reset content.
+- **Do** use appropriate \`htmlType\` (e.g., "password", "email", "number") to trigger the correct mobile keyboard.
+
+### Accessibility
+- Every input **must** have a descriptive label. If a visual label is not present, use \`aria-label\`.
+- Use \`aria-describedby\` to link error messages or helper text to the input.
+- Input states (disabled, error) are communicated to assistive technology via standard HTML attributes.
+- High-quality focus rings are provided by the Geist UI theme to ensure keyboard navigability.
+        `,
+      },
     },
-    scale: { control: 'number' },
-    disabled: { control: 'boolean' },
-    clearable: { control: 'boolean' },
   },
-};
-
-export default meta;
-type Story = StoryObj<typeof Input>;
-
-export const Default: Story = {
-  args: {
-    placeholder: 'Enter your username',
-  },
-};
-
-export const Password: Story = {
-  render: () => <PasswordInput placeholder="Enter your password" />,
-};
-
-export const Statuses: Story = {
-  render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      <Input status="success" placeholder="Success" />
-      <Input status="warning" placeholder="Warning" />
-      <Input status="error" placeholder="Error" />
-    </div>
-  ),
-};
-
-export const WithLabels: Story = {
-  render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      <Input label="Username" placeholder="oguz" />
-      <Input labelRight=".com" placeholder="vercel" />
-    </div>
-  ),
-};
+} as Meta;
