@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, Spacer } from '@geist-ui/core';
+import { Checkbox, Spacer } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

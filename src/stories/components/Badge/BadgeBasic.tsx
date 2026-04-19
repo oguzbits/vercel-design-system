@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Avatar, Button, Link, Spacer } from '@geist-ui/core';
+import { Badge, Avatar, Button, Link, Spacer } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

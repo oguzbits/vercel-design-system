@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Grid } from '@geist-ui/core';
+import { Grid } from '@/components/ui';
 import GridDocumentation from './Grid.mdx';
 
 export { 

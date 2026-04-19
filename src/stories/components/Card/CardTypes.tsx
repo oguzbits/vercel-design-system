@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Text, Grid } from '@geist-ui/core';
+import { Card, Text, Grid } from '@/components/ui';
 
 export const Types = () => (
   <Grid.Container gap={2}>

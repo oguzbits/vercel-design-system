@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Input } from '@geist-ui/core';
+import { Input } from '@/components/ui';
 
 import InputDocumentation from './Input.mdx';
 

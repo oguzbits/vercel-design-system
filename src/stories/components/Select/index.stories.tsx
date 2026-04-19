@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Select } from '@/components/ui/Select';
+import { Select } from '@/components/ui';
 
 import SelectDocumentation from './Select.mdx';
 

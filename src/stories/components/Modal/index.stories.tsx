@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Modal } from '@geist-ui/core';
+import { Modal } from '@/components/ui';
 
 import ModalDocumentation from './Modal.mdx';
 

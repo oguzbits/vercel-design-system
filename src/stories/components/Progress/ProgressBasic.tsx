@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, Spacer, useTheme, Button } from '@geist-ui/core';
+import { Progress, Spacer, useTheme, Button } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rating, Grid } from '@geist-ui/core';
+import { Rating, Grid } from '@/components/ui';
 
 export const Basic = () => (
   <Grid.Container gap={2} direction="column">

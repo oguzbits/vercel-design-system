@@ -1,5 +1,5 @@
 import React from 'react';
-import { useToasts, Button, Spacer } from '@geist-ui/core';
+import { useToasts, Button, Spacer } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

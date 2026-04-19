@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Breadcrumbs } from '@geist-ui/core';
+import { Breadcrumbs } from '@/components/ui';
 
 import BreadcrumbsDocumentation from './Breadcrumbs.mdx';
 

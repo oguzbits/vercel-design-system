@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Keyboard } from '@geist-ui/core';
+import { Keyboard } from '@/components/ui';
 
 import KeyboardDocumentation from './Keyboard.mdx';
 

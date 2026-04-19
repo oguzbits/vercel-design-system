@@ -1,24 +1,26 @@
 import React from 'react'
-import { 
-  Modal as GeistModal, 
-  ModalProps, 
-  useToasts as useGeistToasts,
-  useModal as useGeistModal
-} from '@geist-ui/core'
+import { Modal as GeistModal, useToasts, useModal } from '@geist-ui/core'
+import ModalTitle from '@geist-ui/core/esm/modal/modal-title'
+import ModalSubtitle from '@geist-ui/core/esm/modal/modal-subtitle'
+import ModalContent from '@geist-ui/core/esm/modal/modal-content'
+import ModalAction from '@geist-ui/core/esm/modal/modal-action'
 
-export const Modal: React.FC<ModalProps> & {
-  Title: typeof GeistModal.Title
-  Subtitle: typeof GeistModal.Subtitle
-  Content: typeof GeistModal.Content
-  Action: typeof GeistModal.Action
-} = (props) => {
-  return <GeistModal {...props} />
+const ModalComponent: React.FC<any> = (props) => {
+  return <GeistModal {...(props as any)} />
 }
 
-Modal.Title = GeistModal.Title
-Modal.Subtitle = GeistModal.Subtitle
-Modal.Content = GeistModal.Content
-Modal.Action = GeistModal.Action
+export type ModalComponentType = React.FC<any> & {
+  Title: any;
+  Subtitle: any;
+  Content: any;
+  Action: any;
+}
 
-export const useToasts = useGeistToasts
-export const useModal = useGeistModal
+const Modal = ModalComponent as ModalComponentType
+Modal.Title = ModalTitle as any
+Modal.Subtitle = ModalSubtitle as any
+Modal.Content = ModalContent as any
+Modal.Action = ModalAction as any
+Modal.displayName = 'Modal'
+
+export { Modal, useToasts, useModal }

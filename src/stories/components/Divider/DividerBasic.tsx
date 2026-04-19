@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Grid, Text } from '@geist-ui/core';
+import { Divider, Grid, Text } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],
@@ -15,7 +15,7 @@ export const Basic = {
 export const Types = {
   tags: ['!sidebar'],
   decorators: [
-    (Story) => (
+    (Story: any) => (
       <div style={{ width: '100%' }}>
         <Story />
       </div>

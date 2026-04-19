@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Spacer, Text } from '@geist-ui/core';
+import { Tabs, Spacer, Text } from '@/components/ui';
 import { Home, User, Settings } from '@geist-ui/icons';
 
 export const Basic = {

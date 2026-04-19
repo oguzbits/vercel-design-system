@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Popover, Button, Link, Text, Spacer } from '@geist-ui/core';
+import { Popover, Button, Link, Text, Spacer } from '@/components/ui';
 
 export const Basic = () => {
   const content = () => (

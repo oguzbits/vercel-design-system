@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Text, Button } from '@geist-ui/core';
+import { Page, Text, Button } from '@/components/ui';
 
 const MockPage = ({ visible, onClose, children }: any) => {
   if (!visible) return null;

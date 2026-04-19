@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Divider } from '@geist-ui/core';
+import { Divider } from '@/components/ui';
 import DividerDocumentation from './Divider.mdx';
 
 export { 

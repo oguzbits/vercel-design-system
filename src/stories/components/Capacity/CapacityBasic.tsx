@@ -1,5 +1,5 @@
 import React from 'react';
-import { Capacity, Spacer, useTheme } from '@geist-ui/core';
+import { Capacity, Spacer, useTheme } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

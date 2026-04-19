@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Link } from '@geist-ui/core';
+import { Link } from '@/components/ui';
 
 import LinkDocumentation from './Link.mdx';
 

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Note } from '@geist-ui/core';
+import { Note } from '@/components/ui';
 
 import NoteDocumentation from './Note.mdx';
 

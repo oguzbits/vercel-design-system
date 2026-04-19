@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, Text } from '@geist-ui/core';
+import { Grid, Card, Text } from '@/components/ui';
 
 const Placeholder = ({ text }: { text: string }) => (
   <Card shadow width="100%" style={{ background: '#f8f8f8' }}>

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Fieldset } from '@geist-ui/core';
+import { Fieldset } from '@/components/ui';
 
 import FieldsetDocumentation from './Fieldset.mdx';
 

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Card } from '@geist-ui/core';
+import { Card } from '@/components/ui';
 
 import CardDocumentation from './Card.mdx';
 

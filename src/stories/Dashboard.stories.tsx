@@ -1,17 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Card, CardContent, CardFooter } from '../components/ui/Card';
-import { Text } from '../components/ui/Text';
-import { Spacer } from '../components/ui/Spacer';
-import { Button } from '../components/ui/Button';
-
-import { Snippet } from '../components/ui/Snippet';
-import { Note } from '../components/ui/Note';
-
-import { Avatar } from '../components/ui/Display';
-
-import { Modal, useModal, useToasts } from '../components/ui/Feedback';
-import { Input } from '../components/ui/Input';
+import { 
+  Card, 
+  CardContent, 
+  CardFooter, 
+  Text, 
+  Spacer, 
+  Button, 
+  Snippet, 
+  Note, 
+  Avatar, 
+  Modal, 
+  useModal, 
+  useToasts, 
+  Input 
+} from '../components/ui';
 
 const DashboardMockup = () => {
   const { setToast } = useToasts();

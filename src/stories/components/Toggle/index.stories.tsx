@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Toggle } from '@geist-ui/core';
+import { Toggle } from '@/components/ui';
 
 import ToggleDocumentation from './Toggle.mdx';
 

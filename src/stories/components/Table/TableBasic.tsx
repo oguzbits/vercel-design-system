@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Code, Text, Button as GeistButton, ButtonProps } from '@geist-ui/core';
+import { Table, Code, Text, Button as GeistButton, ButtonGroup } from '@/components/ui';
 
 // Local wrapper to resolve React 19 type incompatibilities in Geist UI v2
 const Button = (props: any) => <GeistButton {...props} />;
@@ -79,7 +79,7 @@ export const Actions = {
       );
     };
     return (
-      <Table data={data} onChange={value => setData(value)}>
+      <Table data={data} onChange={(value: any) => setData(value)}>
         <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
         <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
         <Table.Column prop="operation" label="operation" width={150} render={renderAction} />
@@ -114,7 +114,7 @@ export const UpdateRow = {
       );
     };
     return (
-      <Table data={data} onChange={value => setData(value)}>
+      <Table data={data} onChange={(value: any) => setData(value)}>
         <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
         <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
         <Table.Column prop="operation" label="operation" width={150} render={renderAction} />

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Input, Spacer, Button, Text, Dot } from '@geist-ui/core';
+import { Input, Spacer, Button, Text, Dot } from '@/components/ui';
 import { Github } from '@geist-ui/icons';
 
 export const Basic = {
@@ -128,7 +128,7 @@ export const ImperativeAPI = {
     };
     return (
       <>
-        <Input initialValue="Hello" onChange={e => console.log(e.target.value)} ref={ref} />
+        <Input initialValue="Hello" onChange={(e: any) => console.log(e.target.value)} ref={ref} />
         <Spacer h={0.5} />
         <Button auto type="secondary" scale={1/3} onClick={setChange}>set value</Button>
       </>

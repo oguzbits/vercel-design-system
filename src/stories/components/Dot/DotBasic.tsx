@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dot, Spacer } from '@geist-ui/core';
+import { Dot, Spacer } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

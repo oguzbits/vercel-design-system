@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Spacer } from '@geist-ui/core';
+import { Code, Spacer } from '@/components/ui';
 import type { StoryObj } from '@storybook/react';
 
 type Story = StoryObj<typeof Code>;
@@ -45,7 +45,7 @@ export const ClassicStyle: Story = {
       <Code classic>npm install @geist-ui/core</Code>
       <Spacer h={1} />
       <Code block classic name="main.js">
-        {`import { GeistProvider } from '@geist-ui/core';`}
+        {`import { GeistProvider } from '@/components/ui';`}
       </Code>
     </>
   )

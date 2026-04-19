@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button, useModal, Text } from '@geist-ui/core';
+import { Modal, Button, useModal, Text } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

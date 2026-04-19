@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spacer, Grid } from '@geist-ui/core';
+import { Spacer, Grid } from '@/components/ui';
 
 export const Vertical = {
   tags: ['!sidebar'],

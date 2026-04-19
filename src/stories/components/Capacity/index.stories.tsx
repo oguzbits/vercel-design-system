@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Capacity } from '@geist-ui/core';
+import { Capacity } from '@/components/ui';
 
 import CapacityDocumentation from './Capacity.mdx';
 

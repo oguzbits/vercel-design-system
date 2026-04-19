@@ -1,5 +1,5 @@
-import { Display, Code } from '@geist-ui/core';
-import { Image } from '@/components/ui/Image';
+import { Display, Code } from '@/components/ui';
+import { Image } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

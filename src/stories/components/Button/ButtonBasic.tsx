@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Grid, Spacer } from '@geist-ui/core';
+import { Button, Grid, Spacer } from '@/components/ui';
 import { User, Shield, Github } from '@geist-ui/icons';
 import type { StoryObj } from '@storybook/react';
 

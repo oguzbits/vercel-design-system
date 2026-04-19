@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Text } from '@geist-ui/core';
+import { Link, Text } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

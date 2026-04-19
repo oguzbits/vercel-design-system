@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Drawer } from '@geist-ui/core';
+import { Drawer } from '@/components/ui';
 
 export { Basic, Placement } from './DrawerBasic';
 

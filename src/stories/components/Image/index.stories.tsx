@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Image } from '@/components/ui/Image';
+import { Image } from '@/components/ui';
 
 import ImageDocumentation from './Image.mdx';
 

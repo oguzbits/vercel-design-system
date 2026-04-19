@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Spinner } from '@geist-ui/core';
+import { Spinner } from '@/components/ui';
 
 import SpinnerDocumentation from './Spinner.mdx';
 

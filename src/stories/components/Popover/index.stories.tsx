@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Popover } from '@geist-ui/core';
+import { Popover } from '@/components/ui';
 
 export { Basic, Menu } from './PopoverBasic';
 

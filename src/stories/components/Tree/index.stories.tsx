@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Tree } from '@/components/ui/Tree';
+import { Tree } from '@/components/ui';
 
 import TreeDocumentation from './Tree.mdx';
 

@@ -1,5 +1,5 @@
-import { Spacer, Code, Modal, useModal, Button } from '@geist-ui/core';
-import { Select } from '@/components/ui/Select';
+import { Spacer, Code, Modal, useModal, Button } from '@/components/ui';
+import { Select } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Code } from '@geist-ui/core';
+import { Code } from '@/components/ui';
 import CodeDocumentation from './Code.mdx';
 
 export { 

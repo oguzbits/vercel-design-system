@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Button } from '@geist-ui/core';
+import { Button } from '@/components/ui';
 import ButtonDocumentation from './Button.mdx';
 
 export { 

@@ -1,4 +1,4 @@
-import { Avatar, Spacer } from '@geist-ui/core';
+import { Avatar, Spacer } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

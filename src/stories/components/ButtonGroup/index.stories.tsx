@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { ButtonGroup } from '@geist-ui/core';
+import { ButtonGroup } from '@/components/ui';
 
 import ButtonGroupDocumentation from './ButtonGroup.mdx';
 

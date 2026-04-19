@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Dot } from '@geist-ui/core';
+import { Dot } from '@/components/ui';
 
 import DotDocumentation from './Dot.mdx';
 

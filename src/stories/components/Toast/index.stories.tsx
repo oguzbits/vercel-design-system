@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { useToasts } from '@geist-ui/core';
+import { useToasts } from '@/components/ui';
 
 import ToastDocumentation from './Toast.mdx';
 

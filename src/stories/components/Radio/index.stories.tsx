@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Radio } from '@/components/ui/Radio';
+import { Radio } from '@/components/ui';
 
 import RadioDocumentation from './Radio.mdx';
 

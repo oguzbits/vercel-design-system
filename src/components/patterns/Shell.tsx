@@ -1,6 +1,6 @@
 import React from 'react';
-import { Page, Text, Breadcrumbs, User, Button, Spacer, Grid } from '@geist-ui/core';
-import { Github, Bell, Settings } from '@geist-ui/icons';
+import { Page, Text, Breadcrumbs, User, Button, Spacer, Grid } from '@/components/ui';
+import { Bell, Settings } from '@geist-ui/icons';
 
 interface ShellProps {
   children: React.ReactNode;

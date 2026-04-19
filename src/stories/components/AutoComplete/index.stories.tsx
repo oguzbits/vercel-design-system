@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { AutoComplete } from '@geist-ui/core';
+import { AutoComplete } from '@/components/ui';
 
 import AutoCompleteDocumentation from './AutoComplete.mdx';
 

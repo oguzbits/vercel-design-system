@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Collapse } from '@geist-ui/core';
+import { Collapse } from '@/components/ui';
 
 import CollapseDocumentation from './Collapse.mdx';
 

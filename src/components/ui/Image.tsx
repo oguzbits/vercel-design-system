@@ -1,30 +1,17 @@
-import React from 'react';
-import { Image as GeistImage, ImageProps } from '@geist-ui/core';
+import React from 'react'
+import { Image as GeistImage } from '@geist-ui/core'
+import GeistImageBrowser from '@geist-ui/core/esm/image/image-browser'
 
-/**
- * Wrapper for Geist UI Image to ensure compatibility with React 19.
- * 
- * Provides explicit default values and fixes type issues for Image.Browser
- * which React 19 no longer supports via 'defaultProps'.
- */
+const ImageComponent: React.FC<any> = (props) => {
+  return <GeistImage {...(props as any)} />
+}
 
-const ImageBrowser: React.FC<any> = (props) => {
-  const { 
-    showFullLink = false, 
-    anchorProps = {}, 
-    invert = false, 
-    ...rest 
-  } = props;
-  return <GeistImage.Browser showFullLink={showFullLink} anchorProps={anchorProps} invert={invert} {...rest} />;
-};
+export type ImageComponentType = React.FC<any> & {
+  Browser: any;
+}
 
-const ImageWrapper: React.FC<ImageProps> & {
-  Browser: typeof ImageBrowser;
-} = (props) => {
-  return <GeistImage {...props} />;
-};
+const Image = ImageComponent as ImageComponentType
+Image.Browser = GeistImageBrowser as any
+Image.displayName = 'Image'
 
-ImageWrapper.Browser = ImageBrowser;
-
-export const Image = ImageWrapper;
-export type { ImageProps };
+export { Image }

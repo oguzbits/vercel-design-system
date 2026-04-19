@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Rating } from '@geist-ui/core';
+import { Rating } from '@/components/ui';
 
 export { Basic, Locked } from './RatingBasic';
 

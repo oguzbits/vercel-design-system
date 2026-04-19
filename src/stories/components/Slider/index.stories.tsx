@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Slider } from '@/components/ui/Slider';
+import { Slider } from '@/components/ui';
 
 import SliderDocumentation from './Slider.mdx';
 

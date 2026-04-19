@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Tag } from '@geist-ui/core';
+import { Tag } from '@/components/ui';
 
 import TagDocumentation from './Tag.mdx';
 

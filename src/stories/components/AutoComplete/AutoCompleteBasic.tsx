@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { AutoComplete, Spacer, Badge, Grid, Text } from '@geist-ui/core';
+import { AutoComplete, Spacer, Badge, Grid, Text } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],
@@ -85,7 +85,7 @@ export const Searching = {
     ];
     const [options, setOptions] = useState<{ label: string; value: string }[] | undefined>();
     const [searching, setSearching] = useState(false);
-    const timer = useRef<NodeJS.Timeout>();
+    const timer = useRef<NodeJS.Timeout | undefined>(undefined);
     const searchHandler = (currentValue: string) => {
       if (!currentValue) return setOptions([]);
       setSearching(true);

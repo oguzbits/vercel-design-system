@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Page } from '@geist-ui/core';
+import { Page } from '@/components/ui';
 import PageDocumentation from './Page.mdx';
 
 export { 

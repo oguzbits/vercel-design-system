@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Spacer } from '@geist-ui/core';
+import { Spacer } from '@/components/ui';
 import SpacerDocumentation from './Spacer.mdx';
 
 export { 

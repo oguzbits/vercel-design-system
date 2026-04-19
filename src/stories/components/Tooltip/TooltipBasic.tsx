@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
-import { Spacer, Button, Link, Badge, Grid } from '@geist-ui/core';
+import { Spacer, Button, Link, Badge, Grid } from '@/components/ui';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CustomTooltip — React 19-compatible replacement for Geist UI's Tooltip.
@@ -42,8 +42,8 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({
   const [position, setPosition] = useState({ top: 0, left: 0, transform: '' });
   const anchorRef = useRef<HTMLSpanElement>(null);
   const tipRef = useRef<HTMLDivElement>(null);
-  const enterTimer = useRef<ReturnType<typeof setTimeout>>();
-  const leaveTimer = useRef<ReturnType<typeof setTimeout>>();
+  const enterTimer = useRef<any>(null);
+  const leaveTimer = useRef<any>(null);
 
   const colors = TOOLTIP_COLORS[type] || TOOLTIP_COLORS.default;
 

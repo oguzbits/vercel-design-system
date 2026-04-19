@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Textarea } from '@geist-ui/core';
+import { Textarea } from '@/components/ui';
 
 import TextareaDocumentation from './Textarea.mdx';
 

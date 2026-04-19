@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Spacer, Code } from '@geist-ui/core';
-import { Radio } from '@/components/ui/Radio';
+import { Spacer, Code } from '@/components/ui';
+import { Radio } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],
@@ -42,7 +42,7 @@ export const Type = {
 export const Description = {
   tags: ['!sidebar'],
   render: () => (
-    <Radio.Group value="1" onChange={val => console.log(val)}>
+    <Radio.Group value="1" onChange={(val: any) => console.log(val)}>
       <Radio value="1">
         Option 1
         <Radio.Description>Description for Option1</Radio.Description>

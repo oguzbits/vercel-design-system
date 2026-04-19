@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { User } from '@geist-ui/core';
+import { User } from '@/components/ui';
 
 import UserDocumentation from './User.mdx';
 

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Progress } from '@geist-ui/core';
+import { Progress } from '@/components/ui';
 
 import ProgressDocumentation from './Progress.mdx';
 

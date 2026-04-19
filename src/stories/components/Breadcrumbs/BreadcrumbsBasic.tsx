@@ -1,5 +1,5 @@
 import React from 'react';
-import { Breadcrumbs } from '@geist-ui/core';
+import { Breadcrumbs } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

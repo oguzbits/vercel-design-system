@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Button, Text } from '@geist-ui/core';
+import { Drawer, Button, Text } from '@/components/ui';
 
 export const Basic = () => {
   const [visible, setVisible] = useState(false);

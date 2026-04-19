@@ -1,4 +1,4 @@
-import { Tree } from '@/components/ui/Tree';
+import { Tree } from '@/components/ui';
 import type { TreeFile } from '@geist-ui/core/esm/tree/tree';
 
 export const Basic = {

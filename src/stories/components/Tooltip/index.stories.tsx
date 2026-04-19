@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Tooltip } from '@geist-ui/core';
+import { Tooltip } from '@/components/ui';
 
 import TooltipDocumentation from './Tooltip.mdx';
 

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Tabs } from '@geist-ui/core';
+import { Tabs } from '@/components/ui';
 
 import TabsDocumentation from './Tabs.mdx';
 

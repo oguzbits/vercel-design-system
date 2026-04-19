@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Checkbox } from '@geist-ui/core';
+import { Checkbox } from '@/components/ui';
 
 import CheckboxDocumentation from './Checkbox.mdx';
 

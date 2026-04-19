@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fieldset, Button, Text, Divider } from '@geist-ui/core';
+import { Fieldset, Button, Text, Divider } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

@@ -1,10 +1,13 @@
 import React from 'react'
-import { Avatar as GeistAvatar, AvatarProps, Badge as GeistBadge, BadgeProps } from '@geist-ui/core'
-
-export const Avatar: React.FC<AvatarProps> = (props) => {
-  return <GeistAvatar {...props} />
+import { Display as GeistDisplay, DisplayProps } from '@geist-ui/core'
+const DisplayComponent: React.FC<any> = (props) => {
+  const { label, children, ...rest } = props
+  // Handle Geist components that might need children or specific props
+  return <GeistDisplay {...(rest as any)}>{label || children}</GeistDisplay>
 }
 
-export const Badge: React.FC<BadgeProps> = (props) => {
-  return <GeistBadge {...props} />
-}
+const FinalDisplay = DisplayComponent as any
+
+FinalDisplay.displayName = 'Display'
+
+export { FinalDisplay as Display }

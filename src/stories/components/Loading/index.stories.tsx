@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Loading } from '@geist-ui/core';
+import { Loading } from '@/components/ui';
 
 import LoadingDocumentation from './Loading.mdx';
 

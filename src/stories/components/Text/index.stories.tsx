@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Text } from '@geist-ui/core';
+import { Text } from '@/components/ui';
 import TextDocumentation from './Text.mdx';
 
 export { 

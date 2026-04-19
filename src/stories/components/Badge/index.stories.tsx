@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Badge } from '@geist-ui/core';
+import { Badge } from '@/components/ui';
 
 import BadgeDocumentation from './Badge.mdx';
 

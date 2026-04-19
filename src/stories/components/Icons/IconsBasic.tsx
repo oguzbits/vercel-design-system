@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grid, useTheme, Input, Text, useClipboard, useToasts } from '@geist-ui/core';
+import { Grid, useTheme, Input, Text, useClipboard, useToasts } from '@/components/ui';
 import { Github, Gitlab, Twitter, Activity, Airplay, AlertCircle, Search, Settings } from '@geist-ui/icons';
 import * as AllIcons from '@geist-ui/icons';
 import type { StoryObj } from '@storybook/react';
@@ -73,7 +73,7 @@ export const Gallery: Story = {
           width="100%" 
           placeholder="Search for an icon..." 
           icon={<Search />} 
-          onChange={(e) => setQuery(e.target.value)} 
+          onChange={(e: any) => setQuery(e.target.value)} 
           clearable
         />
         <div style={{ 

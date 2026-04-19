@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Snippet } from '@geist-ui/core';
+import { Snippet } from '@/components/ui';
 
 import SnippetDocumentation from './Snippet.mdx';
 

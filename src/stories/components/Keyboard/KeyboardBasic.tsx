@@ -1,5 +1,5 @@
 import React from 'react';
-import { Keyboard } from '@geist-ui/core';
+import { Keyboard } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

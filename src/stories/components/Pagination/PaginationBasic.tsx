@@ -1,5 +1,5 @@
-import { Spacer } from '@geist-ui/core';
-import { Pagination } from '@/components/ui/Pagination';
+import { Spacer } from '@/components/ui';
+import { Pagination } from '@/components/ui';
 import { ChevronRight, ChevronLeft, ChevronRightCircle, ChevronLeftCircle, ChevronRightCircleFill, ChevronLeftCircleFill } from '@geist-ui/icons';
 
 export const Basic = {

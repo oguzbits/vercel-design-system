@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Pagination } from '@/components/ui/Pagination';
+import { Pagination } from '@/components/ui';
 
 import PaginationDocumentation from './Pagination.mdx';
 

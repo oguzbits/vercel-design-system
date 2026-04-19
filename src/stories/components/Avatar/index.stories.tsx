@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Avatar } from '@geist-ui/core';
+import { Avatar } from '@/components/ui';
 
 import AvatarDocumentation from './Avatar.mdx';
 

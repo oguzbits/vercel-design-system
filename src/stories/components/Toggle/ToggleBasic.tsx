@@ -1,5 +1,5 @@
 import React from 'react';
-import { Toggle, Spacer, ToggleEvent } from '@geist-ui/core';
+import { Toggle, Spacer, ToggleEvent } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

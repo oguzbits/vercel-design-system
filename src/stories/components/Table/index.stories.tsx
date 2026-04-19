@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Table } from '@geist-ui/core';
+import { Table } from '@/components/ui';
 
 import TableDocumentation from './Table.mdx';
 

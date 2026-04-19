@@ -1,27 +1,20 @@
-import React from 'react';
-import { Pagination as GeistPagination, PaginationProps } from '@geist-ui/core';
+import React from 'react'
+import { Pagination as GeistPagination } from '@geist-ui/core'
+import GeistPaginationPrevious from '@geist-ui/core/esm/pagination/pagination-previous'
+import GeistPaginationNext from '@geist-ui/core/esm/pagination/pagination-next'
 
-/**
- * Wrapper for Geist UI Pagination to ensure compatibility with React 19.
- * 
- * Provides explicit default values that React 19 no longer supports via 'defaultProps'.
- */
-export const Pagination: React.FC<PaginationProps> = (props) => {
-  const { 
-    initialPage = 1, 
-    count = 1, 
-    limit = 7, 
-    ...rest 
-  } = props;
+const PaginationComponent: React.FC<any> = (props) => {
+  return <GeistPagination {...(props as any)} />
+}
 
-  return (
-    <GeistPagination 
-      initialPage={initialPage} 
-      count={count} 
-      limit={limit} 
-      {...rest} 
-    />
-  );
-};
+export type PaginationComponentType = React.FC<any> & {
+  Previous: any;
+  Next: any;
+}
 
-Pagination.displayName = 'Pagination';
+const Pagination = PaginationComponent as PaginationComponentType
+Pagination.Previous = GeistPaginationPrevious as any
+Pagination.Next = GeistPaginationNext as any
+Pagination.displayName = 'Pagination'
+
+export { Pagination }

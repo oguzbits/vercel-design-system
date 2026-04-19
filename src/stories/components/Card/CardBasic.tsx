@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Text, Grid, Link, Spacer, Image, Divider, Code } from '@geist-ui/core';
+import { Card, Text, Grid, Link, Spacer, Image, Divider, Code } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

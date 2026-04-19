@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spinner } from '@geist-ui/core';
+import { Spinner } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

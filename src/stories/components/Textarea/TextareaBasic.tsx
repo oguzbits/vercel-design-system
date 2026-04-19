@@ -1,5 +1,5 @@
 import React from 'react';
-import { Textarea, Spacer, useInput, Button } from '@geist-ui/core';
+import { Textarea, Spacer, useInput, Button } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

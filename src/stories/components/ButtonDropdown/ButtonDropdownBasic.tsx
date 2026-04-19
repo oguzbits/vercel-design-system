@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonDropdown, Grid, Spacer } from '@geist-ui/core';
+import { ButtonDropdown, Grid, Spacer } from '@/components/ui';
 
 export const Basic = () => (
   <ButtonDropdown>

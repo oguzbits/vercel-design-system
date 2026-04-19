@@ -1,8 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Shell } from './Shell';
-import { Card, Text, Badge, Tabs, Spacer, Note } from '@geist-ui/core';
-import { Table, TableColumn } from '../ui/Table';
+import { Card, Text, Badge, Tabs, Spacer, Note, Table, TableColumn } from '@/components/ui';
 
 const meta: Meta<typeof Shell> = {
   title: 'Patterns/Application Layout',

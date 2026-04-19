@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Grid, Spacer } from '@geist-ui/core';
+import { Text, Grid, Spacer } from '@/components/ui';
 import type { StoryObj } from '@storybook/react';
 
 type Story = StoryObj<typeof Text>;

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { ButtonDropdown } from '@geist-ui/core';
+import { ButtonDropdown } from '@/components/ui';
 
 export { Basic, Types, Loading } from './ButtonDropdownBasic';
 

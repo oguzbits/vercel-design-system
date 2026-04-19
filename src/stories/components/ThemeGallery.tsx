@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme, Text, Badge } from '@geist-ui/core';
+import { useTheme, Text, Badge } from '@/components/ui';
 
 // ... SpacingGallery code from above ...
 

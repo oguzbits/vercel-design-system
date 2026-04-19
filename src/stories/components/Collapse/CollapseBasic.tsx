@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Text } from '@geist-ui/core';
+import { Collapse, Text } from '@/components/ui';
 
 export const Basic = {
   tags: ['!sidebar'],

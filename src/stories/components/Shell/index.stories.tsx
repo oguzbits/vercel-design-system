@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Page, Breadcrumbs, Tabs, Button, Grid, Text } from '@geist-ui/core';
+import { Page, Breadcrumbs, Tabs, Button, Grid, Text } from '@/components/ui';
 
 const meta: Meta = {
   title: 'Patterns/Shell',
