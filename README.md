@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vercel Design System
 
-## Getting Started
+A high-performance, aesthetically polished design system for modern web applications. Built on top of Geist UI, this system is engineered for the bleeding edge of the React ecosystem, providing native support for React 19 and Next.js 16.
 
-First, run the development server:
+## ✨ Key Features
+
+- **React 19 Native:** Fully compatible with React 19's `ref` prop changes and the removal of `defaultProps`.
+- **Modern Stack:** Powered by Next.js 16, Vite 8, and Storybook 10.
+- **Performance Optimized:** Leverages the **React Compiler** for automatic memoization and optimal rendering.
+- **Professional Aesthetics:** Inherits the iconic Vercel look-and-feel with Geist Sans & Mono typography.
+- **Robust Engineering:** Implements the **Wrapper Pattern** to resolve legacy library conflicts without mutating `node_modules`.
+
+## 🚀 Tech Stack
+
+- **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+- **Core UI:** [@geist-ui/core](https://geist-ui.dev/)
+- **Bundler:** [Vite 8](https://vitejs.dev/)
+- **Documentation:** [Storybook 10](https://storybook.js.org/)
+- **Runtime:** [Bun](https://bun.sh/)
+- **Styling:** CSS Modules & [styled-jsx](https://github.com/vercel/styled-jsx)
+
+## 📦 Getting Started
+
+### Prerequisites
+
+Ensure you have [Bun](https://bun.sh/) installed on your machine.
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+### Development
+
+Run the development server for the main application:
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Storybook
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Launch the design system documentation and component playground:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun storybook
+```
 
-## Learn More
+## 🛠 Architecture: The Wrapper Pattern
 
-To learn more about Next.js, take a look at the following resources:
+This project uses a professional **Wrapper Pattern** located in `src/components/ui/` to ensure modern React 19 compatibility for `@geist-ui/core`. These wrappers handle:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Ref Filtering:** Preventing external `ref` props from overwriting internal library measurements (e.g., in `Slider` and `Select`).
+- **Default Prop Injection:** Providing explicit fallbacks for components where `defaultProps` are no longer supported.
+- **Scroll Fixes:** Scoped CSS injections to fix "scroll-to-top" bugs caused by legacy hidden focus inputs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Always import components from the local UI layer:**
 
-## Deploy on Vercel
+```tsx
+// ✅ Recommended
+import { Button, Slider, Select } from "@/components/ui";
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+// ❌ Avoid direct library imports
+import { Slider } from "@geist-ui/core";
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Testing
+
+Run the test suite powered by Vitest:
+
+```bash
+bun test
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
