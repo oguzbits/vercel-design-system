@@ -4,7 +4,7 @@ import { Avatar, Spacer } from '@geist-ui/core';
 export const Basic = {
   tags: ['!sidebar'],
   render: () => {
-    const url = '/images/avatar.png';
+    const url = '/avatar.png';
     return (
       <>
         <Avatar src={url} />
@@ -36,7 +36,7 @@ export const Text = {
 export const Group = {
   tags: ['!sidebar'],
   render: () => {
-    const url = '/images/avatar.png';
+    const url = '/avatar.png';
     return (
       <>
         <Avatar.Group>
