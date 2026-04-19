@@ -1,69 +1,99 @@
 import { Meta } from "@storybook/blocks";
-import { ValueProp } from "./components/ValueProp";
 
-<Meta title="Concepts/Introduction" />
+<Meta title="Introduction" />
 
-<div style={{ textAlign: 'center', padding: '60px 0 40px 0' }}>
-  <h1 style={{ 
-    fontSize: '56px', 
-    fontWeight: 900, 
-    letterSpacing: '-0.06em', 
-    margin: '0 0 10px 0',
-    background: 'linear-gradient(180deg, #000 0%, #666 100%)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent'
+<div style={{ padding: '80px 40px', maxWidth: '1000px', margin: '0 auto' }}>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+    <h1 style={{ 
+      fontSize: '64px', 
+      fontWeight: 800, 
+      letterSpacing: '-0.06em', 
+      margin: 0,
+      color: '#000'
+    }}>
+      Geist Design System
+    </h1>
+    
+    <p style={{ 
+      fontSize: '24px', 
+      color: '#666', 
+      lineHeight: '1.4',
+      maxWidth: '700px',
+      letterSpacing: '-0.02em',
+      margin: 0
+    }}>
+      An open-source design system for building modern websites and applications. 
+      Created by Vercel and refined for technical performance and minimalist aesthetics.
+    </p>
+
+    <div style={{ display: 'flex', gap: '16px', marginTop: '20px' }}>
+      <a href="https://geist-ui.dev" target="_blank" style={{
+        background: '#000',
+        color: '#fff',
+        padding: '12px 24px',
+        borderRadius: '6px',
+        textDecoration: 'none',
+        fontWeight: 500,
+        fontSize: '14px'
+      }}>Official Documentation</a>
+      <a href="https://github.com/geist-org/react" target="_blank" style={{
+        background: '#fff',
+        color: '#000',
+        padding: '12px 24px',
+        borderRadius: '6px',
+        textDecoration: 'none',
+        fontWeight: 500,
+        fontSize: '14px',
+        border: '1px solid #eaeaea'
+      }}>GitHub Repository</a>
+    </div>
+  </div>
+
+  <div style={{ 
+    display: 'grid', 
+    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
+    gap: '40px',
+    marginTop: '100px'
   }}>
-    Geist Design System
-  </h1>
-  <p style={{ 
-    fontSize: '20px', 
-    color: '#666', 
-    maxWidth: '600px', 
-    margin: '0 auto', 
-    lineHeight: '1.5',
-    letterSpacing: '-0.02em'
+    <div>
+      <h3 style={{ fontWeight: 600, fontSize: '18px' }}>Categorization</h3>
+      <p style={{ color: '#666', lineHeight: '1.6', fontSize: '14px' }}>
+        Components are organized into logical groups following the official Geist UI hierarchy: 
+        General, Layout, Surfaces, Data Entry, Data Display, Feedback, Navigation, and Others.
+      </p>
+    </div>
+    <div>
+      <h3 style={{ fontWeight: 600, fontSize: '18px' }}>High Fidelity</h3>
+      <p style={{ color: '#666', lineHeight: '1.6', fontSize: '14px' }}>
+        Every story is crafted to match the official documentation examples, ensuring 
+        consistency between this Storybook and the production Geist UI library.
+      </p>
+    </div>
+    <div>
+      <h3 style={{ fontWeight: 600, fontSize: '18px' }}>Monochromatic</h3>
+      <p style={{ color: '#666', lineHeight: '1.6', fontSize: '14px' }}>
+        A strict focus on monochromatic aesthetics, utilizing subtle shadows, crisp borders, 
+        and high-contrast typography for a professional, focused atmosphere.
+      </p>
+    </div>
+  </div>
+
+  <div style={{ 
+    marginTop: '100px', 
+    padding: '40px', 
+    background: '#fafafa', 
+    borderRadius: '12px',
+    border: '1px solid #eaeaea'
   }}>
-    The technical foundation for building high-performance, minimalist user interfaces at scale.
-  </p>
+    <h2 style={{ fontSize: '24px', fontWeight: 600, marginTop: 0 }}>Standardized Testing</h2>
+    <p style={{ color: '#666', lineHeight: '1.6' }}>
+      All components in this Storybook follow a standardized set of stories:
+    </p>
+    <ul style={{ color: '#666', lineHeight: '2' }}>
+      <li><strong>Basic</strong>: The simplest usage of the component.</li>
+      <li><strong>Types</strong>: Showcasing semantic variants (Success, Warning, Error, Secondary).</li>
+      <li><strong>Sizes</strong>: Demonstrating the Geist scaling system.</li>
+      <li><strong>States</strong>: Handling Loading, Disabled, and Active states.</li>
+    </ul>
+  </div>
 </div>
-
-<ValueProp 
-  items={[
-    {
-      title: 'Technical Precision',
-      description: 'Strict adherence to mathematical spacing, typographic scales, and consistent design tokens.',
-      icon: '📐'
-    },
-    {
-      title: 'Performance First',
-      description: 'Zero-runtime styles and optimized bundle sizes for lightning-fast application delivery.',
-      icon: '⚡'
-    },
-    {
-      title: 'Modern Accessibility',
-      description: 'Full WCAG 2.1 compliance built into the core primitives, not added as an afterthought.',
-      icon: '♿'
-    }
-  ]} 
-/>
-
-## Technical Principles
-
-Geist is built on a set of core engineering principles that prioritize clarity, density, and developer experience.
-
-### Density and Flow
-We favor high information density, allowing experts to navigate complex data quickly. Our 8pt grid ensures consistent rhythmic flow across all viewports.
-
-### Theme Intelligence
-The entire system is powered by CSS variables (Design Tokens), allowing for 0-latency theme switching and deep customization without re-renders.
-
-### Composition Over Configuration
-Our components use a "primitive-first" approach, providing the building blocks for complex patterns while maintaining a strict API surface.
-
----
-
-## Resources
-
-- [Vercel Design](https://vercel.com/design)
-- [Geist UI GitHub](https://github.com/geist-org/react)
-- [Community Support](https://github.com/geist-org/react/discussions)

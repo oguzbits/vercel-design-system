@@ -1,0 +1,168 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as GridStories from './index.stories';
+
+<Meta title="Layout/Grid" of={GridStories} />
+
+# Grid
+
+Powerful fluid style layout container.
+The Grid component uses dynamic CSS media query to implement responsive layout, It has ultra-high performance and very small size. Of course, it still supports dynamic props and custom breakpoints.
+
+## General
+
+Dynamically scale container width while maintaining spacing.
+
+<Canvas of={GridStories.General} />
+
+## Fluid layout
+
+Containers for wrapping and scaling.
+
+<Canvas of={GridStories.Fluid} />
+
+## Responsive layout
+
+Use different layouts for different screen widths.
+
+<Canvas of={GridStories.Responsive} />
+
+## Hide elements
+
+Hide elements when unit size is 0.
+
+<Canvas of={GridStories.HideElements} />
+
+## Auto width
+
+Auto fill remaining width.
+
+<Canvas of={GridStories.AutoWidth} />
+
+## APIs
+
+### Grid.Props
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', fontSize: '14px' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Attribute</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Description</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Type</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Accepted values</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>justify</code></td>
+        <td style={{ padding: '12px 8px' }}>CSS "justify-content" property</td>
+        <td style={{ padding: '12px 8px' }}><code>Justify</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'flex-start'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>alignItems</code></td>
+        <td style={{ padding: '12px 8px' }}>CSS "align-items" property</td>
+        <td style={{ padding: '12px 8px' }}><code>AlignItems</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'stretch'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>alignContent</code></td>
+        <td style={{ padding: '12px 8px' }}>CSS "align-content" property</td>
+        <td style={{ padding: '12px 8px' }}><code>AlignContent</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'flex-start'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>direction</code></td>
+        <td style={{ padding: '12px 8px' }}>CSS "flex-direction" property</td>
+        <td style={{ padding: '12px 8px' }}><code>Direction</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'row'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>xs</code></td>
+        <td style={{ padding: '12px 8px' }}>columns of screen is narrower than <code>xs</code></td>
+        <td style={{ padding: '12px 8px' }}><code>number</code> / <code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}><code>0 - 24</code></td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>sm</code></td>
+        <td style={{ padding: '12px 8px' }}>columns of screen is narrower than <code>sm</code></td>
+        <td style={{ padding: '12px 8px' }}><code>number</code> / <code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}><code>0 - 24</code></td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>md</code></td>
+        <td style={{ padding: '12px 8px' }}>columns of screen is narrower than <code>md</code></td>
+        <td style={{ padding: '12px 8px' }}><code>number</code> / <code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}><code>0 - 24</code></td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>lg</code></td>
+        <td style={{ padding: '12px 8px' }}>columns of screen is narrower than <code>lg</code></td>
+        <td style={{ padding: '12px 8px' }}><code>number</code> / <code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}><code>0 - 24</code></td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>xl</code></td>
+        <td style={{ padding: '12px 8px' }}>columns of screen is narrower than <code>xl</code></td>
+        <td style={{ padding: '12px 8px' }}><code>number</code> / <code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}><code>0 - 24</code></td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 8px' }}>...native props</td>
+        <td style={{ padding: '12px 8px' }}>native HTML attributes</td>
+        <td style={{ padding: '12px 8px' }}><code>HTMLAttributes</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'id', 'className', ...</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Grid.Container.Props
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', fontSize: '14px' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Attribute</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Description</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Type</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Accepted values</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>gap</code></td>
+        <td style={{ padding: '12px 8px' }}>spacing between grids</td>
+        <td style={{ padding: '12px 8px' }}><code>number</code></td>
+        <td style={{ padding: '12px 8px' }}><code>float</code></td>
+        <td style={{ padding: '12px 8px' }}><code>0</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>wrap</code></td>
+        <td style={{ padding: '12px 8px' }}>CSS "flex-wrap" property</td>
+        <td style={{ padding: '12px 8px' }}><code>Wrap</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'wrap'</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 8px' }}>...other props</td>
+        <td style={{ padding: '12px 8px' }}>same as <code>Grid.Props</code></td>
+        <td style={{ padding: '12px 8px' }}><code>Grid.Props</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

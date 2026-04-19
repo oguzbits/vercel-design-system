@@ -1,0 +1,84 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as CodeStories from './index.stories';
+
+<Meta title="General/Code" of={CodeStories} />
+
+# Code
+
+Show source code in a standardized way.
+
+## Basic
+
+Basic inline codes.
+
+<Canvas of={CodeStories.Basic} />
+
+## Code Block
+
+Multi line code display.
+
+<Canvas of={CodeStories.CodeBlock} />
+
+## Width
+
+Specify width manually, or other styles.
+
+<Canvas of={CodeStories.Width} />
+
+## Name
+
+Specify the file name for the code block.
+
+<Canvas of={CodeStories.Name} />
+
+## Classic Style
+
+The classic design style with a line border instead of a background.
+
+<Canvas of={CodeStories.ClassicStyle} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', fontSize: '14px' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Attribute</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Description</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Type</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Accepted values</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>block</code></td>
+        <td style={{ padding: '12px 8px' }}>show code in pre</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>name</code></td>
+        <td style={{ padding: '12px 8px' }}>text displayed at the top of the code block</td>
+        <td style={{ padding: '12px 8px' }}><code>string</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>classic</code></td>
+        <td style={{ padding: '12px 8px' }}>display with classic style</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 8px' }}>...native props</td>
+        <td style={{ padding: '12px 8px' }}>native props of code element</td>
+        <td style={{ padding: '12px 8px' }}><code>HTMLAttributes</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'className', ...</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

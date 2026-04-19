@@ -1,0 +1,145 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as ButtonStories from './index.stories';
+
+<Meta title="General/Button" of={ButtonStories} />
+
+# Button
+
+Used to trigger an operation.
+
+## Basic
+
+The basic button contains an animation effect.
+
+<Canvas of={ButtonStories.Basic} />
+
+## Loading
+
+Displaying a status of querying or executing.
+
+<Canvas of={ButtonStories.Loading} />
+
+## Types
+
+Buttons of different states.
+
+<Canvas of={ButtonStories.Types} />
+
+## Ghost
+
+Ghost style.
+
+<Canvas of={ButtonStories.Ghost} />
+
+## Disabled
+
+Forbid operation.
+
+<Canvas of={ButtonStories.Disabled} />
+
+## Icons
+
+Buttons with icons.
+
+<Canvas of={ButtonStories.Icons} />
+
+## Sizes
+
+Buttons of different sizes.
+
+<Canvas of={ButtonStories.Sizes} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', fontSize: '14px' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Attribute</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Description</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Type</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Accepted values</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>type</code></td>
+        <td style={{ padding: '12px 8px' }}>button type</td>
+        <td style={{ padding: '12px 8px' }}><code>ButtonTypes</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'default', 'secondary', 'success', 'warning', 'error', 'abort', 'secondary-light', 'success-light', 'warning-light', 'error-light'</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'default'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>ghost</code></td>
+        <td style={{ padding: '12px 8px' }}>the ghost style</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>loading</code></td>
+        <td style={{ padding: '12px 8px' }}>display loading indicator</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>shadow</code></td>
+        <td style={{ padding: '12px 8px' }}>display shadow</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>auto</code></td>
+        <td style={{ padding: '12px 8px' }}>auto width</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>effect</code></td>
+        <td style={{ padding: '12px 8px' }}>display animation effect</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>true</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>disabled</code></td>
+        <td style={{ padding: '12px 8px' }}>disable button</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+       <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>icon</code></td>
+        <td style={{ padding: '12px 8px' }}>button icon</td>
+        <td style={{ padding: '12px 8px' }}><code>ReactNode</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>iconRight</code></td>
+        <td style={{ padding: '12px 8px' }}>button icon at right</td>
+        <td style={{ padding: '12px 8px' }}><code>ReactNode</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+       <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>onClick</code></td>
+        <td style={{ padding: '12px 8px' }}>click handler</td>
+        <td style={{ padding: '12px 8px' }}><code>MouseEventHandler</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 8px' }}>...native props</td>
+        <td style={{ padding: '12px 8px' }}>native props of button element</td>
+        <td style={{ padding: '12px 8px' }}><code>ButtonHTMLAttributes</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'className', ...</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

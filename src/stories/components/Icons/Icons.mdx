@@ -1,0 +1,83 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as IconsStories from './index.stories';
+
+<Meta title="General/Icons" of={IconsStories} />
+
+# Icons
+
+Display semantic vector graphics in SVG format.
+
+## Installation
+
+Install the package in your project directory.
+
+```bash
+bun add @geist-ui/icons
+```
+
+## Import
+
+```jsx
+import { Github } from '@geist-ui/icons'
+
+const MyComponent = () => <Github />
+```
+
+<Canvas of={IconsStories.Import} />
+
+## Color
+
+You can customize the icon color.
+
+<Canvas of={IconsStories.Color} />
+
+## Sizes
+
+You can customize the icon size.
+
+<Canvas of={IconsStories.Sizes} />
+
+## Gallery
+
+Search and copy icons.
+
+<Canvas of={IconsStories.Gallery} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', fontSize: '14px' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Attribute</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Description</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Type</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Accepted values</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>color</code></td>
+        <td style={{ padding: '12px 8px' }}>icon color</td>
+        <td style={{ padding: '12px 8px' }}><code>string</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'currentColor'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>size</code></td>
+        <td style={{ padding: '12px 8px' }}>icon size</td>
+        <td style={{ padding: '12px 8px' }}><code>number</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>24</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 8px' }}>...native props</td>
+        <td style={{ padding: '12px 8px' }}>native SVG attributes</td>
+        <td style={{ padding: '12px 8px' }}><code>SVGAttributes</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'id', 'name', 'className', ...</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

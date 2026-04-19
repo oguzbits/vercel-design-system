@@ -2,11 +2,8 @@ import type { StorybookConfig } from '@storybook/nextjs-vite';
 
 const config: StorybookConfig = {
   "stories": [
-    "../src/stories/**/*.mdx",
-    "../src/stories/*.stories.tsx",
-    "../src/stories/components/*/index.stories.tsx",
-    "../src/stories/**/index.stories.tsx",
-    "../src/stories/theme/*.stories.tsx"
+    "../src/stories/Introduction.mdx",
+    "../src/stories/components/@(Button|Text|Code|Icons|Grid|Spacer)/index.stories.tsx",
   ],
   "addons": [
     "@storybook/addon-docs",
@@ -27,6 +24,7 @@ const config: StorybookConfig = {
           ...(config.optimizeDeps?.include || []),
           'react-dom',
           'react',
+          '@geist-ui/core',
         ],
       },
     };

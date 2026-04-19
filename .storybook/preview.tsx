@@ -1,4 +1,4 @@
-import React from 'react';
+import '../src/stories/utils/geist-fixer';
 import type { Preview } from '@storybook/react';
 import { GeistProvider, CssBaseline } from '@geist-ui/core';
 
@@ -14,7 +14,6 @@ const preview: Preview = {
           { value: 'light', icon: 'circlehollow', title: 'Light' },
           { value: 'dark', icon: 'circle', title: 'Dark' },
         ],
-        showName: true,
       },
     },
   },
@@ -36,12 +35,11 @@ const preview: Preview = {
       return (
         <GeistProvider themeType={theme}>
           <CssBaseline />
-          <div style={{ 
-            padding: '24px', 
-            background: theme === 'dark' ? '#000' : '#fff', 
-            minHeight: '100vh',
-            transition: 'background 0.2s ease'
-          }}>
+            <div style={{ 
+              padding: '24px', 
+              background: theme === 'dark' ? '#000' : '#fff', 
+              transition: 'background 0.2s ease'
+            }}>
             <Story />
           </div>
         </GeistProvider>
