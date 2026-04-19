@@ -1,5 +1,5 @@
-import React from 'react';
-import { Select, Spacer, Code, Modal, useModal, Button } from '@geist-ui/core';
+import { Spacer, Code, Modal, useModal, Button } from '@geist-ui/core';
+import { Select } from '@/components/ui/Select';
 
 export const Basic = {
   tags: ['!sidebar'],

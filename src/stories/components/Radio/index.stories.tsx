@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Radio } from '@geist-ui/core';
+import { Radio } from '@/components/ui/Radio';
 
 import RadioDocumentation from './Radio.mdx';
 

@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Fix Geist UI Select/Radio scroll-to-top on focus issue */
+input[role="combobox"], 
+input[type="radio"].jsx-dynamic {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
+}

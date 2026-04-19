@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Radio, Spacer, Code } from '@geist-ui/core';
+import { Spacer, Code } from '@geist-ui/core';
+import { Radio } from '@/components/ui/Radio';
 
 export const Basic = {
   tags: ['!sidebar'],

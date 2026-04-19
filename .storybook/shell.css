@@ -60,3 +60,13 @@
   margin: 12px !important;
   width: calc(100% - 24px) !important;
 }
+
+/* Fix Geist UI Select/Radio scroll-to-top on focus issue */
+/* These components use hidden inputs positioned at -10000px which triggers browser auto-scroll */
+input[role="combobox"], 
+input[type="radio"].jsx-dynamic {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
+}

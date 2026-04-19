@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Select } from '@geist-ui/core';
+import { Select } from '@/components/ui/Select';
 
 import SelectDocumentation from './Select.mdx';
 
