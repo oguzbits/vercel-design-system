@@ -1,4 +1,3 @@
-import React from 'react';
 import { Avatar, Spacer } from '@geist-ui/core';
 
 export const Basic = {

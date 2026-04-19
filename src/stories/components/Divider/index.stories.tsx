@@ -9,7 +9,7 @@ export {
 } from './DividerBasic';
 
 const meta: Meta<typeof Divider> = {
-  title: 'Data Display/Divider',
+  title: 'Others/Divider',
   component: Divider,
   tags: ['autodocs'],
   parameters: {
