@@ -6,6 +6,7 @@ import BadgeDocumentation from './Badge.mdx';
 export { 
   Basic,
   Type,
+  CustomColor,
   Anchor
 } from './BadgeBasic';
 
