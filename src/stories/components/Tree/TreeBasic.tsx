@@ -1,5 +1,5 @@
-import React from 'react';
-import { Tree } from '@geist-ui/core';
+import { Tree } from '@/components/ui/Tree';
+import type { TreeFile } from '@geist-ui/core/esm/tree/tree';
 
 export const Basic = {
   tags: ['!sidebar'],
@@ -29,7 +29,7 @@ export const InitialExpand = {
 export const Imperative = {
   tags: ['!sidebar'],
   render: () => {
-    const files = [
+    const files: TreeFile[] = [
       {
         type: 'directory',
         name: 'src',

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Tree } from '@geist-ui/core';
+import { Tree } from '@/components/ui/Tree';
 
 import TreeDocumentation from './Tree.mdx';
 

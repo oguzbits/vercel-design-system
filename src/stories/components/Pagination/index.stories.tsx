@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Pagination } from '@geist-ui/core';
+import { Pagination } from '@/components/ui/Pagination';
 
 import PaginationDocumentation from './Pagination.mdx';
 

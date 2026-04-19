@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Slider, Spacer } from '@geist-ui/core';
+import { useState } from 'react';
+import { Spacer } from '@geist-ui/core';
+import { Slider } from '@/components/ui/Slider';
 
 export const Basic = {
   tags: ['!sidebar'],

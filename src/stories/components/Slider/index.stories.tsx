@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Slider } from '@geist-ui/core';
+import { Slider } from '@/components/ui/Slider';
 
 import SliderDocumentation from './Slider.mdx';
 
