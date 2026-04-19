@@ -1,9 +1,9 @@
-import React from 'react';
-import { Image, Display, Code } from '@geist-ui/core';
+import { Display, Code } from '@geist-ui/core';
+import { Image } from '@/components/ui/Image';
 
 export const Basic = {
   tags: ['!sidebar'],
-  render: () => <Image width="280px" height="160px" src="/images/geist-banner.png" />
+  render: () => <Image width="280px" height="160px" src="/geist-banner.png" />
 };
 
 export const Skeleton = {
@@ -15,7 +15,7 @@ export const Browser = {
   tags: ['!sidebar'],
   render: () => (
     <Image.Browser url="https://geist-ui.dev/en-us/guide/introduction" anchorProps={{ rel: 'nofollow' }}>
-      <Image width="525px" height="300px" src="/images/geist-banner.png" />
+      <Image width="525px" height="300px" src="/geist-banner.png" />
     </Image.Browser>
   )
 };
@@ -24,7 +24,7 @@ export const BrowserInvert = {
   tags: ['!sidebar'],
   render: () => (
     <Image.Browser url="https://geist-ui.dev/en-us/guide/introduction" invert>
-      <Image width="525px" height="300px" src="/images/geist-banner-dark.png" />
+      <Image width="525px" height="300px" src="/geist-banner-dark.png" />
     </Image.Browser>
   )
 };
@@ -33,7 +33,7 @@ export const Compose = {
   tags: ['!sidebar'],
   render: () => (
     <Display shadow caption={<p>Set the <Code>height</Code> to reduces the possibility of page rerender.</p>}>
-      <Image height="246px" src="/images/geist-banner-text.png" />
+      <Image height="246px" src="/geist-banner-text.png" />
     </Display>
   )
 };

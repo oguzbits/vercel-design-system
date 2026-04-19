@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Image } from '@geist-ui/core';
+import { Image } from '@/components/ui/Image';
 
 import ImageDocumentation from './Image.mdx';
 
