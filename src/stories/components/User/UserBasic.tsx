@@ -3,7 +3,7 @@ import { User } from '@geist-ui/core';
 
 export const Basic = {
   tags: ['!sidebar'],
-  render: () => <User src="/images/avatar.png" name="Witt" />
+  render: () => <User src="/avatar.png" name="Witt" />
 };
 
 export const Description = {

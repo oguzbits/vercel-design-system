@@ -1,5 +1,5 @@
 import React from 'react';
-import { Loading, Row } from '@geist-ui/core';
+import { Loading, Grid } from '@geist-ui/core';
 
 export const Basic = {
   tags: ['!sidebar'],
@@ -14,12 +14,12 @@ export const Text = {
 export const Type = {
   tags: ['!sidebar'],
   render: () => (
-    <Row>
+    <Grid.Container gap={2}>
        <Loading type="success" />
        <Loading type="warning" />
        <Loading type="error" />
        <Loading type="secondary" />
-    </Row>
+    </Grid.Container>
   )
 };
 
