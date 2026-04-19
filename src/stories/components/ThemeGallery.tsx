@@ -139,3 +139,142 @@ export const SpacingGallery: React.FC = () => {
     </div>
   );
 };
+
+export const BorderRadiiGallery: React.FC = () => {
+  const theme = useTheme();
+  const tokens = [
+    { name: 'borderRadiusNone', value: '0px', radius: '0px' },
+    { name: 'borderRadiusSmall', value: '4px', radius: '4px' },
+    { name: 'borderRadiusMedium', value: theme.layout.radius, radius: theme.layout.radius },
+    { name: 'borderRadiusLarge', value: '12px', radius: '12px' },
+    { name: 'borderRadiusCircle', value: '9999px', radius: '9999px' },
+  ];
+
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '24px' }}>
+      {tokens.map(token => (
+        <div key={token.name} style={{ border: '1px solid #edebe9', borderRadius: '8px', padding: '20px', background: '#fff' }}>
+          <div style={{ background: '#f3f2f1', height: '100px', borderRadius: token.radius, marginBottom: '16px', border: '1px dashed #666', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '40px', height: '40px', background: '#0070f3', borderRadius: token.radius }} />
+          </div>
+          <div style={{ fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{token.name}</div>
+          <div style={{ fontSize: '12px', color: '#666', fontFamily: 'monospace' }}>{token.value}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export const ShadowsGallery: React.FC = () => {
+  const theme = useTheme();
+  const tokens = [
+    { name: 'shadowSmall', value: theme.expressiveness.shadowSmall },
+    { name: 'shadowMedium', value: theme.expressiveness.shadowMedium },
+    { name: 'shadowLarge', value: theme.expressiveness.shadowLarge },
+  ];
+
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '32px', padding: '20px' }}>
+      {tokens.map(token => (
+        <div key={token.name} style={{ 
+          background: '#fff', 
+          borderRadius: '12px', 
+          padding: '24px', 
+          boxShadow: token.value,
+          transition: 'transform 0.2s',
+          cursor: 'default'
+        }}>
+          <div style={{ fontWeight: 600, fontSize: '16px', marginBottom: '8px' }}>{token.name}</div>
+          <div style={{ fontSize: '12px', color: '#666', fontFamily: 'monospace', wordBreak: 'break-all' }}>{token.value}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export const TypographyGallery: React.FC = () => {
+  const theme = useTheme();
+  const sizes = [
+    { label: 'FS1', size: '10px' },
+    { label: 'FS2', size: '12px' },
+    { label: 'FS3', size: '14px' },
+    { label: 'FS4 (Base)', size: '16px' },
+    { label: 'FS5', size: '20px' },
+    { label: 'FS6', size: '24px' },
+    { label: 'FS7', size: '32px' },
+    { label: 'FS8', size: '40px' },
+    { label: 'FS9', size: '48px' },
+  ];
+
+  const weights = [
+    { label: 'Regular', value: '400' },
+    { label: 'Medium', value: '500' },
+    { label: 'SemiBold', value: '600' },
+    { label: 'Bold', value: '700' },
+  ];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '60px' }}>
+      <section>
+        <h3 style={{ marginBottom: '24px' }}>Font Sizes</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {sizes.map(s => (
+            <div key={s.label} style={{ display: 'flex', alignItems: 'baseline', gap: '24px', borderBottom: '1px solid #f3f2f1', paddingBottom: '12px' }}>
+              <div style={{ width: '80px', color: '#666', fontSize: '12px' }}>{s.label} ({s.size})</div>
+              <div style={{ fontSize: s.size, flex: 1 }}>Design for professional developers.</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h3 style={{ marginBottom: '24px' }}>Weights</h3>
+        <div style={{ display: 'flex', gap: '40px' }}>
+          {weights.map(w => (
+            <div key={w.label} style={{ flex: 1 }}>
+              <div style={{ fontSize: '32px', fontWeight: w.value }}>Aa</div>
+              <div style={{ fontWeight: 600, fontSize: '14px' }}>{w.label}</div>
+              <div style={{ fontSize: '12px', color: '#666' }}>{w.value}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export const LayoutGallery: React.FC = () => {
+  const theme = useTheme();
+  const breakpoints = [
+    { name: 'XS', min: '0', max: '650px' },
+    { name: 'SM', min: '650px', max: '900px' },
+    { name: 'MD', min: '900px', max: '1280px' },
+    { name: 'LG', min: '1280px', max: '1920px' },
+    { name: 'XL', min: '1920px', max: '10000px' },
+  ];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #edebe9', borderRadius: '8px', overflow: 'hidden' }}>
+        <thead style={{ background: '#faf9f8' }}>
+          <tr>
+            <th style={{ textAlign: 'left', padding: '12px 20px', fontSize: '12px' }}>Breakpoint</th>
+            <th style={{ textAlign: 'left', padding: '12px 20px', fontSize: '12px' }}>Range</th>
+            <th style={{ textAlign: 'left', padding: '12px 20px', fontSize: '12px' }}>Visualization</th>
+          </tr>
+        </thead>
+        <tbody>
+          {breakpoints.map(bp => (
+            <tr key={bp.name} style={{ borderTop: '1px solid #edebe9' }}>
+              <td style={{ padding: '12px 20px', fontWeight: 600 }}>{bp.name}</td>
+              <td style={{ padding: '12px 20px', fontSize: '13px', fontFamily: 'monospace' }}>{bp.min} - {bp.max}</td>
+              <td style={{ padding: '12px 20px' }}>
+                <div style={{ height: '8px', background: '#0070f3', borderRadius: '4px', width: `${(parseInt(bp.max) / 10000) * 100}%`, minWidth: '20px' }} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
