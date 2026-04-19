@@ -4,6 +4,20 @@ import { Meta } from "@storybook/blocks";
 
 <div style={{ padding: '80px 40px', maxWidth: '1000px', margin: '0 auto' }}>
   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+    <div style={{ 
+      display: 'inline-flex', 
+      alignItems: 'center', 
+      gap: '8px', 
+      background: '#0070f315', 
+      color: '#0070f3', 
+      padding: '4px 12px', 
+      borderRadius: '20px', 
+      fontSize: '12px', 
+      fontWeight: 600,
+      width: 'fit-content'
+    }}>
+      ✨ CUSTOM REFINED EDITION
+    </div>
     <h1 style={{ 
       fontSize: '64px', 
       fontWeight: 800, 
@@ -11,7 +25,7 @@ import { Meta } from "@storybook/blocks";
       margin: 0,
       color: '#000'
     }}>
-      Geist Design System
+      Vercel Design System
     </h1>
     
     <div style={{ 
@@ -22,12 +36,11 @@ import { Meta } from "@storybook/blocks";
       letterSpacing: '-0.02em',
       margin: 0
     }}>
-      An open-source design system for building modern websites and applications. 
-      Created by Vercel and refined for technical performance and minimalist aesthetics.
+      A high-performance implementation of the Geist UI ecosystem, modernized and engineered for <strong>React 19</strong> and <strong>Next.js 16</strong>.
     </div>
 
     <div style={{ display: 'flex', gap: '16px', marginTop: '20px' }}>
-      <a href="https://geist-ui.dev" target="_blank" style={{
+      <a href="https://github.com/oguz/vercel-design-system" target="_blank" style={{
         background: '#000',
         color: '#fff',
         padding: '12px 24px',
@@ -35,8 +48,8 @@ import { Meta } from "@storybook/blocks";
         textDecoration: 'none',
         fontWeight: 500,
         fontSize: '14px'
-      }}>Official Documentation</a>
-      <a href="https://github.com/geist-org/react" target="_blank" style={{
+      }}>Project Source</a>
+      <a href="https://geist-ui.dev" target="_blank" style={{
         background: '#fff',
         color: '#000',
         padding: '12px 24px',
@@ -45,7 +58,7 @@ import { Meta } from "@storybook/blocks";
         fontWeight: 500,
         fontSize: '14px',
         border: '1px solid #eaeaea'
-      }}>GitHub Repository</a>
+      }}>Original Geist UI</a>
     </div>
   </div>
 
@@ -56,24 +69,27 @@ import { Meta } from "@storybook/blocks";
     marginTop: '100px'
   }}>
     <div>
-      <h3 style={{ fontWeight: 600, fontSize: '18px' }}>Categorization</h3>
+      <h3 style={{ fontWeight: 600, fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        ⚛️ React 19 Ready
+      </h3>
       <div style={{ color: '#666', lineHeight: '1.6', fontSize: '14px' }}>
-        Components are organized into logical groups following the official Geist UI hierarchy: 
-        General, Layout, Surfaces, Data Entry, Data Display, Feedback, Navigation, and Others.
+        Engineered to handle the breaking changes in React 19, including the new <code>ref</code> prop behavior and the removal of <code>defaultProps</code>.
       </div>
     </div>
     <div>
-      <h3 style={{ fontWeight: 600, fontSize: '18px' }}>High Fidelity</h3>
+      <h3 style={{ fontWeight: 600, fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        🛡️ Wrapper Pattern
+      </h3>
       <div style={{ color: '#666', lineHeight: '1.6', fontSize: '14px' }}>
-        Every story is crafted to match the official documentation examples, ensuring 
-        consistency between this Storybook and the production Geist UI library.
+        Instead of hacky patches, we use a professional compatibility layer in <code>src/components/ui</code> to fix library-level bugs natively.
       </div>
     </div>
     <div>
-      <h3 style={{ fontWeight: 600, fontSize: '18px' }}>Monochromatic</h3>
+      <h3 style={{ fontWeight: 600, fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        🚀 Performance
+      </h3>
       <div style={{ color: '#666', lineHeight: '1.6', fontSize: '14px' }}>
-        A strict focus on monochromatic aesthetics, utilizing subtle shadows, crisp borders, 
-        and high-contrast typography for a professional, focused atmosphere.
+        Full integration with the <strong>React Compiler</strong> for automatic memoization and optimal rendering cycles in high-density interfaces.
       </div>
     </div>
   </div>
@@ -85,15 +101,15 @@ import { Meta } from "@storybook/blocks";
     borderRadius: '12px',
     border: '1px solid #eaeaea'
   }}>
-    <h2 style={{ fontSize: '24px', fontWeight: 600, marginTop: 0 }}>Standardized Testing</h2>
-    <div style={{ color: '#666', lineHeight: '1.6' }}>
-      All components in this Storybook follow a standardized set of stories:
+    <h2 style={{ fontSize: '24px', fontWeight: 600, marginTop: 0 }}>Engineering Improvements</h2>
+    <div style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px' }}>
+      This version goes beyond the original Geist UI with several critical stability fixes:
     </div>
-    <ul style={{ color: '#666', lineHeight: '2' }}>
-      <li><strong>Basic</strong>: The simplest usage of the component.</li>
-      <li><strong>Types</strong>: Showcasing semantic variants (Success, Warning, Error, Secondary).</li>
-      <li><strong>Sizes</strong>: Demonstrating the Geist scaling system.</li>
-      <li><strong>States</strong>: Handling Loading, Disabled, and Active states.</li>
+    <ul style={{ color: '#666', lineHeight: '2', paddingLeft: '20px' }}>
+      <li><strong>Slider Snap Fix:</strong> Resolved internal measurement collisions that caused sliders to snap to 0 or 100.</li>
+      <li><strong>Scroll-to-Top Prevention:</strong> Scoped style overrides for hidden focus inputs that triggered browser auto-scrolling.</li>
+      <li><strong>Modern Imports:</strong> Optimized for Vite 8 / Storybook 10 with direct ESM support and automatic tree-shaking protection.</li>
+      <li><strong>TypeScript Integrity:</strong> Fixed missing or incorrect type exports for complex components like <code>Tree</code> and <code>Image.Browser</code>.</li>
     </ul>
   </div>
 </div>
