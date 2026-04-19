@@ -1,18 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Avatar } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Avatar } from "@/components/ui";
 
-import AvatarDocumentation from './Avatar.mdx';
+import AvatarDocumentation from "./Avatar.mdx";
 
-export { 
-  Basic,
-  Text,
-  Group
-} from './AvatarBasic';
+export { Basic, Text, Group } from "./AvatarBasic";
 
 const meta: Meta<typeof Avatar> = {
-  title: 'Data Display/Avatar',
+  title: "Data Display/Avatar",
   component: Avatar,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: AvatarDocumentation,

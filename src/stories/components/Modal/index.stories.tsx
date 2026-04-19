@@ -1,18 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Modal } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Modal } from "@/components/ui";
 
-import ModalDocumentation from './Modal.mdx';
+import ModalDocumentation from "./Modal.mdx";
 
-export { 
-  Basic,
-  WithoutActions,
-  CustomContent
-} from './ModalBasic';
+export { Basic, WithoutActions, CustomContent } from "./ModalBasic";
 
 const meta: Meta<typeof Modal> = {
-  title: 'Feedback/Modal',
+  title: "Feedback/Modal",
   component: Modal,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: ModalDocumentation,

@@ -1,9 +1,9 @@
-import { Meta } from '@storybook/react';
-import { Select } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Select } from "@/components/ui";
 
-import SelectDocumentation from './Select.mdx';
+import SelectDocumentation from "./Select.mdx";
 
-export { 
+export {
   Basic,
   Type,
   Disabled,
@@ -15,13 +15,13 @@ export {
   MultipleWithoutClear,
   Compose,
   OverWidthIndices,
-  SetParentElement
-} from './SelectBasic';
+  SetParentElement,
+} from "./SelectBasic";
 
 const meta: Meta<typeof Select> = {
-  title: 'Data Entry/Select',
+  title: "Data Entry/Select",
   component: Select,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: SelectDocumentation,

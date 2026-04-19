@@ -1,9 +1,9 @@
-import { Meta } from '@storybook/react';
-import { Snippet } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Snippet } from "@/components/ui";
 
-import SnippetDocumentation from './Snippet.mdx';
+import SnippetDocumentation from "./Snippet.mdx";
 
-export { 
+export {
   Basic,
   Width,
   Types,
@@ -11,13 +11,13 @@ export {
   WithoutCopy,
   CustomSymbol,
   CustomToast,
-  Filled
-} from './SnippetBasic';
+  Filled,
+} from "./SnippetBasic";
 
 const meta: Meta<typeof Snippet> = {
-  title: 'Others/Snippet',
+  title: "Others/Snippet",
   component: Snippet,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: SnippetDocumentation,

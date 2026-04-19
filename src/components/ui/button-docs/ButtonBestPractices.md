@@ -4,7 +4,7 @@
 
 - **Alignment**: For dialog boxes and panels, right-align buttons with the container. For single-page forms, left-align them.
 - **Hierarchy**: Always place the primary button on the left of the action group.
-- **Quantity**: Show only one primary button per view to reduce cognitive load. 
+- **Quantity**: Show only one primary button per view to reduce cognitive load.
 - **Navigation**: Don't use a button to navigate to another place; use a `Link` instead, unless it's a multi-step wizard.
 
 ### Content

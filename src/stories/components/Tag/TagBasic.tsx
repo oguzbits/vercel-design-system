@@ -1,13 +1,13 @@
-import React from 'react';
-import { Tag, Spacer } from '@/components/ui';
+import React from "react";
+import { Tag, Spacer } from "@/components/ui";
 
 export const Basic = {
-  tags: ['!sidebar'],
-  render: () => <Tag>Status: Unstable</Tag>
+  tags: ["!sidebar"],
+  render: () => <Tag>Status: Unstable</Tag>,
 };
 
 export const Types = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <>
       <Tag type="success">Success</Tag>
@@ -20,22 +20,32 @@ export const Types = {
       <Spacer h={0.5} />
       <Tag type="lite">Lite</Tag>
     </>
-  )
+  ),
 };
 
 export const Invert = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <>
-      <Tag type="default" invert>Default</Tag>
+      <Tag type="default" invert>
+        Default
+      </Tag>
       <Spacer h={0.5} />
-      <Tag type="success" invert>Success</Tag>
+      <Tag type="success" invert>
+        Success
+      </Tag>
       <Spacer h={0.5} />
-      <Tag type="warning" invert>Warning</Tag>
+      <Tag type="warning" invert>
+        Warning
+      </Tag>
       <Spacer h={0.5} />
-      <Tag type="error" invert>Error</Tag>
+      <Tag type="error" invert>
+        Error
+      </Tag>
       <Spacer h={0.5} />
-      <Tag type="secondary" invert>Secondary</Tag>
+      <Tag type="secondary" invert>
+        Secondary
+      </Tag>
     </>
-  )
+  ),
 };

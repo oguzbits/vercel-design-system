@@ -6,40 +6,63 @@ import { Meta } from "@storybook/blocks";
 
 Geist uses elevation to define the visual layering of elements. Shadows vary between light and dark themes to optimize for visibility and contrast.
 
-<div style={{
-  marginTop: '2rem',
-  padding: '4rem 2rem',
-  border: '1px solid #eaeaea',
-  borderRadius: '12px',
-  background: '#fafafa',
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-  gap: '40px'
-}}>
+<div
+  style={{
+    marginTop: "2rem",
+    padding: "4rem 2rem",
+    border: "1px solid #eaeaea",
+    borderRadius: "12px",
+    background: "#fafafa",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+    gap: "40px",
+  }}
+>
   {[
-    { name: 'shadowSmall', shadow: '0 5px 10px rgba(0,0,0,0.12)' },
-    { name: 'shadowMedium', shadow: '0 8px 30px rgba(0,0,0,0.12)' },
-    { name: 'shadowLarge', shadow: '0 30px 60px rgba(0,0,0,0.12)' },
-    { name: 'shadowBrand', shadow: '0 5px 10px rgba(0,112,243,0.3)' },
+    { name: "shadowSmall", shadow: "0 5px 10px rgba(0,0,0,0.12)" },
+    { name: "shadowMedium", shadow: "0 8px 30px rgba(0,0,0,0.12)" },
+    { name: "shadowLarge", shadow: "0 30px 60px rgba(0,0,0,0.12)" },
+    { name: "shadowBrand", shadow: "0 5px 10px rgba(0,112,243,0.3)" },
   ].map((item) => (
-    <div key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-      <div style={{
-        width: '160px',
-        height: '100px',
-        background: '#fff',
-        borderRadius: '8px',
-        boxShadow: item.shadow,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: '11px',
-        color: '#888'
-      }}>
+    <div
+      key={item.name}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "20px",
+      }}
+    >
+      <div
+        style={{
+          width: "160px",
+          height: "100px",
+          background: "#fff",
+          borderRadius: "8px",
+          boxShadow: item.shadow,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "11px",
+          color: "#888",
+        }}
+      >
         Preview
       </div>
-      <div style={{ textAlign: 'center' }}>
-        <div style={{ fontSize: '14px', fontWeight: 600, color: '#111' }}>{item.name}</div>
-        <div style={{ fontSize: '11px', color: '#666', fontFamily: 'monospace', marginTop: '4px' }}>{item.shadow}</div>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: "14px", fontWeight: 600, color: "#111" }}>
+          {item.name}
+        </div>
+        <div
+          style={{
+            fontSize: "11px",
+            color: "#666",
+            fontFamily: "monospace",
+            marginTop: "4px",
+          }}
+        >
+          {item.shadow}
+        </div>
       </div>
     </div>
   ))}
@@ -47,7 +70,7 @@ Geist uses elevation to define the visual layering of elements. Shadows vary bet
 
 ## Usage Guidelines
 
-*   **Small**: Used for static components that need a subtle lift from the background, like small cards or tooltips.
-*   **Medium**: Standard elevation for primary interactive elements like Buttons and Dropdowns.
-*   **Large**: High elevation for critical UI overlays like Modals and Popovers.
-*   **Brand**: Special elevation for primary call-to-action focuses.
+- **Small**: Used for static components that need a subtle lift from the background, like small cards or tooltips.
+- **Medium**: Standard elevation for primary interactive elements like Buttons and Dropdowns.
+- **Large**: High elevation for critical UI overlays like Modals and Popovers.
+- **Brand**: Special elevation for primary call-to-action focuses.

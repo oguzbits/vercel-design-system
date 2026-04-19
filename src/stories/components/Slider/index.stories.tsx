@@ -1,21 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Slider } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Slider } from "@/components/ui";
 
-import SliderDocumentation from './Slider.mdx';
+import SliderDocumentation from "./Slider.mdx";
 
-export { 
-  Basic,
-  Type,
-  Disabled,
-  Step,
-  Range,
-  Event
-} from './SliderBasic';
+export { Basic, Type, Disabled, Step, Range, Event } from "./SliderBasic";
 
 const meta: Meta<typeof Slider> = {
-  title: 'Data Entry/Slider',
+  title: "Data Entry/Slider",
   component: Slider,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: SliderDocumentation,

@@ -1,16 +1,16 @@
-import { Meta } from '@storybook/react';
-import { Rating } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Rating } from "@/components/ui";
 
-export { Basic, Locked } from './RatingBasic';
+export { Basic, Locked } from "./RatingBasic";
 
 export default {
-  title: 'Data Display/Rating',
+  title: "Data Display/Rating",
   component: Rating,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       description: {
-        component: 'Display a rating from user input.',
+        component: "Display a rating from user input.",
       },
     },
   },

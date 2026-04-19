@@ -1,25 +1,25 @@
-import React from 'react';
-import { User } from '@/components/ui';
+import React from "react";
+import { User } from "@/components/ui";
 
 export const Basic = {
-  tags: ['!sidebar'],
-  render: () => <User src="/avatar.png" name="Witt" />
+  tags: ["!sidebar"],
+  render: () => <User src="/avatar.png" name="Witt" />,
 };
 
 export const Description = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <User src="https://unix.bio/assets/avatar.png" name="Witt">
       JavaScript engineer
     </User>
-  )
+  ),
 };
 
 export const Social = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <User src="https://unix.bio/assets/avatar.png" name="Witt">
       <User.Link href="https://twitter.com/echo_witt">@echo_witt</User.Link>
     </User>
-  )
+  ),
 };

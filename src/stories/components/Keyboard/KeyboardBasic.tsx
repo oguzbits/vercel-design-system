@@ -1,29 +1,33 @@
-import React from 'react';
-import { Keyboard } from '@/components/ui';
+import React from "react";
+import { Keyboard } from "@/components/ui";
 
 export const Basic = {
-  tags: ['!sidebar'],
-  render: () => <Keyboard>f</Keyboard>
+  tags: ["!sidebar"],
+  render: () => <Keyboard>f</Keyboard>,
 };
 
 export const Modifiers = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
-    <div style={{ display: 'flex', gap: '10px' }}>
+    <div style={{ display: "flex", gap: "10px" }}>
       <Keyboard command>f</Keyboard>
       <Keyboard shift>e</Keyboard>
       <Keyboard option>b</Keyboard>
       <Keyboard ctrl>n</Keyboard>
     </div>
-  )
+  ),
 };
 
 export const Combination = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
-    <div style={{ display: 'flex', gap: '10px' }}>
-      <Keyboard command shift>e</Keyboard>
-      <Keyboard option ctrl>b</Keyboard>
+    <div style={{ display: "flex", gap: "10px" }}>
+      <Keyboard command shift>
+        e
+      </Keyboard>
+      <Keyboard option ctrl>
+        b
+      </Keyboard>
     </div>
-  )
+  ),
 };

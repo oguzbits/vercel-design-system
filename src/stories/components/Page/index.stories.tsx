@@ -1,16 +1,13 @@
-import { Meta } from '@storybook/react';
-import { Page } from '@/components/ui';
-import PageDocumentation from './Page.mdx';
+import { Meta } from "@storybook/react";
+import { Page } from "@/components/ui";
+import PageDocumentation from "./Page.mdx";
 
-export { 
-  Basic,
-  Content
-} from './PageBasic';
+export { Basic, Content } from "./PageBasic";
 
 const meta: Meta<typeof Page> = {
-  title: 'Layout/Page',
+  title: "Layout/Page",
   component: Page,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: PageDocumentation,

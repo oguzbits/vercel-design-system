@@ -1,19 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Badge } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Badge } from "@/components/ui";
 
-import BadgeDocumentation from './Badge.mdx';
+import BadgeDocumentation from "./Badge.mdx";
 
-export { 
-  Basic,
-  Type,
-  CustomColor,
-  Anchor
-} from './BadgeBasic';
+export { Basic, Type, CustomColor, Anchor } from "./BadgeBasic";
 
 const meta: Meta<typeof Badge> = {
-  title: 'Data Display/Badge',
+  title: "Data Display/Badge",
   component: Badge,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: BadgeDocumentation,

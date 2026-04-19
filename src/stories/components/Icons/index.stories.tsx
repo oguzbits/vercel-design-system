@@ -1,18 +1,13 @@
-import { Meta } from '@storybook/react';
-import { Github } from '@geist-ui/icons';
-import IconsDocumentation from './Icons.mdx';
+import { Meta } from "@storybook/react";
+import { Github } from "@geist-ui/icons";
+import IconsDocumentation from "./Icons.mdx";
 
-export { 
-  Import,
-  Color,
-  Sizes,
-  Gallery
-} from './IconsBasic';
+export { Import, Color, Sizes, Gallery } from "./IconsBasic";
 
 const meta: Meta<typeof Github> = {
-  title: 'General/Icons',
+  title: "General/Icons",
   component: Github,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: IconsDocumentation,

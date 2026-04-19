@@ -1,5 +1,5 @@
-import { Meta, Canvas } from '@storybook/blocks';
-import * as TooltipStories from './index.stories';
+import { Meta, Canvas } from "@storybook/blocks";
+import * as TooltipStories from "./index.stories";
 
 <Meta title="Data Display/Tooltip" of={TooltipStories} />
 
@@ -32,37 +32,219 @@ Display complex components in the tooltip.
 ## APIs
 
 <div style={{ overflowX: "auto", margin: "2rem 0" }}>
-  <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "14px" }}>
+  <table
+    style={{
+      width: "100%",
+      borderCollapse: "collapse",
+      textAlign: "left",
+      fontSize: "14px",
+    }}
+  >
     <thead>
       <tr>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Attribute</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Description</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Type</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Accepted values</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Default</th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Attribute
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Description
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Type
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Accepted values
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Default
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>text</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>tooltip text</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>string / ReactNode</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>text</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          tooltip text
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>string / ReactNode</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>type</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>tooltip type</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>TooltipTypes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>default, secondary, success, warning, error, dark, lite</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>default</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>type</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          tooltip type
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>TooltipTypes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>
+            default, secondary, success, warning, error, dark, lite
+          </code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>default</code>
+        </td>
       </tr>
-                   <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>placement</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>tooltip placement</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>Placement</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>top, topStart, topEnd, left, leftStart, leftEnd, bottom, bottomStart, bottomEnd, right, rightStart, rightEnd</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>top</code></td>
+      <tr>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>placement</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          tooltip placement
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>Placement</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>
+            top, topStart, topEnd, left, leftStart, leftEnd, bottom,
+            bottomStart, bottomEnd, right, rightStart, rightEnd
+          </code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>top</code>
+        </td>
       </tr>
     </tbody>
   </table>

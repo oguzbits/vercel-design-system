@@ -1,5 +1,5 @@
-import { Meta, Canvas } from '@storybook/blocks';
-import * as TextStories from './index.stories';
+import { Meta, Canvas } from "@storybook/blocks";
+import * as TextStories from "./index.stories";
 
 <Meta title="General/Text" of={TextStories} />
 
@@ -52,51 +52,312 @@ Combine multiple styles in a single block.
 ## APIs
 
 <div style={{ overflowX: "auto", margin: "2rem 0" }}>
-  <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "14px" }}>
+  <table
+    style={{
+      width: "100%",
+      borderCollapse: "collapse",
+      textAlign: "left",
+      fontSize: "14px",
+    }}
+  >
     <thead>
       <tr>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Attribute</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Description</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Type</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Accepted values</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Default</th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Attribute
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Description
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Type
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Accepted values
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Default
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>type</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>text type</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>TextTypes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'default', 'secondary', 'success', 'warning', 'error'</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'default'</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>type</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          text type
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>TextTypes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>
+            'default', 'secondary', 'success', 'warning', 'error'
+          </code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'default'</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>h1 - h6</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>render as heading</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>boolean</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>false</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>h1 - h6</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          render as heading
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>boolean</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>false</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>p, small, i, b, blockquote, del</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>render as specific tag</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>boolean</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>false</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>
+            p, small, i, b, blockquote, del
+          </code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          render as specific tag
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>boolean</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>false</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>font</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>custom font size</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>string</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>font</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          custom font size
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>string</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>...native props</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>native props of the element</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>TextHTMLAttributes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'className', ...</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          ...native props
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          native props of the element
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>TextHTMLAttributes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'className', ...</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
       </tr>
     </tbody>
   </table>

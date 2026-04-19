@@ -1,21 +1,21 @@
-import { Meta } from '@storybook/react';
-import { Button } from '@/components/ui';
-import ButtonDocumentation from './Button.mdx';
+import { Meta } from "@storybook/react";
+import { Button } from "@/components/ui";
+import ButtonDocumentation from "./Button.mdx";
 
-export { 
-  Basic, 
-  Loading, 
-  Types, 
-  Ghost, 
-  Disabled, 
-  Icons, 
-  Sizes 
-} from './ButtonBasic';
+export {
+  Basic,
+  Loading,
+  Types,
+  Ghost,
+  Disabled,
+  Icons,
+  Sizes,
+} from "./ButtonBasic";
 
 const meta: Meta<typeof Button> = {
-  title: 'General/Button',
+  title: "General/Button",
   component: Button,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: ButtonDocumentation,

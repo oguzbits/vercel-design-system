@@ -1,22 +1,22 @@
-import { Meta } from '@storybook/react';
-import { Card } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Card } from "@/components/ui";
 
-import CardDocumentation from './Card.mdx';
+import CardDocumentation from "./Card.mdx";
 
-export { 
+export {
   Basic,
   Hoverable,
   Shadow,
   Types,
   WithFooter,
   WithImage,
-  WithDivider
-} from './CardBasic';
+  WithDivider,
+} from "./CardBasic";
 
 const meta: Meta<typeof Card> = {
-  title: 'Surfaces/Card',
+  title: "Surfaces/Card",
   component: Card,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: CardDocumentation,

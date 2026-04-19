@@ -1,18 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Tree } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Tree } from "@/components/ui";
 
-import TreeDocumentation from './Tree.mdx';
+import TreeDocumentation from "./Tree.mdx";
 
-export { 
-  Basic,
-  InitialExpand,
-  Imperative
-} from './TreeBasic';
+export { Basic, InitialExpand, Imperative } from "./TreeBasic";
 
 const meta: Meta<typeof Tree> = {
-  title: 'Data Display/Tree',
+  title: "Data Display/Tree",
   component: Tree,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: TreeDocumentation,

@@ -1,21 +1,21 @@
-import { Meta } from '@storybook/react';
-import { Table } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Table } from "@/components/ui";
 
-import TableDocumentation from './Table.mdx';
+import TableDocumentation from "./Table.mdx";
 
-export { 
+export {
   Basic,
   Compose,
   Width,
   Actions,
   UpdateRow,
-  CustomHead
-} from './TableBasic';
+  CustomHead,
+} from "./TableBasic";
 
 const meta: Meta<typeof Table> = {
-  title: 'Data Display/Table',
+  title: "Data Display/Table",
   component: Table,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: TableDocumentation,

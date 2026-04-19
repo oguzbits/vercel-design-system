@@ -1,20 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Checkbox } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Checkbox } from "@/components/ui";
 
-import CheckboxDocumentation from './Checkbox.mdx';
+import CheckboxDocumentation from "./Checkbox.mdx";
 
-export { 
-  Basic,
-  Sizes,
-  Type,
-  Disabled,
-  Group
-} from './CheckboxBasic';
+export { Basic, Sizes, Type, Disabled, Group } from "./CheckboxBasic";
 
 const meta: Meta<typeof Checkbox> = {
-  title: 'Data Entry/Checkbox',
+  title: "Data Entry/Checkbox",
   component: Checkbox,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: CheckboxDocumentation,

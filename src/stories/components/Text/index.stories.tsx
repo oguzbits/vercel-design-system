@@ -1,21 +1,21 @@
-import { Meta } from '@storybook/react';
-import { Text } from '@/components/ui';
-import TextDocumentation from './Text.mdx';
+import { Meta } from "@storybook/react";
+import { Text } from "@/components/ui";
+import TextDocumentation from "./Text.mdx";
 
-export { 
-  Headings, 
-  Paragraph, 
-  Small, 
-  Blockquote, 
-  Types, 
-  Sizes, 
-  Compose 
-} from './TextBasic';
+export {
+  Headings,
+  Paragraph,
+  Small,
+  Blockquote,
+  Types,
+  Sizes,
+  Compose,
+} from "./TextBasic";
 
 const meta: Meta<typeof Text> = {
-  title: 'General/Text',
+  title: "General/Text",
   component: Text,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: TextDocumentation,

@@ -1,12 +1,12 @@
-import { 
+import {
   useTheme as useGeistTheme,
   useInput as useGeistInput,
   useClipboard as useGeistClipboard,
   useKeyboard as useGeistKeyboard,
   useClasses as useGeistClasses,
   useScale as useGeistScale,
-  withScale as geistWithScale
-} from '@geist-ui/core';
+  withScale as geistWithScale,
+} from "@geist-ui/core";
 
 export const useTheme = useGeistTheme;
 export const useInput = useGeistInput;

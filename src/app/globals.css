@@ -26,7 +26,7 @@ body {
 }
 
 /* Fix Geist UI Select/Radio scroll-to-top on focus issue */
-input[role="combobox"], 
+input[role="combobox"],
 input[type="radio"].jsx-dynamic {
   position: absolute !important;
   top: 0 !important;

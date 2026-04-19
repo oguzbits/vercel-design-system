@@ -1,19 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Fieldset } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Fieldset } from "@/components/ui";
 
-import FieldsetDocumentation from './Fieldset.mdx';
+import FieldsetDocumentation from "./Fieldset.mdx";
 
-export { 
-  Basic,
-  CustomText,
-  Tabs,
-  WithDivider
-} from './FieldsetBasic';
+export { Basic, CustomText, Tabs, WithDivider } from "./FieldsetBasic";
 
 const meta: Meta<typeof Fieldset> = {
-  title: 'Surfaces/Fieldset',
+  title: "Surfaces/Fieldset",
   component: Fieldset,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: FieldsetDocumentation,

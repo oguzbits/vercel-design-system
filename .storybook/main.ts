@@ -1,7 +1,7 @@
-import type { StorybookConfig } from '@storybook/nextjs-vite';
+import type { StorybookConfig } from "@storybook/nextjs-vite";
 
 const config: StorybookConfig = {
-  "stories": [
+  stories: [
     "../src/stories/Introduction.mdx",
     "../src/stories/components/@(AutoComplete|Avatar|Badge|Breadcrumbs|Button|Capacity|Card|Checkbox)/index.stories.tsx",
     "../src/stories/components/@(Code|Collapse|Description|Display|Divider|Dot|Fieldset|Grid)/index.stories.tsx",
@@ -9,13 +9,13 @@ const config: StorybookConfig = {
     "../src/stories/components/@(Page|Pagination|Progress|Radio|Select|Slider|Snippet|Spacer)/index.stories.tsx",
     "../src/stories/components/@(Spinner|Table|Tabs|Tag|Text|Textarea|Toast|Toggle|Tooltip|Tree|User)/index.stories.tsx",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-docs",
     "@storybook/addon-essentials",
     "@storybook/addon-a11y",
     "@chromatic-com/storybook",
   ],
-  "framework": {
+  framework: {
     name: "@storybook/nextjs-vite",
     options: {},
   },
@@ -26,15 +26,13 @@ const config: StorybookConfig = {
         ...config.optimizeDeps,
         include: [
           ...(config.optimizeDeps?.include || []),
-          'react-dom',
-          'react',
-          '@geist-ui/core',
+          "react-dom",
+          "react",
+          "@geist-ui/core",
         ],
       },
     };
   },
-  "staticDirs": [
-    "../public"
-  ]
+  staticDirs: ["../public"],
 };
 export default config;

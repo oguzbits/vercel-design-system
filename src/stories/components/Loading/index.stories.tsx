@@ -1,19 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Loading } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Loading } from "@/components/ui";
 
-import LoadingDocumentation from './Loading.mdx';
+import LoadingDocumentation from "./Loading.mdx";
 
-export { 
-  Basic,
-  Text,
-  Type,
-  Color
-} from './LoadingBasic';
+export { Basic, Text, Type, Color } from "./LoadingBasic";
 
 const meta: Meta<typeof Loading> = {
-  title: 'Feedback/Loading',
+  title: "Feedback/Loading",
   component: Loading,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: LoadingDocumentation,

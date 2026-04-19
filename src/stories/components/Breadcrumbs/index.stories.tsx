@@ -1,17 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Breadcrumbs } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Breadcrumbs } from "@/components/ui";
 
-import BreadcrumbsDocumentation from './Breadcrumbs.mdx';
+import BreadcrumbsDocumentation from "./Breadcrumbs.mdx";
 
-export { 
-  Basic,
-  Separator
-} from './BreadcrumbsBasic';
+export { Basic, Separator } from "./BreadcrumbsBasic";
 
 const meta: Meta<typeof Breadcrumbs> = {
-  title: 'Navigation/Breadcrumbs',
+  title: "Navigation/Breadcrumbs",
   component: Breadcrumbs as any,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: BreadcrumbsDocumentation,

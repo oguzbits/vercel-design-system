@@ -1,17 +1,13 @@
-import { Meta } from '@storybook/react';
-import { Divider } from '@/components/ui';
-import DividerDocumentation from './Divider.mdx';
+import { Meta } from "@storybook/react";
+import { Divider } from "@/components/ui";
+import DividerDocumentation from "./Divider.mdx";
 
-export { 
-  Basic,
-  Alignment,
-  Types
-} from './DividerBasic';
+export { Basic, Alignment, Types } from "./DividerBasic";
 
 const meta: Meta<typeof Divider> = {
-  title: 'Others/Divider',
+  title: "Others/Divider",
   component: Divider,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: DividerDocumentation,

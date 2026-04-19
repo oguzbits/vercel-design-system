@@ -1,5 +1,5 @@
-import React from 'react';
-import { Input, Grid, Spacer, Text } from '@/components/ui';
+import React from "react";
+import { Input, Grid, Spacer, Text } from "@/components/ui";
 
 export const Types = () => (
   <Grid.Container gap={2}>

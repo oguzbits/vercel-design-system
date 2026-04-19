@@ -1,16 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Spinner } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Spinner } from "@/components/ui";
 
-import SpinnerDocumentation from './Spinner.mdx';
+import SpinnerDocumentation from "./Spinner.mdx";
 
-export { 
-  Basic
-} from './SpinnerBasic';
+export { Basic } from "./SpinnerBasic";
 
 const meta: Meta<typeof Spinner> = {
-  title: 'Feedback/Spinner',
+  title: "Feedback/Spinner",
   component: Spinner,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: SpinnerDocumentation,

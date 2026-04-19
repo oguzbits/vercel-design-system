@@ -1,19 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Tabs } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Tabs } from "@/components/ui";
 
-import TabsDocumentation from './Tabs.mdx';
+import TabsDocumentation from "./Tabs.mdx";
 
-export { 
-  Basic,
-  Disabled,
-  Icon,
-  HideDivider
-} from './TabsBasic';
+export { Basic, Disabled, Icon, HideDivider } from "./TabsBasic";
 
 const meta: Meta<typeof Tabs> = {
-  title: 'Navigation/Tabs',
+  title: "Navigation/Tabs",
   component: Tabs as any,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: TabsDocumentation,

@@ -1,20 +1,14 @@
-import { Meta } from '@storybook/react';
-import { ButtonGroup } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { ButtonGroup } from "@/components/ui";
 
-import ButtonGroupDocumentation from './ButtonGroup.mdx';
+import ButtonGroupDocumentation from "./ButtonGroup.mdx";
 
-export { 
-  Basic,
-  Variant,
-  Sizes,
-  Vertical,
-  Disabled
-} from './ButtonGroupBasic';
+export { Basic, Variant, Sizes, Vertical, Disabled } from "./ButtonGroupBasic";
 
 const meta: Meta<typeof ButtonGroup> = {
-  title: 'Data Entry/Button Group',
+  title: "Data Entry/Button Group",
   component: ButtonGroup,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: ButtonGroupDocumentation,

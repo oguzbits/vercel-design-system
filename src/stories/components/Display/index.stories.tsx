@@ -1,16 +1,13 @@
-import { Meta } from '@storybook/react';
-import { Display } from '@/components/ui';
-import DisplayDocumentation from './Display.mdx';
+import { Meta } from "@storybook/react";
+import { Display } from "@/components/ui";
+import DisplayDocumentation from "./Display.mdx";
 
-export { 
-  Basic,
-  CustomCaption
-} from './DisplayBasic';
+export { Basic, CustomCaption } from "./DisplayBasic";
 
 const meta: Meta<typeof Display> = {
-  title: 'Layout/Display',
+  title: "Layout/Display",
   component: Display,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: DisplayDocumentation,

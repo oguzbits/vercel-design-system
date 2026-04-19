@@ -1,16 +1,17 @@
-import { Meta } from '@storybook/react';
-import { Drawer } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Drawer } from "@/components/ui";
 
-export { Basic, Placement } from './DrawerBasic';
+export { Basic, Placement } from "./DrawerBasic";
 
 export default {
-  title: 'Feedback/Drawer',
+  title: "Feedback/Drawer",
   component: Drawer,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       description: {
-        component: 'Display a panel that slides out from the edge of the screen.',
+        component:
+          "Display a panel that slides out from the edge of the screen.",
       },
     },
   },

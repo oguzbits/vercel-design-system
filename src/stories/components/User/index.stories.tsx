@@ -1,18 +1,14 @@
-import { Meta } from '@storybook/react';
-import { User } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { User } from "@/components/ui";
 
-import UserDocumentation from './User.mdx';
+import UserDocumentation from "./User.mdx";
 
-export { 
-  Basic,
-  Description,
-  Social
-} from './UserBasic';
+export { Basic, Description, Social } from "./UserBasic";
 
 const meta: Meta<typeof User> = {
-  title: 'Data Display/User',
+  title: "Data Display/User",
   component: User,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: UserDocumentation,

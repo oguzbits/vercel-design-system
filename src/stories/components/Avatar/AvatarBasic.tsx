@@ -1,9 +1,9 @@
-import { Avatar, Spacer } from '@/components/ui';
+import { Avatar, Spacer } from "@/components/ui";
 
 export const Basic = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
-    const url = '/avatar.png';
+    const url = "/avatar.png";
     return (
       <>
         <Avatar src={url} />
@@ -17,11 +17,11 @@ export const Basic = {
         <Avatar src={url} isSquare />
       </>
     );
-  }
+  },
 };
 
 export const Text = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <>
       <Avatar text="W" />
@@ -29,13 +29,13 @@ export const Text = {
       <Avatar text="W" />
       <Avatar text="Joe" />
     </>
-  )
+  ),
 };
 
 export const Group = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
-    const url = '/avatar.png';
+    const url = "/avatar.png";
     return (
       <>
         <Avatar.Group>
@@ -52,5 +52,5 @@ export const Group = {
         </Avatar.Group>
       </>
     );
-  }
+  },
 };

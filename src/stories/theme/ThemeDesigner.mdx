@@ -9,30 +9,31 @@ Geist is highly customizable. You can override any part of the theme by passing 
 ## Customization Example
 
 ```tsx
-import { GeistProvider, CssBaseline, Themes } from '@/components/ui'
+import { GeistProvider, CssBaseline, Themes } from "@/components/ui";
 
 const myTheme = Themes.createFromLight({
-  type: 'custom',
+  type: "custom",
   palette: {
-    success: '#000',
+    success: "#000",
   },
-})
+});
 
 const App = () => (
   <GeistProvider themes={[myTheme]} themeType="custom">
     <CssBaseline />
     <YourApp />
   </GeistProvider>
-)
+);
 ```
 
 ## Available Overrides
 
 You can override variables in the following categories:
-*   `palette`: All color tokens.
-*   `expressiveness`: Shadows, transitions, and special effects.
-*   `layout`: Spacing, z-index, and container widths.
-*   `font`: Family, sizes, and weights.
+
+- `palette`: All color tokens.
+- `expressiveness`: Shadows, transitions, and special effects.
+- `layout`: Spacing, z-index, and container widths.
+- `font`: Family, sizes, and weights.
 
 ## Tooling
 

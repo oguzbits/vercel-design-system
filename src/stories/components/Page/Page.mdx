@@ -1,5 +1,5 @@
-import { Meta, Canvas } from '@storybook/blocks';
-import * as PageStories from './index.stories';
+import { Meta, Canvas } from "@storybook/blocks";
+import * as PageStories from "./index.stories";
 
 <Meta title="Layout/Page" of={PageStories} />
 
@@ -18,58 +18,355 @@ A container for the main content of the application.
 ## APIs
 
 <div style={{ overflowX: "auto", margin: "2rem 0" }}>
-  <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "14px" }}>
+  <table
+    style={{
+      width: "100%",
+      borderCollapse: "collapse",
+      textAlign: "left",
+      fontSize: "14px",
+    }}
+  >
     <thead>
       <tr>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Attribute</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Description</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Type</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Accepted values</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Default</th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Attribute
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Description
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Type
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Accepted values
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Default
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>renderMode</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>how to render the page</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>PageRenderMode</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'default' | 'effect'</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'default'</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>renderMode</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          how to render the page
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>PageRenderMode</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'default' | 'effect'</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'default'</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>dotBackdrop</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>add a dot backdrop</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>boolean</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>false</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>dotBackdrop</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          add a dot backdrop
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>boolean</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>false</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>dotSize</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>dot size of the background</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>string</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'1px'</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>dotSize</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          dot size of the background
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>string</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'1px'</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>dotSpace</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>spacing between dots</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>number</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>0.5</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>dotSpace</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          spacing between dots
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>number</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>0.5</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>dotBackground</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>color for background dots</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>string</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'auto'</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>dotBackground</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          color for background dots
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>string</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'auto'</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>...native props</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>native HTML attributes</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>HTMLAttributes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'id', 'className', ...</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          ...native props
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          native HTML attributes
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>HTMLAttributes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'id', 'className', ...</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
       </tr>
     </tbody>
   </table>

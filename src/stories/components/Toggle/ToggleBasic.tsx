@@ -1,19 +1,19 @@
-import React from 'react';
-import { Toggle, Spacer, ToggleEvent } from '@/components/ui';
+import React from "react";
+import { Toggle, Spacer, ToggleEvent } from "@/components/ui";
 
 export const Basic = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <>
       <Toggle />
       <Spacer h={0.5} />
       <Toggle initialChecked />
     </>
-  )
+  ),
 };
 
 export const Type = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <>
       <Toggle type="default" initialChecked />
@@ -26,26 +26,26 @@ export const Type = {
       <Spacer h={0.5} />
       <Toggle type="error" initialChecked />
     </>
-  )
+  ),
 };
 
 export const Disabled = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => (
     <>
       <Toggle disabled />
       <Spacer h={0.5} />
       <Toggle initialChecked disabled />
     </>
-  )
+  ),
 };
 
 export const GetChange = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
     const handler = (event: ToggleEvent) => {
       console.log(event.target.checked);
     };
     return <Toggle onChange={handler} />;
-  }
+  },
 };

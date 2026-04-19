@@ -1,16 +1,13 @@
-import { Meta } from '@storybook/react';
-import { Spacer } from '@/components/ui';
-import SpacerDocumentation from './Spacer.mdx';
+import { Meta } from "@storybook/react";
+import { Spacer } from "@/components/ui";
+import SpacerDocumentation from "./Spacer.mdx";
 
-export { 
-  Vertical,
-  Horizontal
-} from './SpacerBasic';
+export { Vertical, Horizontal } from "./SpacerBasic";
 
 const meta: Meta<typeof Spacer> = {
-  title: 'Layout/Spacer',
+  title: "Layout/Spacer",
   component: Spacer,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: SpacerDocumentation,

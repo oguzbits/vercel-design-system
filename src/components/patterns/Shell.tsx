@@ -1,6 +1,14 @@
-import React from 'react';
-import { Page, Text, Breadcrumbs, User, Button, Spacer, Grid } from '@/components/ui';
-import { Bell, Settings } from '@geist-ui/icons';
+import React from "react";
+import {
+  Page,
+  Text,
+  Breadcrumbs,
+  User,
+  Button,
+  Spacer,
+  Grid,
+} from "@/components/ui";
+import { Bell, Settings } from "@geist-ui/icons";
 
 interface ShellProps {
   children: React.ReactNode;
@@ -8,12 +16,24 @@ interface ShellProps {
   projectName: string;
 }
 
-export const Shell: React.FC<ShellProps> = ({ children, username, projectName }) => {
+export const Shell: React.FC<ShellProps> = ({
+  children,
+  username,
+  projectName,
+}) => {
   return (
     <Page style={{ padding: 0 }}>
       {/* Top Header */}
-      <div style={{ borderBottom: '1px solid var(--accents-2)', padding: '0.75rem 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+      <div
+        style={{
+          borderBottom: "1px solid var(--accents-2)",
+          padding: "0.75rem 1.5rem",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <svg
             aria-label="Vercel Logo"
             fill="var(--geist-foreground)"
@@ -28,7 +48,7 @@ export const Shell: React.FC<ShellProps> = ({ children, username, projectName })
             <Breadcrumbs.Item>{projectName}</Breadcrumbs.Item>
           </Breadcrumbs>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <Button icon={<Bell />} auto type="abort" px={0.5} />
           <Button icon={<Settings />} auto type="abort" px={0.5} />
           <User src="https://github.com/vercel.png" name="Vercel" />
@@ -36,7 +56,9 @@ export const Shell: React.FC<ShellProps> = ({ children, username, projectName })
       </div>
 
       {/* Main Content */}
-      <Page.Content style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '2rem' }}>
+      <Page.Content
+        style={{ maxWidth: "1200px", margin: "0 auto", paddingTop: "2rem" }}
+      >
         {children}
       </Page.Content>
     </Page>

@@ -1,13 +1,11 @@
-import { Canvas, Meta } from '@storybook/blocks';
-import * as BadgeStories from './index.stories';
+import { Canvas, Meta } from "@storybook/blocks";
+import * as BadgeStories from "./index.stories";
 
 <Meta of={BadgeStories} />
-
 
 # Badge
 
 Display an indicator that requires attention.
-
 
 ## General
 
@@ -15,13 +13,11 @@ Show number or text.
 
 <Canvas of={BadgeStories.Basic} />
 
-
 ## Type
 
 Express state in different colors.
 
 <Canvas of={BadgeStories.Type} />
-
 
 ## Custom Color
 
@@ -29,99 +25,411 @@ For more colors, please refer to the [color section](https://geist-ui.dev/en-us/
 
 <Canvas of={BadgeStories.CustomColor} />
 
-
 ## Anchor
 
 Fix the `Badge` in the designated position.
 
 <Canvas of={BadgeStories.Anchor} />
 
-
 ## APIs
-
 
 ### Badge.Props
 
 <div style={{ overflowX: "auto", margin: "2rem 0" }}>
-  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '14px' }}>
+  <table
+    style={{
+      width: "100%",
+      borderCollapse: "collapse",
+      textAlign: "left",
+      fontSize: "14px",
+    }}
+  >
     <thead>
       <tr>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Attribute</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Description</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Type</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Accepted values</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Default</th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Attribute
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Description
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Type
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Accepted values
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Default
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>type</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>badge type</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ color: '#d400ff' }}>BadgeTypes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ color: '#0070f3' }}>BadgeTypes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'default'</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>type</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          badge type
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ color: "#d400ff" }}>BadgeTypes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ color: "#0070f3" }}>BadgeTypes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'default'</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>dot</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>show dot and ignore content</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>boolean</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>false</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>dot</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          show dot and ignore content
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>boolean</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>false</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>...</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>native props</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>HTMLAttributes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'alt', 'id', 'className', ...</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>...</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          native props
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>HTMLAttributes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>
+            'alt', 'id', 'className', ...
+          </code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
-
 
 ### Badge.Anchor.Props
 
 <div style={{ overflowX: "auto", margin: "2rem 0" }}>
-  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '14px' }}>
+  <table
+    style={{
+      width: "100%",
+      borderCollapse: "collapse",
+      textAlign: "left",
+      fontSize: "14px",
+    }}
+  >
     <thead>
       <tr>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Attribute</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Description</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Type</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Accepted values</th>
-        <th style={{ padding: "0 10px", color: "#666", fontWeight: "400", borderBottom: "1px solid #eaeaea", height: "40px" }}>Default</th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Attribute
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Description
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Type
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Accepted values
+        </th>
+        <th
+          style={{
+            padding: "0 10px",
+            color: "#666",
+            fontWeight: "400",
+            borderBottom: "1px solid #eaeaea",
+            height: "40px",
+          }}
+        >
+          Default
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>placement</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>fix position of Badge</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ color: '#d400ff' }}>AnchorPlacement</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ color: '#0070f3' }}>AnchorPlacement</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'topRight'</code></td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>placement</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          fix position of Badge
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ color: "#d400ff" }}>AnchorPlacement</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ color: "#0070f3" }}>AnchorPlacement</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>'topRight'</code>
+        </td>
       </tr>
       <tr>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><strong>...</strong></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>native props</td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>HTMLAttributes</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}><code style={{ fontSize: "13px" }}>'alt', 'id', 'className', ...</code></td>
-        <td style={{ padding: "0 10px", borderBottom: "1px solid #eaeaea", height: "48px" }}>-</td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <strong>...</strong>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          native props
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>HTMLAttributes</code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          <code style={{ fontSize: "13px" }}>
+            'alt', 'id', 'className', ...
+          </code>
+        </td>
+        <td
+          style={{
+            padding: "0 10px",
+            borderBottom: "1px solid #eaeaea",
+            height: "48px",
+          }}
+        >
+          -
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-
 ### BadgeTypes
 
 ```typescript
-type BadgeTypes = 'default' | 'secondary' | 'success' | 'warning' | 'error'
+type BadgeTypes = "default" | "secondary" | "success" | "warning" | "error";
 ```
-
 
 ### AnchorPlacement
 
 ```typescript
-type AnchorPlacement = 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRight'
+type AnchorPlacement = "topLeft" | "topRight" | "bottomLeft" | "bottomRight";
 ```

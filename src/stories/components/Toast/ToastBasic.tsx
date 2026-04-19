@@ -1,62 +1,82 @@
-import React from 'react';
-import { useToasts, Button, Spacer } from '@/components/ui';
+import React from "react";
+import { useToasts, Button, Spacer } from "@/components/ui";
 
 export const Basic = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
     const { setToast } = useToasts();
     return (
-      <Button auto onClick={() => setToast({ text: 'The world is standardizing on Geist.' })}>
+      <Button
+        auto
+        onClick={() =>
+          setToast({ text: "The world is standardizing on Geist." })
+        }
+      >
         Show Toast
       </Button>
     );
-  }
+  },
 };
 
 export const Type = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
     const { setToast } = useToasts();
-    const click = (type: any) => setToast({ text: 'The world is standardizing on Geist.', type });
+    const click = (type: any) =>
+      setToast({ text: "The world is standardizing on Geist.", type });
     return (
       <>
-        <Button auto type="success" onClick={() => click('success')}>Success</Button>
+        <Button auto type="success" onClick={() => click("success")}>
+          Success
+        </Button>
         <Spacer h={0.5} />
-        <Button auto type="warning" onClick={() => click('warning')}>Warning</Button>
+        <Button auto type="warning" onClick={() => click("warning")}>
+          Warning
+        </Button>
         <Spacer h={0.5} />
-        <Button auto type="error" onClick={() => click('error')}>Error</Button>
+        <Button auto type="error" onClick={() => click("error")}>
+          Error
+        </Button>
       </>
     );
-  }
+  },
 };
 
 export const Action = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
     const { setToast } = useToasts();
-    const click = () => setToast({
-      text: 'The world is standardizing on Geist.',
-      actions: [{
-        name: 'cancel',
-        passive: true,
-        handler: (event, cancel) => cancel()
-      }]
-    });
+    const click = () =>
+      setToast({
+        text: "The world is standardizing on Geist.",
+        actions: [
+          {
+            name: "cancel",
+            passive: true,
+            handler: (event, cancel) => cancel(),
+          },
+        ],
+      });
     return (
-      <Button auto onClick={click}>Action</Button>
+      <Button auto onClick={click}>
+        Action
+      </Button>
     );
-  }
+  },
 };
 
 export const Multiline = {
-  tags: ['!sidebar'],
+  tags: ["!sidebar"],
   render: () => {
     const { setToast } = useToasts();
-    const click = () => setToast({
-      text: 'Geist is a modern design system for building high-quality web applications. It is easy to use and provides a consistent look and feel throughout your application.'
-    });
+    const click = () =>
+      setToast({
+        text: "Geist is a modern design system for building high-quality web applications. It is easy to use and provides a consistent look and feel throughout your application.",
+      });
     return (
-      <Button auto onClick={click}>Multiline</Button>
+      <Button auto onClick={click}>
+        Multiline
+      </Button>
     );
-  }
+  },
 };

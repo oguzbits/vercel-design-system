@@ -1,18 +1,14 @@
-import { Meta } from '@storybook/react';
-import { Tag } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Tag } from "@/components/ui";
 
-import TagDocumentation from './Tag.mdx';
+import TagDocumentation from "./Tag.mdx";
 
-export { 
-  Basic,
-  Types,
-  Invert
-} from './TagBasic';
+export { Basic, Types, Invert } from "./TagBasic";
 
 const meta: Meta<typeof Tag> = {
-  title: 'Data Display/Tag',
+  title: "Data Display/Tag",
   component: Tag,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: TagDocumentation,

@@ -37,31 +37,57 @@ The Geist font system is designed for maximum clarity in technical and data-dens
 
 ## Size Scale
 
-<div style={{
-  marginTop: '2rem',
-  padding: '1rem 2rem',
-  border: '1px solid #eaeaea',
-  borderRadius: '12px',
-  background: '#fff'
-}}>
+<div
+  style={{
+    marginTop: "2rem",
+    padding: "1rem 2rem",
+    border: "1px solid #eaeaea",
+    borderRadius: "12px",
+    background: "#fff",
+  }}
+>
   {[
-    { token: 'fontSize100', value: '12px', sample: 'Micro copy and metadata' },
-    { token: 'fontSize200', value: '14px', sample: 'Secondary body and descriptions' },
-    { token: 'fontSize300', value: '16px', sample: 'Default primary interface text' },
-    { token: 'fontSize400', value: '20px', sample: 'Interface sub-headers' },
-    { token: 'fontSize500', value: '24px', sample: 'Section headers' },
-    { token: 'fontSize600', value: '32px', sample: 'Page titles' },
-    { token: 'fontSizeHero700', value: '48px', sample: 'Hero marketing title' },
+    { token: "fontSize100", value: "12px", sample: "Micro copy and metadata" },
+    {
+      token: "fontSize200",
+      value: "14px",
+      sample: "Secondary body and descriptions",
+    },
+    {
+      token: "fontSize300",
+      value: "16px",
+      sample: "Default primary interface text",
+    },
+    { token: "fontSize400", value: "20px", sample: "Interface sub-headers" },
+    { token: "fontSize500", value: "24px", sample: "Section headers" },
+    { token: "fontSize600", value: "32px", sample: "Page titles" },
+    { token: "fontSizeHero700", value: "48px", sample: "Hero marketing title" },
   ].map((item) => (
-    <div key={item.token} style={{
-      display: 'flex',
-      alignItems: 'baseline',
-      padding: '24px 0',
-      borderBottom: '1px solid #f5f5f5'
-    }}>
-      <div style={{ width: '150px', fontSize: '12px', color: '#888', fontFamily: 'monospace' }}>{item.token}</div>
-      <div style={{ width: '80px', fontSize: '14px', color: '#111' }}>{item.value}</div>
-      <div style={{ fontSize: item.value, flex: 1, color: '#000' }}>{item.sample}</div>
+    <div
+      key={item.token}
+      style={{
+        display: "flex",
+        alignItems: "baseline",
+        padding: "24px 0",
+        borderBottom: "1px solid #f5f5f5",
+      }}
+    >
+      <div
+        style={{
+          width: "150px",
+          fontSize: "12px",
+          color: "#888",
+          fontFamily: "monospace",
+        }}
+      >
+        {item.token}
+      </div>
+      <div style={{ width: "80px", fontSize: "14px", color: "#111" }}>
+        {item.value}
+      </div>
+      <div style={{ fontSize: item.value, flex: 1, color: "#000" }}>
+        {item.sample}
+      </div>
     </div>
   ))}
 </div>

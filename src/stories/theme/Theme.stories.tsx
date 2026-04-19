@@ -1,18 +1,18 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { 
-  ColorTable, 
-  SpacingGallery, 
-  BorderRadiiGallery, 
-  ShadowsGallery, 
-  TypographyGallery, 
-  LayoutGallery 
-} from '../components/ThemeGallery';
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
+import {
+  ColorTable,
+  SpacingGallery,
+  BorderRadiiGallery,
+  ShadowsGallery,
+  TypographyGallery,
+  LayoutGallery,
+} from "../components/ThemeGallery";
 
 const meta: Meta = {
-  title: 'Theme/Guidelines',
+  title: "Theme/Guidelines",
   parameters: {
-    layout: 'padded',
+    layout: "padded",
   },
 };
 
@@ -27,7 +27,7 @@ export const Spacing: StoryObj = {
 };
 
 export const BorderRadii: StoryObj = {
-  name: 'Border Radii',
+  name: "Border Radii",
   render: () => <BorderRadiiGallery />,
 };
 

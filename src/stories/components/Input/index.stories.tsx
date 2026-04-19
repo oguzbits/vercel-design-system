@@ -1,9 +1,9 @@
-import { Meta } from '@storybook/react';
-import { Input } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Input } from "@/components/ui";
 
-import InputDocumentation from './Input.mdx';
+import InputDocumentation from "./Input.mdx";
 
-export { 
+export {
   Basic,
   Sizes,
   Width,
@@ -15,13 +15,13 @@ export {
   Clearable,
   Password,
   GetChange,
-  ImperativeAPI
-} from './InputBasic';
+  ImperativeAPI,
+} from "./InputBasic";
 
 const meta: Meta<typeof Input> = {
-  title: 'Data Entry/Input',
+  title: "Data Entry/Input",
   component: Input,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: InputDocumentation,

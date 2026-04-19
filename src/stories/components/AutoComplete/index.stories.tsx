@@ -1,9 +1,9 @@
-import { Meta } from '@storybook/react';
-import { AutoComplete } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { AutoComplete } from "@/components/ui";
 
-import AutoCompleteDocumentation from './AutoComplete.mdx';
+import AutoCompleteDocumentation from "./AutoComplete.mdx";
 
-export { 
+export {
   Basic,
   Type,
   Disabled,
@@ -14,13 +14,13 @@ export {
   CustomNoOptions,
   CustomOption,
   Clearable,
-  Creatable
-} from './AutoCompleteBasic';
+  Creatable,
+} from "./AutoCompleteBasic";
 
 const meta: Meta<typeof AutoComplete> = {
-  title: 'Data Entry/AutoComplete',
+  title: "Data Entry/AutoComplete",
   component: AutoComplete,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: AutoCompleteDocumentation,

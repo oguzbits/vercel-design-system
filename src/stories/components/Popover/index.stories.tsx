@@ -1,16 +1,17 @@
-import { Meta } from '@storybook/react';
-import { Popover } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Popover } from "@/components/ui";
 
-export { Basic, Menu } from './PopoverBasic';
+export { Basic, Menu } from "./PopoverBasic";
 
 export default {
-  title: 'Feedback/Popover',
+  title: "Feedback/Popover",
   component: Popover,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       description: {
-        component: 'Floating content revealed by clicking or hovering on an element.',
+        component:
+          "Floating content revealed by clicking or hovering on an element.",
       },
     },
   },

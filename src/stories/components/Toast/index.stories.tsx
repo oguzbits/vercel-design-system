@@ -1,18 +1,13 @@
-import { Meta } from '@storybook/react';
-import { useToasts } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { useToasts } from "@/components/ui";
 
-import ToastDocumentation from './Toast.mdx';
+import ToastDocumentation from "./Toast.mdx";
 
-export { 
-  Basic,
-  Type,
-  Action,
-  Multiline
-} from './ToastBasic';
+export { Basic, Type, Action, Multiline } from "./ToastBasic";
 
 const meta: Meta<any> = {
-  title: 'Feedback/Toast',
-  tags: ['autodocs'],
+  title: "Feedback/Toast",
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: ToastDocumentation,

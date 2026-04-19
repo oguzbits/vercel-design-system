@@ -1,21 +1,21 @@
-import { Meta } from '@storybook/react';
-import { Image } from '@/components/ui';
+import { Meta } from "@storybook/react";
+import { Image } from "@/components/ui";
 
-import ImageDocumentation from './Image.mdx';
+import ImageDocumentation from "./Image.mdx";
 
-export { 
+export {
   Basic,
   Skeleton,
   Browser,
   BrowserInvert,
   Compose,
-  SVG
-} from './ImageBasic';
+  SVG,
+} from "./ImageBasic";
 
 const meta: Meta<typeof Image> = {
-  title: 'Data Display/Image',
+  title: "Data Display/Image",
   component: Image,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     docs: {
       page: ImageDocumentation,

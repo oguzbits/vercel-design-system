@@ -1,5 +1,5 @@
-import React from 'react';
-import { ButtonDropdown, Grid, Spacer } from '@/components/ui';
+import React from "react";
+import { ButtonDropdown, Grid, Spacer } from "@/components/ui";
 
 export const Basic = () => (
   <ButtonDropdown>
@@ -33,7 +33,7 @@ export const Types = () => (
 );
 
 export const Loading = () => (
-    <ButtonDropdown loading>
-      <ButtonDropdown.Item main>Default Action</ButtonDropdown.Item>
-    </ButtonDropdown>
+  <ButtonDropdown loading>
+    <ButtonDropdown.Item main>Default Action</ButtonDropdown.Item>
+  </ButtonDropdown>
 );
