@@ -1,18 +1,33 @@
 import { Meta } from '@storybook/react';
 import { Input } from '@geist-ui/core';
 
-export { Basic, Labels } from './InputBasic';
-export { Types, Sizes } from './InputAdvanced';
+import InputDocumentation from './Input.mdx';
 
-export default {
+export { 
+  Basic,
+  Sizes,
+  Width,
+  Unwritable,
+  InlineLabel,
+  BlockLabel,
+  Type,
+  Icon,
+  Clearable,
+  Password,
+  GetChange,
+  ImperativeAPI
+} from './InputBasic';
+
+const meta: Meta<typeof Input> = {
   title: 'Data Entry/Input',
   component: Input,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Retrieve text input from a user.',
-      },
+      page: InputDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

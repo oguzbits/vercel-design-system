@@ -1,39 +1,50 @@
 import React from 'react';
-import { Tree, Grid } from '@geist-ui/core';
+import { Tree } from '@geist-ui/core';
 
-export const Basic = () => {
-  const files = [
-    {
-      type: 'directory',
-      name: 'src',
-      children: [
-        { type: 'file', name: 'index.ts' },
-        { type: 'file', name: 'app.tsx' },
-      ],
-    },
-    { type: 'file', name: 'package.json' },
-  ];
-  return (
-    <div style={{ width: '300px' }}>
-      <Tree value={files} />
-    </div>
-  );
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Tree>
+      <Tree.File name="src/index.js" />
+      <Tree.Folder name="components">
+        <Tree.File name="button.js" />
+        <Tree.File name="card.js" />
+      </Tree.Folder>
+      <Tree.File name="package.json" />
+    </Tree>
+  )
 };
 
-export const Icons = () => {
-  const files = [
-    {
-      type: 'directory',
-      name: 'assets',
-      children: [
-        { type: 'file', name: 'logo.png' },
-      ],
-    },
-    { type: 'file', name: 'README.md' },
-  ];
-  return (
-    <div style={{ width: '300px' }}>
-      <Tree value={files} initialExpand />
-    </div>
-  );
+export const InitialExpand = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Tree initialExpand>
+      <Tree.Folder name="src">
+        <Tree.File name="index.js" />
+      </Tree.Folder>
+    </Tree>
+  )
+};
+
+export const Imperative = {
+  tags: ['!sidebar'],
+  render: () => {
+    const files = [
+      {
+        type: 'directory',
+        name: 'src',
+        files: [
+          {
+            type: 'file',
+            name: 'index.js',
+          },
+        ],
+      },
+      {
+        type: 'file',
+        name: 'package.json',
+      },
+    ];
+    return <Tree value={files} />;
+  }
 };

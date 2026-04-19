@@ -1,0 +1,75 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as CheckboxStories from './index.stories';
+
+<Meta title="Data Entry/Checkbox" of={CheckboxStories} />
+
+# Checkbox
+
+Displays a boolean value.
+
+## Basic
+
+Change state with `checked` props.
+
+<Canvas of={CheckboxStories.Basic} />
+
+## Sizes
+
+Checkbox of different sizes.
+
+<Canvas of={CheckboxStories.Sizes} />
+
+## Type
+
+Differentiate states by color.
+
+<Canvas of={CheckboxStories.Type} />
+
+## Disable
+
+<Canvas of={CheckboxStories.Disabled} />
+
+## Group
+
+Manage a set of `Checkbox`.
+
+<Canvas of={CheckboxStories.Group} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>checked</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>checked or not</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>current type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>CheckboxTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>disabled</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>disable checkbox</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

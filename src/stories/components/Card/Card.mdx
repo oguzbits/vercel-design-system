@@ -1,0 +1,86 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as CardStories from './index.stories';
+
+<Meta title="Surfaces/Card" of={CardStories} />
+
+# Card
+
+A common container component.
+
+## Basic
+
+<Canvas of={CardStories.Basic} />
+
+## Hoverable
+
+<Canvas of={CardStories.Hoverable} />
+
+## Shadow
+
+<Canvas of={CardStories.Shadow} />
+
+## Types
+
+Show different states with colors.
+
+<Canvas of={CardStories.Types} />
+
+## With Footer
+
+<Canvas of={CardStories.WithFooter} />
+
+## With Image
+
+<Canvas of={CardStories.WithImage} />
+
+## With Divider
+
+Show different types of content using `Divider`
+
+<Canvas of={CardStories.WithDivider} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>hoverable</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>add effect on hover</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>shadow</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>show shadow</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>card type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>CardType</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>...</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>native props</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>HTMLAttributes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>'id', 'className', ...</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

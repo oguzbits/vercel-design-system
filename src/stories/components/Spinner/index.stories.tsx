@@ -1,17 +1,22 @@
 import { Meta } from '@storybook/react';
 import { Spinner } from '@geist-ui/core';
 
-export { Basic, Sizes } from './SpinnerBasic';
+import SpinnerDocumentation from './Spinner.mdx';
 
-export default {
+export { 
+  Basic
+} from './SpinnerBasic';
+
+const meta: Meta<typeof Spinner> = {
   title: 'Feedback/Spinner',
   component: Spinner,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a spinner to indicate a loading state.',
-      },
+      page: SpinnerDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

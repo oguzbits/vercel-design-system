@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Pagination } from '@geist-ui/core';
 
-export { Basic, Sizes, Limit } from './PaginationBasic';
+import PaginationDocumentation from './Pagination.mdx';
 
-export default {
-  title: 'Data Display/Pagination',
+export { 
+  Basic,
+  Limit,
+  Icon
+} from './PaginationBasic';
+
+const meta: Meta<typeof Pagination> = {
+  title: 'Navigation/Pagination',
   component: Pagination,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Navigation across multiple pages.',
-      },
+      page: PaginationDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Tree } from '@geist-ui/core';
 
-export { Basic, Icons } from './TreeBasic';
+import TreeDocumentation from './Tree.mdx';
 
-export default {
+export { 
+  Basic,
+  InitialExpand,
+  Imperative
+} from './TreeBasic';
+
+const meta: Meta<typeof Tree> = {
   title: 'Data Display/Tree',
   component: Tree,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a hierarchical file structure.',
-      },
+      page: TreeDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

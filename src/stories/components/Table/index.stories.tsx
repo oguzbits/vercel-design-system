@@ -1,17 +1,27 @@
 import { Meta } from '@storybook/react';
 import { Table } from '@geist-ui/core';
 
-export { Basic, CustomContent } from './TableBasic';
+import TableDocumentation from './Table.mdx';
 
-export default {
+export { 
+  Basic,
+  Compose,
+  Width,
+  Actions,
+  UpdateRow,
+  CustomHead
+} from './TableBasic';
+
+const meta: Meta<typeof Table> = {
   title: 'Data Display/Table',
   component: Table,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display structured data in a grid layout.',
-      },
+      page: TableDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Toggle } from '@geist-ui/core';
 
-export { Basic, Sizes, Types } from './ToggleBasic';
+import ToggleDocumentation from './Toggle.mdx';
 
-export default {
+export { 
+  Basic,
+  Type,
+  Disabled,
+  GetChange
+} from './ToggleBasic';
+
+const meta: Meta<typeof Toggle> = {
   title: 'Data Entry/Toggle',
   component: Toggle,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a switch for boolean input.',
-      },
+      page: ToggleDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

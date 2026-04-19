@@ -1,17 +1,26 @@
 import { Meta } from '@storybook/react';
 import { Link } from '@geist-ui/core';
 
-export { Basic, External } from './LinkBasic';
+import LinkDocumentation from './Link.mdx';
 
-export default {
-  title: 'Navigation/Link',
+export { 
+  Basic,
+  Highlight,
+  Underline,
+  Icon,
+  Block
+} from './LinkBasic';
+
+const meta: Meta<typeof Link> = {
+  title: 'General/Link',
   component: Link,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Hyperlinks to navigate between pages or sections.',
-      },
+      page: LinkDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

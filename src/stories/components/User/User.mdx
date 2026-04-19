@@ -1,0 +1,58 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as UserStories from './index.stories';
+
+<Meta title="Data Display/User" of={UserStories} />
+
+# User
+
+Display user profile or social information.
+
+## Basic
+
+Show username.
+
+<Canvas of={UserStories.Basic} />
+
+## Description
+
+Show an extra description.
+
+<Canvas of={UserStories.Description} />
+
+## Social
+
+Show link below user name.
+
+<Canvas of={UserStories.Social} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>name</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>user name</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>ReactNode / string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>src</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>avatar url</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Display } from '@geist-ui/core';
+import DisplayDocumentation from './Display.mdx';
 
-export { Basic, CustomCaption } from './DisplayBasic';
+export { 
+  Basic,
+  CustomCaption
+} from './DisplayBasic';
 
-export default {
-  title: 'Data Display/Display',
+const meta: Meta<typeof Display> = {
+  title: 'Layout/Display',
   component: Display,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Centered content with a caption.',
-      },
+      page: DisplayDocumentation,
+    },
+    sidebar: {
+      showChildren: false,
     },
   },
-} as Meta;
+};
+
+export default meta;

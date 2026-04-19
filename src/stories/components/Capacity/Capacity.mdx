@@ -1,0 +1,55 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as CapacityStories from './index.stories';
+
+<Meta title="Data Display/Capacity" of={CapacityStories} />
+
+# Capacity
+
+Display an indicator of capacity.
+
+## Basic
+
+<Canvas of={CapacityStories.Basic} />
+
+## Fixed Color
+
+<Canvas of={CapacityStories.FixedColor} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>value</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>value number</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>0</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>limit</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>max value</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>100</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>color</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>css color string</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

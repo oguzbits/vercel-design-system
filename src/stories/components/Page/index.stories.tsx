@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Page } from '@geist-ui/core';
+import PageDocumentation from './Page.mdx';
 
-export { Basic } from './PageBasic';
+export { 
+  Basic,
+  Content
+} from './PageBasic';
 
-export default {
+const meta: Meta<typeof Page> = {
   title: 'Layout/Page',
   component: Page,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Default container for a page, including Header, Content and Footer.',
-      },
+      page: PageDocumentation,
+    },
+    sidebar: {
+      showChildren: false,
     },
   },
-} as Meta;
+};
+
+export default meta;

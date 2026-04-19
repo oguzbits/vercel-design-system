@@ -1,0 +1,117 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as InputStories from './index.stories';
+
+<Meta title="Data Entry/Input" of={InputStories} />
+
+# Input
+
+Retrieve text input from a user.
+
+## Basic
+
+Basic input field.
+
+<Canvas of={InputStories.Basic} />
+
+## Sizes
+
+Inputs of different sizes.
+
+<Canvas of={InputStories.Sizes} />
+
+## Set width
+
+Specify width or other styles.
+
+<Canvas of={InputStories.Width} />
+
+## Unwritable
+
+Disable interactive inputs.
+
+<Canvas of={InputStories.Unwritable} />
+
+## Inline label
+
+Show a short label in the line.
+
+<Canvas of={InputStories.InlineLabel} />
+
+## Block label
+
+Labels for custom styles.
+
+<Canvas of={InputStories.BlockLabel} />
+
+## Type
+
+Differentiate states by color.
+
+<Canvas of={InputStories.Type} />
+
+## Icon
+
+Specify an icon component.
+
+<Canvas of={InputStories.Icon} />
+
+## Clearable
+
+Add a clear button in the input box.
+
+<Canvas of={InputStories.Clearable} />
+
+## Password
+
+<Canvas of={InputStories.Password} />
+
+## Get Change
+
+Capture changes in input.
+
+<Canvas of={InputStories.GetChange} />
+
+## Imperative API
+
+Update component in an uncontrolled way.
+
+<Canvas of={InputStories.ImperativeAPI} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>value</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>input value</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>current type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>InputTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>clearable</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>show clear icon</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

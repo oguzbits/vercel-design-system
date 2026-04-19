@@ -1,23 +1,43 @@
 import React from 'react';
-import { Pagination, Grid, Spacer } from '@geist-ui/core';
+import { Pagination, Spacer } from '@geist-ui/core';
+import { ChevronRight, ChevronLeft, ChevronRightCircle, ChevronLeftCircle, ChevronRightCircleFill, ChevronLeftCircleFill } from '@geist-ui/icons';
 
-export const Basic = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Pagination count={20} initialPage={1} /></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Pagination count={20} initialPage={3} />
+};
 
-export const Sizes = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Pagination count={10} scale={0.5} /></Grid>
-    <Grid><Pagination count={10} scale={1} /></Grid>
-    <Grid><Pagination count={10} scale={1.5} /></Grid>
-  </Grid.Container>
-);
+export const Limit = {
+  tags: ['!sidebar'],
+  render: () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <Pagination count={10} limit={10} />
+      <Pagination count={5} />
+      <Pagination count={10} initialPage={6} limit={5} />
+      <Pagination count={10} initialPage={6} />
+      <Pagination count={30} initialPage={6} limit={10} />
+    </div>
+  )
+};
 
-export const Limit = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Pagination count={20} limit={5} /></Grid>
-    <Grid><Pagination count={20} limit={10} /></Grid>
-  </Grid.Container>
-);
+export const Icon = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Pagination count={5}>
+       <Pagination.Next><ChevronRight /></Pagination.Next>
+       <Pagination.Previous><ChevronLeft /></Pagination.Previous>
+      </Pagination>
+      <Spacer h={0.5} />
+      <Pagination count={5}>
+       <Pagination.Next><ChevronRightCircle /></Pagination.Next>
+       <Pagination.Previous><ChevronLeftCircle /></Pagination.Previous>
+      </Pagination>
+      <Spacer h={0.5} />
+      <Pagination count={5}>
+       <Pagination.Next><ChevronRightCircleFill /></Pagination.Next>
+       <Pagination.Previous><ChevronLeftCircleFill /></Pagination.Previous>
+      </Pagination>
+    </>
+  )
+};

@@ -1,18 +1,28 @@
 import { Meta } from '@storybook/react';
 import { Card } from '@geist-ui/core';
 
-export { Basic, Hoverable } from './CardBasic';
-export { Types } from './CardTypes';
+import CardDocumentation from './Card.mdx';
 
-export default {
+export { 
+  Basic,
+  Hoverable,
+  Shadow,
+  Types,
+  WithFooter,
+  WithImage,
+  WithDivider
+} from './CardBasic';
+
+const meta: Meta<typeof Card> = {
   title: 'Surfaces/Card',
   component: Card,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a contained surface for related content and actions.',
-      },
+      page: CardDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

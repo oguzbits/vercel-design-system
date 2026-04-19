@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Avatar } from '@geist-ui/core';
 
-export { Basic, Group } from './AvatarBasic';
+import AvatarDocumentation from './Avatar.mdx';
 
-export default {
+export { 
+  Basic,
+  Text,
+  Group
+} from './AvatarBasic';
+
+const meta: Meta<typeof Avatar> = {
   title: 'Data Display/Avatar',
   component: Avatar,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Avatars are used to represent users or entities.',
-      },
+      page: AvatarDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

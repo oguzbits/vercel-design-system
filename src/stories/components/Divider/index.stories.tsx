@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Divider } from '@geist-ui/core';
+import DividerDocumentation from './Divider.mdx';
 
-export { Basic, Types, Alignment } from './DividerBasic';
+export { 
+  Basic,
+  Alignment,
+  Types
+} from './DividerBasic';
 
-export default {
-  title: 'Others/Divider',
+const meta: Meta<typeof Divider> = {
+  title: 'Data Display/Divider',
   component: Divider,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Divide content with a line.',
-      },
+      page: DividerDocumentation,
+    },
+    sidebar: {
+      showChildren: false,
     },
   },
-} as Meta;
+};
+
+export default meta;

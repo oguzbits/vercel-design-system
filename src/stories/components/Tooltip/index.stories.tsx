@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Tooltip } from '@geist-ui/core';
 
-export { Basic, Placement } from './TooltipBasic';
+import TooltipDocumentation from './Tooltip.mdx';
 
-export default {
-  title: 'Feedback/Tooltip',
+export { 
+  Basic,
+  Types,
+  Placement,
+  CustomContent
+} from './TooltipBasic';
+
+const meta: Meta<typeof Tooltip> = {
+  title: 'Data Display/Tooltip',
   component: Tooltip,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a short message on hover.',
-      },
+      page: TooltipDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

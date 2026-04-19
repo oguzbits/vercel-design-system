@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Progress } from '@geist-ui/core';
 
-export { Basic, Colors } from './ProgressBasic';
+import ProgressDocumentation from './Progress.mdx';
 
-export default {
-  title: 'Data Display/Progress',
+export { 
+  Basic,
+  CustomMax,
+  DynamicColors,
+  Type
+} from './ProgressBasic';
+
+const meta: Meta<typeof Progress> = {
+  title: 'Feedback/Progress',
   component: Progress,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a progress bar.',
-      },
+      page: ProgressDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

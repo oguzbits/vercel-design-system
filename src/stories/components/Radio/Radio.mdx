@@ -1,0 +1,81 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as RadioStories from './index.stories';
+
+<Meta title="Data Entry/Radio" of={RadioStories} />
+
+# Radio
+
+Provides single user input from a selection of options.
+
+## Basic
+
+<Canvas of={RadioStories.Basic} />
+
+## Group
+
+A group of radio components.
+
+<Canvas of={RadioStories.Group} />
+
+## Type
+
+Differentiate states by color.
+
+<Canvas of={RadioStories.Type} />
+
+## Description
+
+`Description` can be combined with other components.
+
+<Canvas of={RadioStories.Description} />
+
+## Disabled
+
+Disable all radios.
+
+<Canvas of={RadioStories.Disabled} />
+
+## Row
+
+Horizontal arrangement.
+
+<Canvas of={RadioStories.Row} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>checked</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>selected or not (in single)</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>current type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>RadioTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>disabled</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>disable radio</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

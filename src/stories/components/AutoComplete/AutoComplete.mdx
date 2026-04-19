@@ -1,0 +1,118 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as AutoCompleteStories from './index.stories';
+
+<Meta title="Data Entry/AutoComplete" of={AutoCompleteStories} />
+
+# Auto Complete
+
+AutoComplete control of input field.
+
+## Basic
+
+Basic usage, add autocomplete list for all inputs.
+
+<Canvas of={AutoCompleteStories.Basic} />
+
+## Type
+
+Express state in different colors.
+
+<Canvas of={AutoCompleteStories.Type} />
+
+## Disabled
+
+<Canvas of={AutoCompleteStories.Disabled} />
+
+## Only allow selected
+
+You can only change the value of the input by select.
+
+<Canvas of={AutoCompleteStories.DisableFreeSolo} />
+
+## Search
+
+Update the contents of drop-down list based on input.
+
+<Canvas of={AutoCompleteStories.Search} />
+
+## Waiting in search
+
+Show friendly tips and UI when searching.
+
+<Canvas of={AutoCompleteStories.Searching} />
+
+## Custom searching text
+
+You can replace the default waiting text with any components.
+
+<Canvas of={AutoCompleteStories.CustomSearchingText} />
+
+## Custom no options
+
+You can also customize the prompt with no options.
+
+<Canvas of={AutoCompleteStories.CustomNoOptions} />
+
+## Custom option
+
+You can rewrite each item of the `AutoComplete` to express more.
+
+<Canvas of={AutoCompleteStories.CustomOption} />
+
+## Clearable
+
+Add a clear button in the input box.
+
+<Canvas of={AutoCompleteStories.Clearable} />
+
+## Creatable
+
+Add an entry to be selected for any value.
+
+<Canvas of={AutoCompleteStories.Creatable} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>options</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>options of input</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>AutoCompleteOptions</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>input type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>AutoCompleteTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>clearable</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>show clear icon</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>searching</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>show loading icon for search</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

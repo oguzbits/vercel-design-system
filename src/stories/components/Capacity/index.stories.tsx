@@ -1,17 +1,23 @@
 import { Meta } from '@storybook/react';
 import { Capacity } from '@geist-ui/core';
 
-export { Basic, Colors } from './CapacityBasic';
+import CapacityDocumentation from './Capacity.mdx';
 
-export default {
+export { 
+  Basic,
+  FixedColor
+} from './CapacityBasic';
+
+const meta: Meta<typeof Capacity> = {
   title: 'Data Display/Capacity',
   component: Capacity,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display the capacity status of a resource.',
-      },
+      page: CapacityDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

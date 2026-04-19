@@ -1,21 +1,41 @@
 import React from 'react';
-import { Tag, Grid, Spacer } from '@geist-ui/core';
+import { Tag, Spacer } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2}>
-    <Grid><Tag>Default</Tag></Grid>
-    <Grid><Tag type="success">Success</Tag></Grid>
-    <Grid><Tag type="warning">Warning</Tag></Grid>
-    <Grid><Tag type="error">Error</Tag></Grid>
-    <Grid><Tag type="secondary">Secondary</Tag></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Tag>Status: Unstable</Tag>
+};
 
-export const Invert = () => (
-  <Grid.Container gap={2}>
-    <Grid><Tag invert>Default</Tag></Grid>
-    <Grid><Tag type="success" invert>Success</Tag></Grid>
-    <Grid><Tag type="warning" invert>Warning</Tag></Grid>
-    <Grid><Tag type="error" invert>Error</Tag></Grid>
-  </Grid.Container>
-);
+export const Types = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Tag type="success">Success</Tag>
+      <Spacer h={0.5} />
+      <Tag type="warning">Warning</Tag>
+      <Spacer h={0.5} />
+      <Tag type="error">Error</Tag>
+      <Spacer h={0.5} />
+      <Tag type="secondary">Secondary</Tag>
+      <Spacer h={0.5} />
+      <Tag type="lite">Lite</Tag>
+    </>
+  )
+};
+
+export const Invert = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Tag type="default" invert>Default</Tag>
+      <Spacer h={0.5} />
+      <Tag type="success" invert>Success</Tag>
+      <Spacer h={0.5} />
+      <Tag type="warning" invert>Warning</Tag>
+      <Spacer h={0.5} />
+      <Tag type="error" invert>Error</Tag>
+      <Spacer h={0.5} />
+      <Tag type="secondary" invert>Secondary</Tag>
+    </>
+  )
+};

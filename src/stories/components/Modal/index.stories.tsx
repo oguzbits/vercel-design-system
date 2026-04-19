@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Modal } from '@geist-ui/core';
 
-export { Basic } from './ModalBasic';
+import ModalDocumentation from './Modal.mdx';
 
-export default {
+export { 
+  Basic,
+  WithoutActions,
+  CustomContent
+} from './ModalBasic';
+
+const meta: Meta<typeof Modal> = {
   title: 'Feedback/Modal',
   component: Modal,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a dialog box, typically for a critical action or information.',
-      },
+      page: ModalDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

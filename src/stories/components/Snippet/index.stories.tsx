@@ -1,17 +1,29 @@
 import { Meta } from '@storybook/react';
 import { Snippet } from '@geist-ui/core';
 
-export { Basic, MultiLine, NoCopy } from './SnippetBasic';
+import SnippetDocumentation from './Snippet.mdx';
 
-export default {
-  title: 'Data Display/Snippet',
+export { 
+  Basic,
+  Width,
+  Types,
+  MultiLine,
+  WithoutCopy,
+  CustomSymbol,
+  CustomToast,
+  Filled
+} from './SnippetBasic';
+
+const meta: Meta<typeof Snippet> = {
+  title: 'Others/Snippet',
   component: Snippet,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a code snippet to be copied.',
-      },
+      page: SnippetDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

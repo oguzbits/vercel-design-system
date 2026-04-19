@@ -1,0 +1,65 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as AvatarStories from './index.stories';
+
+<Meta title="Data Display/Avatar" of={AvatarStories} />
+
+# Avatar
+
+Avatars represent a user or a team. Stacked avatars represent a group of people.
+
+## Basic
+
+The `Avatar` contains circle and square.
+
+<Canvas of={AvatarStories.Basic} />
+
+## Text
+
+Display text in the avatar box.
+
+<Canvas of={AvatarStories.Text} />
+
+## Group
+
+Multiple avatars can overlap and stack together.
+
+<Canvas of={AvatarStories.Group} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>src</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>image src</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>text</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>display text when image is missing</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>isSquare</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>avatar shape</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

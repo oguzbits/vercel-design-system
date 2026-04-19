@@ -1,32 +1,32 @@
 import React from 'react';
-import { Spacer, Card, Container } from '@geist-ui/core';
+import { Spacer, Grid } from '@geist-ui/core';
 
 export const Vertical = {
   tags: ['!sidebar'],
   render: () => (
-    <Container>
-      <Card shadow>
-        <span style={{color: '#999'}}>Object Above</span>
-      </Card>
+    <Grid.Container>
+      <Grid xs={24} style={{ background: '#444', borderRadius: '15px' }}>
+        <Spacer h={2} />
+      </Grid>
       <Spacer h={2} />
-      <Card shadow>
-        <span style={{color: '#999'}}>Object Below</span>
-      </Card>
-    </Container>
+      <Grid xs={24} style={{ background: '#666', borderRadius: '15px' }}>
+        <Spacer h={3} />
+      </Grid>
+      <Spacer h={3} />
+      <Grid xs={24} style={{ background: '#999', borderRadius: '15px' }}>
+        <Spacer h={4} />
+      </Grid>
+    </Grid.Container>
   )
 };
 
 export const Horizontal = {
   tags: ['!sidebar'],
   render: () => (
-    <Container style={{ display: 'flex' }}>
-      <Card shadow>
-        <span style={{color: '#999'}}>Left Component</span>
-      </Card>
+    <Grid.Container>
+      <Grid xs={4} style={{ background: '#444', borderRadius: '15px' }} />
       <Spacer w={5} />
-      <Card shadow>
-        <span style={{color: '#999'}}>Right Component</span>
-      </Card>
-    </Container>
+      <Grid xs={4} style={{ background: '#444', borderRadius: '15px' }} />
+    </Grid.Container>
   )
 };

@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Collapse } from '@geist-ui/core';
 
-export { Basic, Group } from './CollapseBasic';
+import CollapseDocumentation from './Collapse.mdx';
 
-export default {
+export { 
+  Basic,
+  Expanded,
+  Subtitle,
+  Shadow
+} from './CollapseBasic';
+
+const meta: Meta<typeof Collapse> = {
   title: 'Surfaces/Collapse',
   component: Collapse,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a collapse with title and content.',
-      },
+      page: CollapseDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

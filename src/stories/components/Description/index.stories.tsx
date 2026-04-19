@@ -1,17 +1,23 @@
 import { Meta } from '@storybook/react';
 import { Description } from '@geist-ui/core';
 
-export { Basic, CustomContent } from './DescriptionBasic';
+import DescriptionDocumentation from './Description.mdx';
 
-export default {
+export { 
+  Basic,
+  WithComponent
+} from './DescriptionBasic';
+
+const meta: Meta<typeof Description> = {
   title: 'Data Display/Description',
   component: Description,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Description is used to display a title and content pair.',
-      },
+      page: DescriptionDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

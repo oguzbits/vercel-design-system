@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Loading } from '@geist-ui/core';
 
-export { Basic, Types, TextColor } from './LoadingBasic';
+import LoadingDocumentation from './Loading.mdx';
 
-export default {
+export { 
+  Basic,
+  Text,
+  Type,
+  Color
+} from './LoadingBasic';
+
+const meta: Meta<typeof Loading> = {
   title: 'Feedback/Loading',
   component: Loading,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Indicate an action is running.',
-      },
+      page: LoadingDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

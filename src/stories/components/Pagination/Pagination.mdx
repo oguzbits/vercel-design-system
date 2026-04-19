@@ -1,0 +1,63 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as PaginationStories from './index.stories';
+
+<Meta title="Navigation/Pagination" of={PaginationStories} />
+
+# Pagination
+
+Navigation and identification between multiple pages.
+
+## Basic
+
+<Canvas of={PaginationStories.Basic} />
+
+## Limit
+
+The maximum number of pages that can be displayed.
+
+<Canvas of={PaginationStories.Limit} />
+
+## Icon
+
+Customize buttons as icons.
+
+<Canvas of={PaginationStories.Icon} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>initialPage</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>the page selected by default</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>1</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>count</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>the total number of pages</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>1</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>limit</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>limit of display page</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>7</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

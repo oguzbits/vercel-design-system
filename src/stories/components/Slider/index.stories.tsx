@@ -1,17 +1,27 @@
 import { Meta } from '@storybook/react';
 import { Slider } from '@geist-ui/core';
 
-export { Basic, Step, Disabled } from './SliderBasic';
+import SliderDocumentation from './Slider.mdx';
 
-export default {
+export { 
+  Basic,
+  Type,
+  Disabled,
+  Step,
+  Range,
+  Event
+} from './SliderBasic';
+
+const meta: Meta<typeof Slider> = {
   title: 'Data Entry/Slider',
   component: Slider,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Slider for selecting values from a range.',
-      },
+      page: SliderDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

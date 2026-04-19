@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { User } from '@geist-ui/core';
 
-export { Basic, Description } from './UserBasic';
+import UserDocumentation from './User.mdx';
 
-export default {
+export { 
+  Basic,
+  Description,
+  Social
+} from './UserBasic';
+
+const meta: Meta<typeof User> = {
   title: 'Data Display/User',
   component: User,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a user with name, description and avatar.',
-      },
+      page: UserDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

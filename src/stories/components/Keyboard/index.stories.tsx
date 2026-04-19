@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Keyboard } from '@geist-ui/core';
 
-export { Basic, Combination } from './KeyboardBasic';
+import KeyboardDocumentation from './Keyboard.mdx';
 
-export default {
+export { 
+  Basic,
+  Modifiers,
+  Combination
+} from './KeyboardBasic';
+
+const meta: Meta<typeof Keyboard> = {
   title: 'Data Display/Keyboard',
   component: Keyboard,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display keyboard shortcuts.',
-      },
+      page: KeyboardDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

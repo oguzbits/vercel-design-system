@@ -1,18 +1,49 @@
 import React from 'react';
-import { Link, Grid, Text } from '@geist-ui/core';
+import { Link, Text } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Link href="#">Default Link</Link></Grid>
-    <Grid><Link href="#" color>Secondary Color Link</Link></Grid>
-    <Grid><Link href="#" underline>Underline Link</Link></Grid>
-    <Grid><Link href="#" block>Block Link (hover effect)</Link></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Link href="#">Hyperlink</Link>
+};
 
-export const External = () => (
-    <Grid.Container gap={2} direction="column">
-        <Grid><Link href="https://github.com/geist-ui/core" icon target="_blank">View on GitHub</Link></Grid>
-        <Grid><Link href="https://geist-ui.dev" icon color target="_blank">Official Docs</Link></Grid>
-    </Grid.Container>
-);
+export const Highlight = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Link href="#" color>
+      Hyperlink With Color
+    </Link>
+  )
+};
+
+export const Underline = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Link href="#" underline>
+      Underline Hyperlink
+    </Link>
+  )
+};
+
+export const Icon = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Link href="#" icon>
+        Hyperlink With Icon
+      </Link>
+      <br />
+      <Link href="#" icon color>
+        Hyperlink With Icon And Color
+      </Link>
+    </>
+  )
+};
+
+export const Block = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Link href="#" block>
+      Block Hyperlink
+    </Link>
+  )
+};

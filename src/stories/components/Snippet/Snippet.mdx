@@ -1,0 +1,78 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as SnippetStories from './index.stories';
+
+<Meta title="Others/Snippet" of={SnippetStories} />
+
+# Snippet
+
+Display a snippet of copyable code for the command line.
+
+## Basic
+
+<Canvas of={SnippetStories.Basic} />
+
+## Width
+
+Specify width manually.
+
+<Canvas of={SnippetStories.Width} />
+
+## Types
+
+Show different states with colors.
+
+<Canvas of={SnippetStories.Types} />
+
+## Multi Line
+
+<Canvas of={SnippetStories.MultiLine} />
+
+## Without Copy
+
+Hide icon for copy. (disable copy)
+
+<Canvas of={SnippetStories.WithoutCopy} />
+
+## Custom Symbol
+
+<Canvas of={SnippetStories.CustomSymbol} />
+
+## Custom Toast
+
+<Canvas of={SnippetStories.CustomToast} />
+
+## Filled
+
+<Canvas of={SnippetStories.Filled} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>text</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>code snippet</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string / string[]</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>snippet types</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>SnippetTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error, dark, lite</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

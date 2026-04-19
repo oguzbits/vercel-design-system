@@ -1,41 +1,85 @@
 import React from 'react';
-import { Fieldset, Text, Button, Spacer } from '@geist-ui/core';
+import { Fieldset, Button, Text, Divider } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Fieldset width="500px">
-    <Fieldset.Title>Project Name</Fieldset.Title>
-    <Fieldset.Subtitle>The name of your project as it appears in Vercel.</Fieldset.Subtitle>
-    <Text p>This will change the name of your project in the dashboard.</Text>
-    <Fieldset.Footer>
-      <Fieldset.Footer.Status>Actions are irreversible.</Fieldset.Footer.Status>
-      <Fieldset.Footer.Actions>
-        <Button auto scale={0.5} type="secondary">Save</Button>
-      </Fieldset.Footer.Actions>
-    </Fieldset.Footer>
-  </Fieldset>
-);
-
-export const Group = () => (
-  <div>
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => (
     <Fieldset>
-      <Fieldset.Title>Email Address</Fieldset.Title>
-      <Fieldset.Subtitle>The email address you use to sign in.</Fieldset.Subtitle>
-      <Text p>user@example.com</Text>
+      <Fieldset.Title>HTTP is simple</Fieldset.Title>
+      <Fieldset.Subtitle>HTTP is generally designed to be simple and human readable, even with the added complexity introduced in HTTP/2 by encapsulating HTTP messages into frames. HTTP messages can be read and understood by humans, providing easier testing for developers, and reduced complexity for newcomers.</Fieldset.Subtitle>
       <Fieldset.Footer>
-        <Text small>Last changed 2 days ago.</Text>
+        HTTP Knowledge Base
+        <Button auto scale={1/3} font="12px">OK</Button>
       </Fieldset.Footer>
     </Fieldset>
-    <Spacer h={2} />
-    <Fieldset type="error">
-      <Fieldset.Title>Danger Zone</Fieldset.Title>
-      <Fieldset.Subtitle>Permanently delete this project and all of its data.</Fieldset.Subtitle>
-      <Text p>This action cannot be undone.</Text>
+  )
+};
+
+export const CustomText = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Fieldset>
+      <Fieldset.Title>HTTP is extensible</Fieldset.Title>
+      <Fieldset.Subtitle>Introduced in HTTP/1.0, HTTP headers make this protocol easy to extend and experiment with. </Fieldset.Subtitle>
       <Fieldset.Footer>
-        <Fieldset.Footer.Status>Proceed with caution.</Fieldset.Footer.Status>
-        <Fieldset.Footer.Actions>
-          <Button auto scale={0.5} type="error">Delete</Button>
-        </Fieldset.Footer.Actions>
+        <Text type="error" margin={0}>An error has occurred.</Text>
+        <Button auto scale={1/3} type="error" font="12px">Revert</Button>
       </Fieldset.Footer>
     </Fieldset>
-  </div>
-);
+  )
+};
+
+export const Tabs = {
+  tags: ['!sidebar'],
+  render: () => {
+    const handler = (v: string) => console.log(v);
+    return (
+      <Fieldset.Group value="extensible" onChange={handler}>
+        <Fieldset label="simple">
+          <Fieldset.Title>HTTP is simple</Fieldset.Title>
+          <Fieldset.Subtitle>HTTP is generally designed to be simple and human readable, even with the added complexity introduced in HTTP/2 by encapsulating HTTP messages into frames.</Fieldset.Subtitle>
+          <Fieldset.Footer>
+            HTTP Knowledge Base
+            <Button auto scale={1/3} font="12px">Actions</Button>
+          </Fieldset.Footer>
+        </Fieldset>
+        <Fieldset label="extensible">
+          <Fieldset.Title>HTTP is extensible</Fieldset.Title>
+          <Fieldset.Subtitle>Introduced in HTTP/1.0, HTTP headers make this protocol easy to extend and experiment with.</Fieldset.Subtitle>
+          <Fieldset.Footer>
+            HTTP Knowledge Base
+            <Button auto scale={1/3} font="12px">Actions</Button>
+          </Fieldset.Footer>
+        </Fieldset>
+        <Fieldset label="stateless">
+          <Fieldset.Title>HTTP is stateless</Fieldset.Title>
+          <Fieldset.Subtitle>HTTP is stateless: there is no link between two requests being successively carried out on the same connection. </Fieldset.Subtitle>
+          <Fieldset.Footer>
+            HTTP Knowledge Base
+            <Button auto scale={1/3} font="12px">Actions</Button>
+          </Fieldset.Footer>
+        </Fieldset>
+      </Fieldset.Group>
+    );
+  }
+};
+
+export const WithDivider = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Fieldset>
+      <Fieldset.Content style={{ paddingTop: '10pt', paddingBottom: '10pt' }}>
+        <h4 style={{ margin: 0 }}>Prerequisites</h4>
+      </Fieldset.Content>
+      <Divider my={0} />
+      <Fieldset.Content>
+        <Fieldset.Title>Basic knowledge of HTML and CSS would also be useful.</Fieldset.Title>
+        <p>To get the most out of this module, you should have worked your way through the previous JavaScript modules in the series.
+        Those modules typically involve simple API usage, as it is often difficult to write client-side JavaScript examples without them. </p>
+      </Fieldset.Content>
+      <Fieldset.Footer>
+        <small>Client-side web APIs</small>
+      </Fieldset.Footer>
+    </Fieldset>
+  )
+};

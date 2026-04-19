@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Tag } from '@geist-ui/core';
 
-export { Basic, Invert } from './TagBasic';
+import TagDocumentation from './Tag.mdx';
 
-export default {
+export { 
+  Basic,
+  Types,
+  Invert
+} from './TagBasic';
+
+const meta: Meta<typeof Tag> = {
   title: 'Data Display/Tag',
   component: Tag,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a small tag for status or categories.',
-      },
+      page: TagDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

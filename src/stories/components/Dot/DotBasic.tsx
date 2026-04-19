@@ -1,20 +1,26 @@
 import React from 'react';
-import { Dot, Grid, Spacer } from '@geist-ui/core';
+import { Dot, Spacer } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2}>
-    <Grid><Dot>Default</Dot></Grid>
-    <Grid><Dot type="success">Success</Dot></Grid>
-    <Grid><Dot type="warning">Warning</Dot></Grid>
-    <Grid><Dot type="error">Error</Dot></Grid>
-    <Grid><Dot type="secondary">Secondary</Dot></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Dot style={{ marginRight: '20px' }} />
+      <Dot style={{ marginRight: '20px' }} type="success" />
+      <Dot style={{ marginRight: '20px' }} type="warning" />
+      <Dot type="error" />
+    </>
+  )
+};
 
-export const Labels = () => (
-  <Grid.Container gap={2}>
-    <Grid><Dot type="success">Ready</Dot></Grid>
-    <Grid><Dot type="warning">Building</Dot></Grid>
-    <Grid><Dot type="error">Failed</Dot></Grid>
-  </Grid.Container>
-);
+export const Text = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Dot style={{ marginRight: '20px' }}>Canceled</Dot>
+      <Dot style={{ marginRight: '20px' }} type="success">Ready</Dot>
+      <Dot style={{ marginRight: '20px' }} type="warning">Warning</Dot>
+      <Dot type="error">Error</Dot>
+    </>
+  )
+};

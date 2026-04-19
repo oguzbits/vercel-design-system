@@ -1,0 +1,69 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as ProgressStories from './index.stories';
+
+<Meta title="Feedback/Progress" of={ProgressStories} />
+
+# Progress
+
+Display progress relative to a limit or related to a task.
+
+## Basic
+
+<Canvas of={ProgressStories.Basic} />
+
+## Custom Max
+
+Modify the maximum value of progress.
+
+<Canvas of={ProgressStories.CustomMax} />
+
+## Dynamic Colors
+
+You can specify the color of the progress in any range.
+
+<Canvas of={ProgressStories.DynamicColors} />
+
+## Type
+
+We prepared some different styles in advance.
+
+<Canvas of={ProgressStories.Type} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>value</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>current value</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>0</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>max</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>max value</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>100</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>predefined state types</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>ProgressTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,25 +1,25 @@
 import React from 'react';
-import { User, Grid } from '@geist-ui/core';
+import { User } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2}>
-    <Grid>
-      <User src="https://geist-ui.dev/images/avatar.png" name="Geist UI" />
-    </Grid>
-    <Grid>
-      <User src="https://geist-ui.dev/images/avatar.png" name="Geist UI">
-        <User.Link href="https://github.com/geist-ui/core">@geist-ui</User.Link>
-      </User>
-    </Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <User src="/images/avatar.png" name="Witt" />
+};
 
-export const Description = () => (
-  <Grid.Container gap={2}>
-    <Grid>
-      <User src="https://geist-ui.dev/images/avatar.png" name="Jane Doe">
-        Project Manager
-      </User>
-    </Grid>
-  </Grid.Container>
-);
+export const Description = {
+  tags: ['!sidebar'],
+  render: () => (
+    <User src="https://unix.bio/assets/avatar.png" name="Witt">
+      JavaScript engineer
+    </User>
+  )
+};
+
+export const Social = {
+  tags: ['!sidebar'],
+  render: () => (
+    <User src="https://unix.bio/assets/avatar.png" name="Witt">
+      <User.Link href="https://twitter.com/echo_witt">@echo_witt</User.Link>
+    </User>
+  )
+};

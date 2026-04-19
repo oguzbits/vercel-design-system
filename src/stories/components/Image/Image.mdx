@@ -1,0 +1,72 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as ImageStories from './index.stories';
+
+<Meta title="Data Display/Image" of={ImageStories} />
+
+# Image
+
+Display image content.
+
+## Basic
+
+<Canvas of={ImageStories.Basic} />
+
+## Skeleton
+
+`Image` will show skeleton animation after `width` and `height` props are set.
+
+<Canvas of={ImageStories.Skeleton} />
+
+## Browser
+
+Add a browser style wrapper to the image.
+
+<Canvas of={ImageStories.Browser} />
+
+## Browser Invert
+
+<Canvas of={ImageStories.BrowserInvert} />
+
+## Compose
+
+Show `Image` in `Display` component.
+
+<Canvas of={ImageStories.Compose} />
+
+## SVG
+
+Render svg strings directly.
+
+<Canvas of={ImageStories.SVG} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>src</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>image src</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>disableSkeleton</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>disable skeleton animation when loading</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

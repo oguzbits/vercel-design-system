@@ -1,17 +1,27 @@
 import { Meta } from '@storybook/react';
 import { Image } from '@geist-ui/core';
 
-export { Basic, Browser, Skeleton } from './ImageBasic';
+import ImageDocumentation from './Image.mdx';
 
-export default {
+export { 
+  Basic,
+  Skeleton,
+  Browser,
+  BrowserInvert,
+  Compose,
+  SVG
+} from './ImageBasic';
+
+const meta: Meta<typeof Image> = {
   title: 'Data Display/Image',
   component: Image,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display images with a loading skeleton and optional browser frame.',
-      },
+      page: ImageDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

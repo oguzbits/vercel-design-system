@@ -1,0 +1,37 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as SpinnerStories from './index.stories';
+
+<Meta title="Feedback/Spinner" of={SpinnerStories} />
+
+# Spinner
+
+Indicate an action running in the background.
+
+## Basic
+
+<Canvas of={SpinnerStories.Basic} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>...</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>native props</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>HTMLAttributes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>'id', 'className', ...</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

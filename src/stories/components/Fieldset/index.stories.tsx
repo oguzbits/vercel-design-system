@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Fieldset } from '@geist-ui/core';
 
-export { Basic, Group } from './FieldsetBasic';
+import FieldsetDocumentation from './Fieldset.mdx';
 
-export default {
+export { 
+  Basic,
+  CustomText,
+  Tabs,
+  WithDivider
+} from './FieldsetBasic';
+
+const meta: Meta<typeof Fieldset> = {
   title: 'Surfaces/Fieldset',
   component: Fieldset,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a detailed configuration section with title and footer.',
-      },
+      page: FieldsetDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

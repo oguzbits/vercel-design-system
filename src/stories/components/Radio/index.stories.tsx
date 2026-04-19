@@ -1,17 +1,27 @@
 import { Meta } from '@storybook/react';
 import { Radio } from '@geist-ui/core';
 
-export { Basic, Descriptions, Row } from './RadioBasic';
+import RadioDocumentation from './Radio.mdx';
 
-export default {
+export { 
+  Basic,
+  Group,
+  Type,
+  Description,
+  Disabled,
+  Row
+} from './RadioBasic';
+
+const meta: Meta<typeof Radio> = {
   title: 'Data Entry/Radio',
   component: Radio,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Allow the user to select one option from a set.',
-      },
+      page: RadioDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

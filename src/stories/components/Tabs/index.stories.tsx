@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Tabs } from '@geist-ui/core';
 
-export { Basic, Highlight } from './TabsBasic';
+import TabsDocumentation from './Tabs.mdx';
 
-export default {
+export { 
+  Basic,
+  Disabled,
+  Icon,
+  HideDivider
+} from './TabsBasic';
+
+const meta: Meta<typeof Tabs> = {
   title: 'Navigation/Tabs',
-  component: Tabs,
+  component: Tabs as any,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display tabbed content.',
-      },
+      page: TabsDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

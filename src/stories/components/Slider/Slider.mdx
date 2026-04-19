@@ -1,0 +1,83 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as SliderStories from './index.stories';
+
+<Meta title="Data Entry/Slider" of={SliderStories} />
+
+# Slider
+
+Display the current value and an inputable range.
+
+## Basic
+
+Accept clicks or drag actions.
+
+<Canvas of={SliderStories.Basic} />
+
+## Type
+
+Differentiate states by color.
+
+<Canvas of={SliderStories.Type} />
+
+## Disabled
+
+Do not respond to drag and click.
+
+<Canvas of={SliderStories.Disabled} />
+
+## Step
+
+Different granularity.
+
+<Canvas of={SliderStories.Step} />
+
+## Range
+
+Specifies the maximum or minimum value of the Slider.
+
+<Canvas of={SliderStories.Range} />
+
+## Event
+
+Get event when slide.
+
+<Canvas of={SliderStories.Event} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>initialValue</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>initial value</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>0</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>current type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>SliderTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>step</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>the granularity the slider can step through values</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>number</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>1</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

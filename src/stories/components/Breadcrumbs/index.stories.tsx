@@ -1,17 +1,23 @@
 import { Meta } from '@storybook/react';
 import { Breadcrumbs } from '@geist-ui/core';
 
-export { Basic, Separator } from './BreadcrumbsBasic';
+import BreadcrumbsDocumentation from './Breadcrumbs.mdx';
 
-export default {
+export { 
+  Basic,
+  Separator
+} from './BreadcrumbsBasic';
+
+const meta: Meta<typeof Breadcrumbs> = {
   title: 'Navigation/Breadcrumbs',
-  component: Breadcrumbs,
+  component: Breadcrumbs as any,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Indicate the path for current terminal page.',
-      },
+      page: BreadcrumbsDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

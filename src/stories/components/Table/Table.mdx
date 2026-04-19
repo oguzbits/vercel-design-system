@@ -1,0 +1,74 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as TableStories from './index.stories';
+
+<Meta title="Data Display/Table" of={TableStories} />
+
+# Table
+
+Display tabular data in format.
+
+## Basic
+
+Display formatted data in rows and columns.
+
+<Canvas of={TableStories.Basic} />
+
+## Compose
+
+Show other components in the table.
+
+<Canvas of={TableStories.Compose} />
+
+## Width
+
+Specifies the `width` of all or part of the columns.
+
+<Canvas of={TableStories.Width} />
+
+## Actions
+
+Custom elements can be displayed in the table, and any changes will be immediately rendered.
+
+<Canvas of={TableStories.Actions} />
+
+## Update Row
+
+You can use custom elements to update a specific row.
+
+<Canvas of={TableStories.UpdateRow} />
+
+## Custom Head
+
+<Canvas of={TableStories.CustomHead} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>data</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>data source</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>Array&lt;T&gt;</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>hover</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>table's hover effect</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>true</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

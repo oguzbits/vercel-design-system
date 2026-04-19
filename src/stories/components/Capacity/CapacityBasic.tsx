@@ -1,17 +1,21 @@
 import React from 'react';
-import { Capacity, Grid, Spacer } from '@geist-ui/core';
+import { Capacity, Spacer, useTheme } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Capacity value={45} /></Grid>
-    <Grid><Capacity value={15} type="success" /></Grid>
-    <Grid><Capacity value={85} type="error" /></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <Capacity value={15} />
+      <Capacity value={45} />
+      <Capacity value={95} />
+    </div>
+  )
+};
 
-export const Colors = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Capacity value={45} color="cyan" /></Grid>
-    <Grid><Capacity value={85} color="#de5000" /></Grid>
-  </Grid.Container>
-);
+export const FixedColor = {
+  tags: ['!sidebar'],
+  render: () => {
+    const theme = useTheme();
+    return <Capacity value={75} color={theme.palette.success} />;
+  }
+};

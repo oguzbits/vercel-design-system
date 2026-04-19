@@ -1,24 +1,29 @@
 import React from 'react';
-import { Loading, Grid, Spacer, Text } from '@geist-ui/core';
+import { Loading, Row } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2}>
-    <Grid><Loading /></Grid>
-    <Grid><Loading>Loading</Loading></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Loading />
+};
 
-export const Types = () => (
-  <Grid.Container gap={2}>
-    <Grid><Loading type="success" /></Grid>
-    <Grid><Loading type="warning" /></Grid>
-    <Grid><Loading type="error" /></Grid>
-    <Grid><Loading type="secondary" /></Grid>
-  </Grid.Container>
-);
+export const Text = {
+  tags: ['!sidebar'],
+  render: () => <Loading>Loading</Loading>
+};
 
-export const TextColor = () => (
-    <Grid.Container gap={2}>
-      <Grid><Loading color="red">Custom Color</Loading></Grid>
-    </Grid.Container>
-);
+export const Type = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Row>
+       <Loading type="success" />
+       <Loading type="warning" />
+       <Loading type="error" />
+       <Loading type="secondary" />
+    </Row>
+  )
+};
+
+export const Color = {
+  tags: ['!sidebar'],
+  render: () => <Loading color="red" />
+};

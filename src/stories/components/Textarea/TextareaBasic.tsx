@@ -1,25 +1,52 @@
 import React from 'react';
-import { Textarea, Grid, Spacer } from '@geist-ui/core';
+import { Textarea, Spacer, useInput, Button } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Textarea placeholder="Please enter some text" /></Grid>
-    <Grid><Textarea width="100%" placeholder="Full width textarea" /></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Textarea placeholder="Please enter some text." />
+};
 
-export const Types = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Textarea type="success" placeholder="Success style" /></Grid>
-    <Grid><Textarea type="warning" placeholder="Warning style" /></Grid>
-    <Grid><Textarea type="error" placeholder="Error style" /></Grid>
-  </Grid.Container>
-);
+export const Width = {
+  tags: ['!sidebar'],
+  render: () => <Textarea width="100%" placeholder="Please enter some text." />
+};
 
-export const Resize = () => (
-    <Grid.Container gap={2} direction="column">
-      <Grid><Textarea placeholder="Resize: vertical" resize="vertical" /></Grid>
-      <Grid><Textarea placeholder="Resize: horizontal" resize="horizontal" /></Grid>
-      <Grid><Textarea placeholder="Resize: none" resize="none" /></Grid>
-    </Grid.Container>
-);
+export const Types = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Textarea type="success" placeholder="Success" />
+      <Spacer h={0.5} />
+      <Textarea type="secondary" placeholder="Secondary" />
+      <Spacer h={0.5} />
+      <Textarea type="warning" placeholder="Warning" />
+      <Spacer h={0.5} />
+      <Textarea type="error" placeholder="Error" />
+    </>
+  )
+};
+
+export const Status = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Textarea disabled placeholder="Disabled" />
+      <Spacer h={0.5} />
+      <Textarea readOnly initialValue="Read Only" />
+    </>
+  )
+};
+
+export const Command = {
+  tags: ['!sidebar'],
+  render: () => {
+    const { state, setState, bindings } = useInput('The world is standardizing on Geist.');
+    return (
+      <>
+        <Textarea width="100%" {...bindings} />
+        <Spacer h={0.5} />
+        <Button auto type="secondary" scale={0.5} onClick={() => setState('The world is standardizing on Geist.')}>Reset</Button>
+      </>
+    );
+  }
+};

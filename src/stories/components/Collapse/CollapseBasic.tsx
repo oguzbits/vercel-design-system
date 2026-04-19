@@ -1,31 +1,67 @@
 import React from 'react';
-import { Collapse, Text, Grid } from '@geist-ui/core';
+import { Collapse, Text } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2}>
-    <Grid xs={24}>
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Collapse.Group>
       <Collapse title="Question A">
-        <Text>Content for question A.</Text>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
       </Collapse>
-    </Grid>
-    <Grid xs={24}>
-      <Collapse shadow title="Shadow Collapse">
-        <Text>This collapse has a shadow for better visibility.</Text>
+      <Collapse title="Question B">
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
       </Collapse>
-    </Grid>
-  </Grid.Container>
-);
+    </Collapse.Group>
+  )
+};
 
-export const Group = () => (
-  <Collapse.Group>
-    <Collapse title="Question A">
-      <Text>Content for question A.</Text>
+export const Expanded = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Collapse.Group>
+      <Collapse title="Question A" initialVisible>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+      </Collapse>
+      <Collapse title="Question B">
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+      </Collapse>
+    </Collapse.Group>
+  )
+};
+
+export const Subtitle = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Collapse.Group>
+      <Collapse title="Question A" subtitle="More description about Question A">
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+      </Collapse>
+      <Collapse title="Question B" subtitle={<>More description about <Text b>Question B</Text></>}>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+      </Collapse>
+    </Collapse.Group>
+  )
+};
+
+export const Shadow = {
+  tags: ['!sidebar'],
+  render: () => (
+    <Collapse shadow title="Question A" subtitle="More description about Question A">
+      <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
     </Collapse>
-    <Collapse title="Question B">
-      <Text>Content for question B.</Text>
-    </Collapse>
-    <Collapse title="Question C">
-      <Text>Content for question C.</Text>
-    </Collapse>
-  </Collapse.Group>
-);
+  )
+};

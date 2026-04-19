@@ -1,0 +1,115 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as SelectStories from './index.stories';
+
+<Meta title="Data Entry/Select" of={SelectStories} />
+
+# Select
+
+Display a dropdown list of items.
+
+## Basic
+
+<Canvas of={SelectStories.Basic} />
+
+## Type
+
+Differentiate states by color.
+
+<Canvas of={SelectStories.Type} />
+
+## Disabled
+
+Disable all options.
+
+<Canvas of={SelectStories.Disabled} />
+
+## Disabled Option
+
+Disable specified options.
+
+<Canvas of={SelectStories.DisabledOption} />
+
+## Without Icon
+
+Hide icon on right.
+
+<Canvas of={SelectStories.Pure} />
+
+## Labels
+
+Show data as a group.
+
+<Canvas of={SelectStories.Labels} />
+
+## Divider
+
+<Canvas of={SelectStories.Divider} />
+
+## Multiple
+
+`Select` supports multiple values to be selected.
+
+<Canvas of={SelectStories.Multiple} />
+
+## Multiple without clear
+
+`Select` supports multiple values to be selected without the clear icon.
+
+<Canvas of={SelectStories.MultipleWithoutClear} />
+
+## Compose
+
+Use with other components.
+
+<Canvas of={SelectStories.Compose} />
+
+## Over width
+
+`Option` to show more text with adaptive width.
+
+<Canvas of={SelectStories.OverWidthIndices} />
+
+## Set parent element
+
+You can specify the container for drop-down box rendering.
+
+<Canvas of={SelectStories.SetParentElement} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '10px 0' }}>Attribute</th>
+        <th style={{ padding: '10px 0' }}>Description</th>
+        <th style={{ padding: '10px 0' }}>Type</th>
+        <th style={{ padding: '10px 0' }}>Accepted values</th>
+        <th style={{ padding: '10px 0' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>value</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>selected value</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>string, string[]</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>type</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>current type</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>SelectTypes</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default, secondary, success, warning, error</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>default</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><strong>multiple</strong></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>support multiple selection</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>boolean</code></td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}>-</td>
+        <td style={{ padding: '10px 0', borderBottom: '1px solid #eaeaea' }}><code>false</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

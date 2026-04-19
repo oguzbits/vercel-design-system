@@ -1,17 +1,25 @@
 import { Meta } from '@storybook/react';
 import { Note } from '@geist-ui/core';
 
-export { Basic, Types, Filled } from './NoteBasic';
+import NoteDocumentation from './Note.mdx';
 
-export default {
-  title: 'Data Display/Note',
+export { 
+  Basic,
+  Type,
+  Label,
+  Filled
+} from './NoteBasic';
+
+const meta: Meta<typeof Note> = {
+  title: 'Feedback/Note',
   component: Note,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a short message to the user.',
-      },
+      page: NoteDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

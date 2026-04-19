@@ -1,17 +1,26 @@
 import { Meta } from '@storybook/react';
 import { Checkbox } from '@geist-ui/core';
 
-export { Basic, Group, Types } from './CheckboxBasic';
+import CheckboxDocumentation from './Checkbox.mdx';
 
-export default {
+export { 
+  Basic,
+  Sizes,
+  Type,
+  Disabled,
+  Group
+} from './CheckboxBasic';
+
+const meta: Meta<typeof Checkbox> = {
   title: 'Data Entry/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Capture boolean input or select multiple options from a group.',
-      },
+      page: CheckboxDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

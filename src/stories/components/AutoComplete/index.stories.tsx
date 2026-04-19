@@ -1,17 +1,32 @@
 import { Meta } from '@storybook/react';
 import { AutoComplete } from '@geist-ui/core';
 
-export { Basic, Searching } from './AutoCompleteBasic';
+import AutoCompleteDocumentation from './AutoComplete.mdx';
 
-export default {
+export { 
+  Basic,
+  Type,
+  Disabled,
+  DisableFreeSolo,
+  Search,
+  Searching,
+  CustomSearchingText,
+  CustomNoOptions,
+  CustomOption,
+  Clearable,
+  Creatable
+} from './AutoCompleteBasic';
+
+const meta: Meta<typeof AutoComplete> = {
   title: 'Data Entry/AutoComplete',
   component: AutoComplete,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'AutoComplete is a text input with suggestions.',
-      },
+      page: AutoCompleteDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

@@ -1,27 +1,66 @@
 import React from 'react';
-import { Snippet, Grid, Spacer } from '@geist-ui/core';
+import { Snippet, Spacer } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Snippet text="yarn add @geist-ui/core" width="300px" /></Grid>
-    <Grid><Snippet text="npm install @geist-ui/core" type="success" width="300px" /></Grid>
-    <Grid><Snippet text="pnpm add @geist-ui/core" type="warning" width="300px" /></Grid>
-    <Grid><Snippet text="bun add @geist-ui/core" type="error" width="300px" /></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Snippet text="yarn add @geist-ui/core" width="300px" />
+};
 
-export const MultiLine = () => (
-    <Grid.Container gap={2} direction="column">
-      <Grid>
-        <Snippet text={['cd project', 'yarn install', 'yarn dev']} width="300px" />
-      </Grid>
-    </Grid.Container>
-);
+export const Width = {
+  tags: ['!sidebar'],
+  render: () => <Snippet text="yarn add @geist-ui/core" width="100%" />
+};
 
-export const NoCopy = () => (
-    <Grid.Container gap={2} direction="column">
-      <Grid>
-        <Snippet text="git clone https://github.com/geist-ui/core.git" copy="prevent" width="300px" />
-      </Grid>
-    </Grid.Container>
-);
+export const Types = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Snippet text="yarn add @geist-ui/core" type="dark" width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="success" width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="warning" width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="error" width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="secondary" width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="lite" width="300px" />
+    </>
+  )
+};
+
+export const MultiLine = {
+  tags: ['!sidebar'],
+  render: () => <Snippet text={['cd project', 'now']} width="300px" />
+};
+
+export const WithoutCopy = {
+  tags: ['!sidebar'],
+  render: () => <Snippet copy="prevent" text="yarn add @geist-ui/core" width="300px" />
+};
+
+export const CustomSymbol = {
+  tags: ['!sidebar'],
+  render: () => <Snippet symbol=">" text="yarn add @geist-ui/core" width="300px" />
+};
+
+export const CustomToast = {
+  tags: ['!sidebar'],
+  render: () => <Snippet toastText="Code copied!" toastType="secondary" text="yarn add @geist-ui/core" width="300px" />
+};
+
+export const Filled = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
+      <Snippet text="yarn add @geist-ui/core" type="success" filled width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="warning" filled width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="error" filled width="300px" />
+      <Spacer h={0.5} />
+      <Snippet text="yarn add @geist-ui/core" type="secondary" filled width="300px" />
+    </>
+  )
+};

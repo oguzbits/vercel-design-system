@@ -1,0 +1,76 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as PageStories from './index.stories';
+
+<Meta title="Layout/Page" of={PageStories} />
+
+# Page
+
+A container for the main content of the application.
+
+## Basic
+
+<Canvas of={PageStories.Basic} />
+
+## Content
+
+<Canvas of={PageStories.Content} />
+
+## APIs
+
+<div style={{ overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', fontSize: '14px' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid #eaeaea', textAlign: 'left' }}>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Attribute</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Description</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Type</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Accepted values</th>
+        <th style={{ padding: '12px 8px', fontWeight: '600' }}>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>renderMode</code></td>
+        <td style={{ padding: '12px 8px' }}>how to render the page</td>
+        <td style={{ padding: '12px 8px' }}><code>PageRenderMode</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'default' | 'effect'</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'default'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>dotBackdrop</code></td>
+        <td style={{ padding: '12px 8px' }}>add a dot backdrop</td>
+        <td style={{ padding: '12px 8px' }}><code>boolean</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>false</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>dotSize</code></td>
+        <td style={{ padding: '12px 8px' }}>dot size of the background</td>
+        <td style={{ padding: '12px 8px' }}><code>string</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'1px'</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>dotSpace</code></td>
+        <td style={{ padding: '12px 8px' }}>spacing between dots</td>
+        <td style={{ padding: '12px 8px' }}><code>number</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>0.5</code></td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid #eaeaea' }}>
+        <td style={{ padding: '12px 8px' }}><code>dotBackground</code></td>
+        <td style={{ padding: '12px 8px' }}>color for background dots</td>
+        <td style={{ padding: '12px 8px' }}><code>string</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+        <td style={{ padding: '12px 8px' }}><code>'auto'</code></td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 8px' }}>...native props</td>
+        <td style={{ padding: '12px 8px' }}>native HTML attributes</td>
+        <td style={{ padding: '12px 8px' }}><code>HTMLAttributes</code></td>
+        <td style={{ padding: '12px 8px' }}><code>'id', 'className', ...</code></td>
+        <td style={{ padding: '12px 8px' }}>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

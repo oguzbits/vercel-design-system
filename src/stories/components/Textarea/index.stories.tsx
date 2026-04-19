@@ -1,17 +1,26 @@
 import { Meta } from '@storybook/react';
 import { Textarea } from '@geist-ui/core';
 
-export { Basic, Types, Resize } from './TextareaBasic';
+import TextareaDocumentation from './Textarea.mdx';
 
-export default {
+export { 
+  Basic,
+  Width,
+  Types,
+  Status,
+  Command
+} from './TextareaBasic';
+
+const meta: Meta<typeof Textarea> = {
   title: 'Data Entry/Textarea',
   component: Textarea,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a multi-line text input.',
-      },
+      page: TextareaDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;

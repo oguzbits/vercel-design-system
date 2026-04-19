@@ -1,18 +1,47 @@
 import React from 'react';
-import { Progress, Grid, Spacer } from '@geist-ui/core';
+import { Progress, Spacer, useTheme, Button } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Progress value={30} /></Grid>
-    <Grid><Progress value={50} type="success" /></Grid>
-    <Grid><Progress value={70} type="warning" /></Grid>
-    <Grid><Progress value={90} type="error" /></Grid>
-  </Grid.Container>
-);
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => <Progress value={50} />
+};
 
-export const Colors = () => (
-  <Grid.Container gap={2} direction="column">
-    <Grid><Progress value={45} colors={{ 30: 'red', 60: 'yellow', 90: 'green' }} /></Grid>
-    <Grid><Progress value={85} colors={{ 30: 'red', 80: 'yellow', 100: 'green' }} /></Grid>
-  </Grid.Container>
-);
+export const CustomMax = {
+  tags: ['!sidebar'],
+  render: () => <Progress value={45} max={50} />
+};
+
+export const DynamicColors = {
+  tags: ['!sidebar'],
+  render: function Render() {
+    const theme = useTheme();
+    const [value, setValue] = React.useState(20);
+    const colors = {
+      20: theme.palette.error,
+      40: theme.palette.warning,
+      60: theme.palette.success,
+      80: '#000',
+    };
+    return (
+      <div style={{ maxWidth: '400px' }}>
+        <Progress value={value} colors={colors} />
+        <Spacer h={1} />
+        <Button onClick={() => setValue(prev => prev + 20)} auto scale={0.5}>Increase</Button>
+        <Spacer w={0.5} inline />
+        <Button onClick={() => setValue(20)} auto scale={0.5} type="abort">Reset</Button>
+      </div>
+    );
+  }
+};
+
+export const Type = {
+  tags: ['!sidebar'],
+  render: () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <Progress type="secondary" value={10} />
+      <Progress type="success" value={45} />
+      <Progress type="warning" value={100} />
+      <Progress type="error" value={21} />
+    </div>
+  )
+};

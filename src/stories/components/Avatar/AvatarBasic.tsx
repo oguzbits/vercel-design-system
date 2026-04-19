@@ -1,25 +1,57 @@
 import React from 'react';
-import { Avatar, Grid, Spacer } from '@geist-ui/core';
+import { Avatar, Spacer } from '@geist-ui/core';
 
-export const Basic = () => (
-  <Grid.Container gap={2}>
-    <Grid>
-      <Avatar src="https://geist-ui.dev/images/avatar.png" />
-    </Grid>
-    <Grid>
-      <Avatar src="https://geist-ui.dev/images/avatar.png" scale={2} />
-    </Grid>
-    <Grid>
+export const Basic = {
+  tags: ['!sidebar'],
+  render: () => {
+    const url = '/images/avatar.png';
+    return (
+      <>
+        <Avatar src={url} />
+        <Avatar src={url} />
+        <Avatar src={url} />
+        <Avatar src={url} />
+        <Spacer h={0.5} />
+        <Avatar src={url} isSquare />
+        <Avatar src={url} isSquare />
+        <Avatar src={url} isSquare />
+        <Avatar src={url} isSquare />
+      </>
+    );
+  }
+};
+
+export const Text = {
+  tags: ['!sidebar'],
+  render: () => (
+    <>
       <Avatar text="W" />
-    </Grid>
-  </Grid.Container>
-);
+      <Avatar text="A" />
+      <Avatar text="W" />
+      <Avatar text="Joe" />
+    </>
+  )
+};
 
-export const Group = () => (
-  <Avatar.Group>
-    <Avatar src="https://geist-ui.dev/images/avatar.png" />
-    <Avatar src="https://geist-ui.dev/images/avatar.png" />
-    <Avatar src="https://geist-ui.dev/images/avatar.png" />
-    <Avatar text="+3" />
-  </Avatar.Group>
-);
+export const Group = {
+  tags: ['!sidebar'],
+  render: () => {
+    const url = '/images/avatar.png';
+    return (
+      <>
+        <Avatar.Group>
+          <Avatar src={url} stacked />
+          <Avatar src={url} stacked />
+          <Avatar src={url} stacked />
+          <Avatar src={url} stacked />
+        </Avatar.Group>
+        <Spacer h={1} />
+        <Avatar.Group count={12}>
+          <Avatar src={url} stacked />
+          <Avatar text="W" stacked />
+          <Avatar text="Ana" stacked />
+        </Avatar.Group>
+      </>
+    );
+  }
+};

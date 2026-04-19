@@ -1,17 +1,24 @@
 import { Meta } from '@storybook/react';
 import { Badge } from '@geist-ui/core';
 
-export { Basic, Anchor } from './BadgeBasic';
+import BadgeDocumentation from './Badge.mdx';
 
-export default {
+export { 
+  Basic,
+  Type,
+  Anchor
+} from './BadgeBasic';
+
+const meta: Meta<typeof Badge> = {
   title: 'Data Display/Badge',
   component: Badge,
   tags: ['autodocs'],
   parameters: {
     docs: {
-      description: {
-        component: 'Display a small numerical value or status descriptor.',
-      },
+      page: BadgeDocumentation,
     },
   },
-} as Meta;
+  args: {},
+};
+
+export default meta;
