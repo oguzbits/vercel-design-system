@@ -1,5 +1,8 @@
 import React from 'react';
-import { Table, Code, Text, Button } from '@geist-ui/core';
+import { Table, Code, Text, Button as GeistButton, ButtonProps } from '@geist-ui/core';
+
+// Local wrapper to resolve React 19 type incompatibilities in Geist UI v2
+const Button = (props: any) => <GeistButton {...props} />;
 
 export const Basic = {
   tags: ['!sidebar'],
@@ -11,10 +14,10 @@ export const Basic = {
     ];
     return (
       <Table data={data}>
-        <Table.Column prop="property" label="property" />
-        <Table.Column prop="description" label="description" />
-        <Table.Column prop="type" label="type" />
-        <Table.Column prop="default" label="default" />
+        <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="type" label="type" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="default" label="default" render={(v: any) => <span>{v}</span>} />
       </Table>
     );
   }
@@ -30,10 +33,10 @@ export const Compose = {
     ];
     return (
       <Table data={data}>
-        <Table.Column prop="property" label="property" />
-        <Table.Column prop="description" label="description" />
-        <Table.Column prop="type" label="type" />
-        <Table.Column prop="default" label="default" />
+        <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="type" label="type" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="default" label="default" render={(v: any) => <span>{v}</span>} />
       </Table>
     );
   }
@@ -49,10 +52,10 @@ export const Width = {
     ];
     return (
       <Table data={data}>
-        <Table.Column prop="property" label="property" width={50} />
-        <Table.Column prop="description" label="description" />
-        <Table.Column prop="type" label="type" />
-        <Table.Column prop="default" label="default" />
+        <Table.Column prop="property" label="property" width={50} render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="type" label="type" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="default" label="default" render={(v: any) => <span>{v}</span>} />
       </Table>
     );
   }
@@ -77,8 +80,8 @@ export const Actions = {
     };
     return (
       <Table data={data} onChange={value => setData(value)}>
-        <Table.Column prop="property" label="property" />
-        <Table.Column prop="description" label="description" />
+        <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
         <Table.Column prop="operation" label="operation" width={150} render={renderAction} />
       </Table>
     );
@@ -112,8 +115,8 @@ export const UpdateRow = {
     };
     return (
       <Table data={data} onChange={value => setData(value)}>
-        <Table.Column prop="property" label="property" />
-        <Table.Column prop="description" label="description" />
+        <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
         <Table.Column prop="operation" label="operation" width={150} render={renderAction} />
       </Table>
     );
@@ -130,12 +133,12 @@ export const CustomHead = {
     ];
     return (
       <Table data={data}>
-        <Table.Column prop="property" label="property" />
-        <Table.Column prop="description" label="description" />
-        <Table.Column prop="type">
+        <Table.Column prop="property" label="property" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="description" label="description" render={(v: any) => <span>{v}</span>} />
+        <Table.Column prop="type" render={(v: any) => <span>{v}</span>}>
           <Code>type</Code>
         </Table.Column>
-        <Table.Column prop="default">
+        <Table.Column prop="default" render={(v: any) => <span>{v}</span>}>
           <Text b m={0}>default</Text>
         </Table.Column>
       </Table>
